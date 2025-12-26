@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!---------BOOTSTRAP CSS------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-----------CUSTOM CSS------------->
+    <link rel="stylesheet" href="./css/forgotpass.css" />
+    <link rel="stylesheet" href="./css/signup.css" />
+</head>
+
+<body>
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/navlogo.png" alt="" />
+                </a>
+                <div class="d-flex align-items-center nav-btn">
+                    <div class="d-flex align-items-center border border-dark rounded-pill px-4 py-2 me-3 sign-in-btn">
+                        <a class="btn primary-btn text-black fw-semibold px-4 rounded-pill" href="">Sign Up</a>
+                        <a class="arrow-btn" href="">
+                            <img src="./assets/upper-arrow.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center border border-dark rounded-pill px-4 py-2 login-btn">
+                        <a class="btn secondary-btn text-black fw-semibold px-4 rounded-pill" href="">Log In</a>
+                        <a class="arrow-btn" href="">
+                            <img src="./assets/upper-arrow.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="account-section">
+        <div class="container account-part">
+            <div class="account-cntn">
+                <div class="row">
+                    <div class="col-md-6 d-md-flex position-relative p-0">
+                        <img src="./assets/welcomeback.png" class="img-fluid w-100 h-100 object-fit-cover" alt="">
+                        <h1 class="left-text position-absolute text-white fw-bold">
+                            Let’s Get <br> Started
+                        </h1>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <div class="form-box w-100 w-md-75 px-3 px-md-0">
+
+                            <h2 class="fw-bold">Create Account</h2>
+                            <p class="text-muted">Join Now and Experience a World of Opportunities!</p>
+
+                            <!-- Name -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">First name</label>
+                                    <input type="text" class="form-control border-dark"
+                                        placeholder="Enter your first name">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Last name</label>
+                                    <input type="text" class="form-control border-dark"
+                                        placeholder="Enter your last name">
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control border-dark" placeholder="Enter your email">
+                            </div>
+
+                            <!-- Password -->
+                            <div class="mb-3 position-relative">
+                                <label class="form-label">Password</label>
+                                <input type="password" id="password" class="form-control border-dark"
+                                    placeholder="Create password">
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <input type="checkbox">
+                                    <small>I agree with Terms & Privacy Policy</small>
+                                </div>
+                                <a href="#" class="small text-decoration-none">Forgot password?</a>
+                            </div>
+                            <a class="btn btn-danger w-100 fw-bold py-2 mb-3">
+                                CREATE ACCOUNT
+                            </a>
+                            <div class="d-flex align-items-center my-3">
+                                <hr class="flex-grow-1">
+                                <span class="mx-2 text-muted">OR</span>
+                                <hr class="flex-grow-1">
+                            </div>
+                            <div class="sign-up-with-google d-flex align-items-center">
+                                <div class="g-logo me-4">
+                                    <a class="google-logo" href="">
+                                        <img src="./assets/google.png" alt="" />
+                                    </a>
+                                </div>
+                                <a class="sign-text" href="">
+                                    <span>Sign Up With Google</span>
+                                </a>
+                            </div>
+                            <h6 class="exist-check mb-4">Already have an account?
+                                <a class="login-page" href="./login.html">Log in</a></h6>
+                        </div>
+
+                    </div>
+                </div>
+    </section>
+
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row small">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <ul>
+                        <li>
+                            <a class="footer-logo" href="">
+                                <img src="./assets/footer-logo.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                We provide industry-recognized online and offline courses to help learners gain
+                                practical skills
+                                and advance their careers.
+                            </p>
+                        </li>
+                        <li class="mail"><a class="footer-email" href="">
+                                <img src="./assets/footer-email.png" alt="" />
+                            </a>Vidyasu@gmail.com</li>
+                        <li class="location"><a class="footer-loc" href="">
+                                <img src="./assets/footer-map.png" alt="" />
+                            </a>Eco Intelligent Park, Unit No- 7E, 7th Floor, Block-EM, Plot-3, Salt Lake Sector-5,
+                            Kolkata 700091, India</li>
+                        <li><a class="footer-call" href="">
+                                <img src="./assets/footer-call.png" alt="" />
+                            </a>1800- 419-9108</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <ul>
+                        <li>
+                            <h6>About</h6>
+                        </li>
+                        <li>About Us</li>
+                        <li>Courses</li>
+                        <li>News & Blog</li>
+                        <li>Become A Teacher</li>
+                        <li>Events</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <ul>
+                        <li>
+                            <h6>Quick Links</h6>
+                        </li>
+                        <li>Students</li>
+                        <li>Admission</li>
+                        <li>Faculty & Staffs</li>
+                        <li>Media Relations</li>
+                        <li>Alumni</li>
+                        <li>Visit</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="d-flex">
+                        <ul>
+                            <li>
+                                <h6>Our Newsletter</h6>
+                            </li>
+                            <li>
+                                <p>Enter your email and we will send you more information</p>
+                            </li>
+                            <li>
+                                <div class="type-container">
+                                    <input type="email" class="form-control me-2" placeholder="Email">
+                                    <a class="btn btn-danger btn-sm" href="">Subscribe</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

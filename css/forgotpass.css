@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 950px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-section {
+    background: red;
+}
+
+.arrow-circle {
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.arrow-circle img {
+    width: 12px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+.sign-in-btn,
+.login-btn {
+    background: #fff;
+}
+.reset-password-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-cntn {
+    background: #F5F5F5;
+    width: 100%;
+    margin: 120px 0;
+}
+
+.col-6 {
+    min-height: 600px;
+}
+
+.right-img {
+    height: 100%;
+}
+
+.right-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reset-pass-part {
+    max-width: 420px;
+    margin: auto;
+    margin-top: 274px;
+}
+.pass-cntn{
+    max-width: 1200px;
+}
+
+.footer-section{
+    background: #F3F4F8;
+    padding: 60px 0 0;
+}
+.type-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid black;
+    max-width: 610px;
+    width:100%;
+}
+.mail,.location{
+    margin-bottom:10px;
+}

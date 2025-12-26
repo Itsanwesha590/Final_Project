@@ -1,0 +1,35 @@
+.account-section{
+    padding: 120px 0;
+}
+.left-text{
+    bottom: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: clamp(32px, 4vw, 60px);
+}
+.account-part{
+    max-width: 1200px;
+}
+.account-cntn{
+    background:#F5F5F5;
+}
+.sign-up-with-google{
+    border: 2px solid black;
+    padding: 5px 55px;
+    border-radius: 10px;
+}
+.sign-text{
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .account-section {
+        padding: 60px 0;
+    }
+
+    .footer-section {
+        padding: 40px 0;
+    }
+
+}
