@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 20,
         autoplay: {
             delay: 2500,

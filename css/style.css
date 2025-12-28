@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +9,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1157px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -49,6 +50,13 @@ ul {
 
 .active {
     color: #FFFF !important;
+    position: relative;
+}
+
+.active::after {
+    position: absolute;
+    content: "";
+    background: #fff;
 }
 
 .hero-img {
@@ -60,6 +68,7 @@ ul {
     background: url("../assets/banner.png")no-repeat center center/cover;
     min-height: 100vh;
     color: #fff;
+    padding: 120px 0;
 }
 
 .sign-btn {
@@ -81,9 +90,9 @@ ul {
 .hero-title {
     text-transform: capitalize;
     font-family: "Urbanist";
-    font-size: 80px;
+    font-size: 60px;
     max-width: 755px;
-    min-height: 255px;
+    min-height: 200px;
 }
 
 .enroll-btn {
@@ -91,20 +100,105 @@ ul {
     border: 1px solid black;
     background-color: #e50914;
     color: #FFFF;
+    position: relative;
+    z-index: 999;
+    border-radius: 8px;
 }
 
 .enroll-btn:hover {
     color: black;
     background: #C8C0C0;
 }
+.register-btn{
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.15);
+}
 
 .hero-img {
     right: 1%;
     top: 0;
+    z-index: 1;
+}
+
+.member-img {
+    margin-block: 40px;
+}
+
+.member-circle {
+    width: 70px;
+    height: 70px;
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+.member-circle>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+}
+
+.member-img li:nth-child(1) {
+    animation-delay: 0.01s;
+}
+
+.member-img li:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.member-img li:nth-child(3) {
+    animation-delay: 0.19s;
+}
+
+.member-img li:nth-child(4) {
+    animation-delay: 0.28s;
+}
+
+.member-img li:nth-child(4) {
+    animation-delay: 0.28s;
+}
+
+.member-img li:nth-child(2) img {
+    transform: translateX(-32px);
+}
+
+.member-img li:nth-child(3) img {
+    transform: translateX(-58px);
+}
+
+.member-img li:nth-child(4) img {
+    transform: translateX(-88px);
+}
+
+.member-img li:nth-child(5) img {
+    transform: translateX(-118px);
+}
+
+.stars img {
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+}
+
+.stars {
+    list-style: none;
+    padding: 0;
 }
 
 /*==================================
-FEARTHERS SECTION
+FEARTURES SECTION
 =====================================
 */
 .features-section {
@@ -363,6 +457,10 @@ ACADEMIC SECTION
     width: auto;
 }
 
+.view-courses {
+    text-align: center;
+}
+
 /*========================================
 EVENTS SECTION
 ==========================================
@@ -374,7 +472,6 @@ EVENTS SECTION
 
 .events-header {
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .events-title {
@@ -493,6 +590,106 @@ NEWS SECTION
     max-width: 532px;
 }
 
+/*=======================================
+VIDEO TOUR SECTION
+=========================================
+*/
+.video-pic {
+    left: 21.67%;
+    top: 33.9%;
+}
+
+
+.video-btn a::after {
+    content: "";
+    background: url("../assets/video-cicle.png") no-repeat center/cover;
+    position: absolute;
+    height: 105.3px;
+    width: 105.3px;
+    left: 21%;
+    top: 32.5%;
+    animation: rotate 3s infinite linear;
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+}
+
+.testimonial-card {
+    right: 8%;
+    top: 15%;
+    max-width: 520px;
+    background: #fff;
+    padding: 27px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card p {
+    font-size: 12px;
+}
+
+.quote-icon {
+    width: 40px;
+}
+
+.student-review h2 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.arrows {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slider-sec {
+    padding: 45px 0;
+}
+
+/*============================================
+CREATIVE SECTION
+===============================================
+*/
+.apply-now-btn {
+    padding: 13px 30px;
+    border: 1px solid black;
+    background-color: #fff;
+    color: #e50914;
+    border-radius: 10px;
+}
+
+.creative-cntn {
+    background: url("../assets/creative-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 251px;
+}
+
+.creative-header {
+    margin: 0 auto;
+}
+
+.creative-header>h2 {
+    font-size: 24px;
+    font-style: italic;
+    color: #fff;
+    font-family: "Crimson Pro";
+}
+
+.creative-header>h1 {
+    font-size: 32px;
+    color: #fff;
+}
 
 /*========================================
 FOOTER SECTION
@@ -516,6 +713,16 @@ FOOTER SECTION
     margin-bottom: 10px;
 }
 
+.footer-bottom {
+    border-top: 1px solid black;
+    padding: 15px 0;
+}
+
+.footer-icons img {
+    width: 36px;
+    height: 36px;
+}
+
 /*=======================================
 MEDIA QUERIES
 =========================================
@@ -528,7 +735,10 @@ MEDIA QUERIES
 
     .hero-title {
         font-size: 56px;
+        position: relative;
+        z-index: 99;
         min-height: auto;
+        margin-bottom: 25px;
     }
 
     .hero-img {
@@ -538,7 +748,10 @@ MEDIA QUERIES
 
     .paragraph {
         font-size: 32px;
+        position: relative;
+        z-index: 99;
     }
+
 
     /* FEATURES */
     .feature-card {
@@ -546,10 +759,12 @@ MEDIA QUERIES
         margin: auto;
     }
 
-    /* ABOUT SECTION */
-    .about-university .row {
-        flex-direction: column;
+    .features-cntn p {
+        margin-top: 20px;
     }
+
+    /* ABOUT SECTION */
+
 
     .image-cntn {
         margin-bottom: 40px;
@@ -573,11 +788,26 @@ MEDIA QUERIES
     .blog-card {
         margin: auto;
     }
+
+    .academic-section {
+        padding-top: 350px;
+    }
+
+    .testimonial-card {
+        right: 4%;
+        top: 12%;
+        max-width: 450px;
+    }
+
+    .video-btn {
+        left: 28%;
+    }
 }
 
 @media screen and (max-width:768px) {
     .feature-card {
-        margin: auto;
+        margin: 0 auto;
+        padding: 30px;
     }
 
     .top-bar {
@@ -596,6 +826,8 @@ MEDIA QUERIES
 
     .paragraph {
         font-size: 26px;
+        position: relative;
+        z-index: 99;
     }
 
     .hero-img {
@@ -609,29 +841,23 @@ MEDIA QUERIES
         margin-bottom: 40px;
     }
 
-    .feature-card {
-        padding: 30px;
-    }
-
     /* ABOUT */
     .about-title {
         font-size: 32px;
-        text-align: center;
-    }
-
-    .about-text {
-        text-align: center;
-        margin: auto;
     }
 
     .qualities {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        margin-top: 12px;
     }
 
     .writing>p {
         max-width: 100%;
+    }
+
+    .writing>h6 {
+        margin-top: 12px;
     }
 
     /* COUNTER */
@@ -649,6 +875,14 @@ MEDIA QUERIES
         display: none;
     }
 
+    /*CREATIVE SECTION*/
+    .creative-cntn {
+        min-height: 0;
+    }
+
+
+
+
     /* FOOTER */
     .footer-section .row {
         text-align: center;
@@ -656,8 +890,17 @@ MEDIA QUERIES
 
     .type-container {
         flex-direction: column;
-        gap: 10px;
+        margin-bottom: 10px;
         border: none;
+    }
+
+    .newsletter-part {
+        margin: 0 auto;
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -673,15 +916,98 @@ MEDIA QUERIES
     }
 
     .enroll-btn {
-        padding: 10px 20px;
+        margin-left: 0 !important;
+        display: inline-block;
     }
 
-    .counter {
-        font-size: 2rem;
+    .counter-section {
+        position: static !important;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .counter-section .col-3 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .about-university {
+        padding: 60px 0;
     }
 
     .blog-title {
         font-size: 16px;
     }
 
+
+    .blog-card {
+        min-height: auto;
+    }
+
+    .academic-section {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .title {
+        padding-top: 0;
+    }
+
+    .events-cntn {
+        padding: 20px 0;
+    }
+
+    .about-title {
+        margin-top: 64px;
+    }
+
+    .testimonial-card {
+        position: static;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .video-btn {
+        left: 50%;
+        top: 50%;
+    }
+
+    .video-pic {
+        width: 55px;
+    }
+
+    .video-btn::after {
+        width: 85px;
+        height: 85px;
+    }
+
+}
+
+/*============================
+CREATIVE SECTION MEDIA QUERIES
+===============================
+*/
+@media screen and (max-width: 768px) {
+    .creative-cntn {
+        background-size: cover;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .creative-header {
+        margin: 0;
+    }
+
+    .creative-header>h2 {
+        font-size: 18px;
+    }
+
+    .creative-header>h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .apply-now-btn {
+        padding: 10px 24px;
+    }
 }

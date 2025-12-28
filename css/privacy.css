@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top-bar {
+    height: 36px;
+}
+
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 999;
+}
+
+.nav-link {
+    color: #C8C0C0;
+    margin-right: 20px;
+}
+
+.active {
+    color: #FFFF !important;
+}
+
+.apply-btn {
+    border: 1px solid gray;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: black;
+}
+
+.sign-btn {
+    color: #C8C0C0;
+    margin-left: 20px;
+}
+
+/*=========================================
+HERO SECTION
+=============================================
+*/
+.banner-section {
+    background: url("../assets/privacy-hero.png")no-repeat center/cover;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+}
+
+.banner-title {
+    max-width: 634px;
+    min-height: 134px;
+    font-size: 80px;
+    font-family: "Urbanist";
+}
+
+
+
+
+/*===========================================
+INFORMATION SECTION
+==============================================
+*/
+.review-box {
+    padding: 30px 30px 32px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    max-width: 314px;
+    min-height: 214px;
+}
+
+.review-box>h4 {
+    font-size: 24px;
+}
+
+.review-box>h6 {
+    font-size: 16px;
+}
+
+.review-box>h5 {
+    font-size: 15px;
+}
+
+.head-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.let-us-know {
+    margin: 0 auto;
+    max-width: 860px;
+    background: #F6F4EE;
+    margin-bottom: 60px;
+}
+
+.information-sec {
+    padding: 60px;
+    background: #F6F4EE;
+}
+
+.info-wrpr {
+    max-width: 860px;
+}
+
+.topic {
+    margin-bottom: 50px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*=========================================
+MEDIA QUERIES
+============================================
+*/
+@media screen and(max-width:768px) {
+    .banner-title {
+        font-size: 36px;
+        min-height: auto;
+    }
+}

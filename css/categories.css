@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  height: 36px;
+}
+
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 999;
+}
+
+.nav-link {
+  color: #C8C0C0;
+  margin-right: 20px;
+}
+
+.active {
+  color: #FFFF !important;
+}
+
+.apply-btn {
+  border: 1px solid gray;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: black;
+}
+
+.sign-btn {
+  color: #C8C0C0;
+  margin-left: 20px;
+}
+
+/*=========================================
+HERO SECTION
+=============================================
+*/
+.banner-section {
+  background: url("../assets/privacy-hero.png")no-repeat center/cover;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+.banner-title {
+  max-width: 634px;
+  min-height: 134px;
+  font-size: 80px;
+  font-family: "Urbanist";
+}
+.category-sec{
+  background:#F6F4EE;
+}
+.creative-sec{
+  background: #F6F4EE;
+}
+
+
+
+/* Card backgrounds */
+.bg-cert {
+  background-image: url("../assets/earn-certificate.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 250px;
+  max-width:634px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.bg-rated {
+  background-image: url("../assets/best-rated-course.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 250px;
+  max-width: 634px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+
+
+
+
+
+/* Mobile fix */
+@media screen and (max-width: 576px) {
+  .promo-card {
+    background-position: right bottom;
+    background-size: 120px;
+  }
+}
+@media screen and(max-width:768px) {
+    .bg-cert{
+      min-height:max-content;
+      max-width: min-content;
+      padding: 0;
+    }
+    .bg-rated{
+      min-height: max-content;
+      max-width: min-content;
+      padding: 0;
+    }
+    .copy-text{
+      margin: 0 auto;
+    }
+}
