@@ -1,0 +1,42 @@
+.banner-section {
+    background: url("../assets/privacy-hero.png")no-repeat center/cover;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.banner-title {
+    max-width: 634px;
+    min-height: 134px;
+    font-size: 80px;
+    font-family: "Urbanist";
+}
+
+.banner-img {
+    max-width: 100%;
+    min-height: 539px;
+    bottom: -17%;
+    left: 57%;
+}
+
+.vidyashu-btn {
+    padding: 13px 30px;
+    border: 1px solid black;
+    background-color: #e50914;
+    color: #FFFF;
+    border-radius: 8px;
+}
+.goal-cntn p{
+    max-width: 1320px;
+    min-height:216px;
+    font-size: 56px;
+}
+.mission-section{
+    padding:120px 0;
+    background: #F6F4EE;
+}
+.card{
+    margin-bottom: 30px;
+}

@@ -356,9 +356,10 @@ ACADEMIC SECTION
     font-style: italic;
     color: #F6F4EE;
     border-radius: 20px;
-    font-size: 40px;
+    font-size: 16px;
     bottom: -22%;
-    left: 11%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .counter {
@@ -386,6 +387,9 @@ ACADEMIC SECTION
 
 .mySwiper {
     padding: 20px 0 50px;
+}
+.swipper-wrapper{
+    align-items: stretch;
 }
 
 .course-card {
@@ -422,7 +426,7 @@ ACADEMIC SECTION
 }
 
 .play-btn {
-    margin-top: 40px;
+    margin-top: auto;
     border: 1px solid black;
     text-align: center;
     padding: 9px;
@@ -436,25 +440,13 @@ ACADEMIC SECTION
     background: #777;
     transition: 1s;
 }
-
-.max-play-btn {
-    margin-top: 57px;
-    border: 1px solid black;
-    text-align: center;
-    padding: 9px;
-    border-radius: 4px;
-    color: black;
-    background: #fff;
-}
-
-.max-play-btn:hover {
-    color: white;
-    background: #777;
-    transition: 1s;
+.data-para{
+    margin-bottom: 15px;
 }
 
 .swiper-slide {
-    width: auto;
+    display: flex;
+    height: auto;
 }
 
 .view-courses {
@@ -490,7 +482,6 @@ EVENTS SECTION
 /* EVENT ITEM */
 .event-item {
     display: flex;
-    gap: 30px;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
 }
@@ -895,7 +886,7 @@ MEDIA QUERIES
     }
 
     .newsletter-part {
-        margin: 0 auto;
+        justify-content: center;
     }
 
     .footer-icons {
