@@ -2,10 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*=================================
+MAIN CSS
+===================================
+*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .container {
@@ -26,23 +34,23 @@ ul {
 .apply-btn {
     border: 1px solid gray;
     padding: 6px 16px;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 13px;
     color: black;
 }
 
+/*==================================
+TOP - BAR SECTION
+====================================
+*/
 .top-bar {
-    height: 36px;
+    min-height: 36px;
 }
 
-.glass-navbar {
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    z-index: 999;
-}
-
+/*====================================
+NAVBAR SECTION
+======================================
+*/
 .nav-link {
     color: #C8C0C0;
     margin-right: 20px;
@@ -53,12 +61,62 @@ ul {
     position: relative;
 }
 
-.active::after {
-    position: absolute;
+.hdr-sec ul li .active::after {
     content: "";
-    background: #fff;
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    width: 44px;
+    height: 2px;
+    background: white;
+    transition: all 0.5s ease;
+    transform: translateX(-50%);
+
 }
 
+/* .hdr-sec{
+    z-index: 999;
+} */
+
+.sign-btn {
+    color: #C8C0C0;
+    margin-left: 20px;
+}
+
+.enroll-btn:hover {
+    color: black;
+    background: #C8C0C0;
+}
+
+.register-btn {
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.offcanvas {
+    flex-direction: row;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.offcanvas-open,
+.offcanvas-backdrop {
+    padding-right: 0 !important;
+}
+
+
+/*=============================================
+BANNER SECTION
+===============================================
+*/
 .hero-img {
     min-height: 592px;
     max-width: 700px;
@@ -69,15 +127,6 @@ ul {
     min-height: 100vh;
     color: #fff;
     padding: 120px 0;
-}
-
-.sign-btn {
-    color: #C8C0C0;
-    margin-left: 20px;
-}
-
-.apply-btn {
-    border-radius: 8px;
 }
 
 .paragraph {
@@ -101,23 +150,20 @@ ul {
     background-color: #e50914;
     color: #FFFF;
     position: relative;
-    z-index: 999;
+    z-index: 99;
     border-radius: 8px;
-}
-
-.enroll-btn:hover {
-    color: black;
-    background: #C8C0C0;
-}
-.register-btn{
-    backdrop-filter: blur(6px);
-    background: rgba(255, 255, 255, 0.15);
+    /* margin-left: 74px; */
 }
 
 .hero-img {
-    right: 1%;
+    left: 40%;
     top: 0;
-    z-index: 1;
+}
+
+.hero-img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .member-img {
@@ -170,7 +216,11 @@ ul {
     animation-delay: 0.28s;
 }
 
-.member-img li:nth-child(2) img {
+.membership ul {
+    padding-left: 0;
+}
+
+/* .member-img li:nth-child(2) img {
     transform: translateX(-32px);
 }
 
@@ -184,6 +234,10 @@ ul {
 
 .member-img li:nth-child(5) img {
     transform: translateX(-118px);
+} */
+
+.member-circle:not(:first-child) {
+    margin-left: -22px;
 }
 
 .stars img {
@@ -195,6 +249,11 @@ ul {
 .stars {
     list-style: none;
     padding: 0;
+    margin: 0;
+}
+
+.hero-section p {
+    margin-left: 3px;
 }
 
 /*==================================
@@ -273,10 +332,29 @@ ABOUT SECTION
     min-height: 500px;
 }
 
+.main-image {
+    min-height: 496px;
+}
+
+.main-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.float-img {
+    min-height: 413px;
+}
+
+.float-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .float-img {
     top: 32%;
-    right: 17%;
-    width: 45%;
+    right: 2%;
 }
 
 .float-img img {
@@ -284,20 +362,39 @@ ABOUT SECTION
 }
 
 .float-img-on {
+    min-height: 500px;
+}
+
+.float-img-on>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.float-img-on {
     top: 14.5%;
-    right: 17%;
-    width: 45%;
+    right: -6.5%;
+}
+
+.float-img-exp {
+    min-height: 96px;
+}
+
+.float-img-exp>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .float-img-exp {
     top: 83.3%;
-    right: -10%;
-    width: 45%;
+    right: -15%;
 }
 
 .about-title {
     font-size: 42px;
     font-weight: 700;
+    margin-left: 70px;
 }
 
 .about-title span {
@@ -308,6 +405,7 @@ ABOUT SECTION
     color: #777;
     margin-top: 15px;
     max-width: 420px;
+    margin-left: 70px;
 }
 
 .about-text::before {
@@ -343,6 +441,21 @@ ABOUT SECTION
 
 .writing>p {
     max-width: 397px;
+}
+
+.icon {
+    margin-left: 40px;
+}
+
+.enroll-now-btn {
+    padding: 13px 30px;
+    border: 1px solid black;
+    background-color: #e50914;
+    color: #FFFF;
+    position: relative;
+    z-index: 999;
+    border-radius: 8px;
+    margin-left: 74px;
 }
 
 /*========================================
@@ -388,7 +501,8 @@ ACADEMIC SECTION
 .mySwiper {
     padding: 20px 0 50px;
 }
-.swipper-wrapper{
+
+.swipper-wrapper {
     align-items: stretch;
 }
 
@@ -440,7 +554,8 @@ ACADEMIC SECTION
     background: #777;
     transition: 1s;
 }
-.data-para{
+
+.data-para {
     margin-bottom: 15px;
 }
 
@@ -572,7 +687,7 @@ NEWS SECTION
 
 .news-arrow {
     left: 44%;
-    bottom: -34px;
+    bottom: -36px;
     /* margin-top: 10px; */
 }
 
@@ -658,12 +773,16 @@ CREATIVE SECTION
     border-radius: 10px;
 }
 
-.creative-cntn {
+.apply-now {
+    margin-top: 71px;
+}
+
+.creative-section {
     background: url("../assets/creative-bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    min-height: 251px;
+    min-height: 200px;
 }
 
 .creative-header {
@@ -675,6 +794,7 @@ CREATIVE SECTION
     font-style: italic;
     color: #fff;
     font-family: "Crimson Pro";
+    margin-top: 71px;
 }
 
 .creative-header>h1 {
@@ -719,32 +839,184 @@ MEDIA QUERIES
 =========================================
 */
 
-@media screen and (max-width: 992px) {
+/*=========================================
+NAVBAR MEDIA QUERIES
+===========================================
+*/
+@media screen and (max-width:1200px) {
+
+    .offcanvas {
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(20px);
+        padding-top: 100px;
+        /* width: 100% !important; */
+        text-align: center;
+    }
+
+    /* .offcanvas-end {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+    } */
+
+
+    .nav-link {
+        margin-right: 0;
+    }
+
+    .offcanvas .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 9999;
+        height: 24px;
+        transition: 0.5s linear;
+    }
+
+    .navbar-toggler::before {
+        content: '';
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        background-color: white;
+        transition: 0.5s linear;
+    }
+
+    .navbar-toggler::after {
+        content: '';
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        transition: 0.5s linear;
+    }
+
+    .navbar-toggler.open::before {
+        transform: translate(0, 10px) rotate(-45deg);
+    }
+
+    .navbar-toggler.open::after {
+        transform: translate(0, -10px) rotate(45deg);
+    }
+
+    .navbar-toggler.open>.navbar-toggler-icon {
+        opacity: 0;
+    }
+
+    .navbar-toggler-icon {
+        background: none;
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        transition: 0.5s linear;
+    }
+
+    .nav-item {
+        /* margin-right: 0; */
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
     .nav-btn {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .offcanvas>ul {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .hdr-sec ul li .active::after {
         display: none;
     }
 
+    .nav-link {
+        color: #fff;
+    }
+
+
+
+    /*============================
+    ABOUT SECTION
+    ==============================
+    */
+    .about-title {
+        font-size: 38px;
+        margin-left: 40px;
+    }
+
+    .about-text {
+        margin-left: 40px;
+    }
+
+    .qualities {
+        margin: 40px 20px;
+    }
+
+    .icon {
+        margin-left: 20px;
+    }
+
+    .float-img-on {
+        right: -3%;
+    }
+
+    .float-img-exp {
+        right: -8%;
+    }
+}
+
+
+/*===================================
+BANNER SECTION
+======================================
+*/
+@media screen and (max-width: 992px) {
     .hero-title {
         font-size: 56px;
         position: relative;
         z-index: 99;
         min-height: auto;
-        margin-bottom: 25px;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .hero-img {
-        max-width: 100%;
-        min-height: auto;
+        max-width: 592px;
+        left: 1%;
     }
 
     .paragraph {
         font-size: 32px;
         position: relative;
         z-index: 99;
+        text-align: center;
+    }
+
+    .enroll-btn {
+        left: 38%;
+        /* margin-top: 15px; */
     }
 
 
-    /* FEATURES */
+
+    /* =====================================
+    FEATURES
+    ========================================= */
     .feature-card {
         top: 0;
         margin: auto;
@@ -754,34 +1026,111 @@ MEDIA QUERIES
         margin-top: 20px;
     }
 
-    /* ABOUT SECTION */
+    /*=========================================
+     ABOUT SECTION 
+     ==========================================*/
 
+
+    .about-university {
+        padding: 80px 0;
+    }
+
+    .about-university .col-6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
     .image-cntn {
-        margin-bottom: 40px;
+        min-height: 400px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .float-img,
+    .float-img-on,
+    .float-img-exp {
+        position: absolute;
+        transform: scale(0.9);
+    }
+
+    .main-image {
+        right: 31%;
+    }
+
+    .float-img {
+        right: 5%;
+        top: 35%;
+    }
+
+    .float-img-on {
+        right: 0;
+        top: 14.5%;
+    }
+
+    .float-img-exp {
+        right: -38px;
+        top: 96%;
+    }
+
+    .about-title {
+        font-size: 32px;
+        margin-left: 0;
+        margin-top: 172px;
+        text-align: center;
     }
 
     .about-text {
-        margin-left: 0 !important;
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
     }
 
     .qualities {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 30px 0;
+        text-align: center;
+        max-width: 320px;
     }
 
-    /* COUNTER */
+    .writing h6,
+    .writing p {
+        margin-left: 15px;
+    }
+
+    .icon {
+        margin: 0 0 10px 0;
+    }
+
+    /* .enroll-btn {
+        margin: 25px auto 0 !important;
+    } */
+
+    /*===========================================
+     COUNTER
+     ============================================ */
+    .counter-section .col-3 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
     .counter-section {
-        padding: 40px;
-        font-size: 28px;
+        bottom: -45%;
+
     }
 
-    /* BLOG */
+    /* ============================================
+    ACADEMIC SECTION
+    ===================================================
+     */
     .blog-card {
         margin: auto;
     }
 
     .academic-section {
-        padding-top: 350px;
+        padding-top: 653px;
     }
 
     .testimonial-card {
@@ -793,12 +1142,69 @@ MEDIA QUERIES
     .video-btn {
         left: 28%;
     }
+
+    /*===================================
+    ABOUT SECTION
+    =====================================
+    */
+
+
+    /*=======================================
+    CREATIVE SECTION
+    ===========================================
+    */
+    .creative-cntn {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .creative-header {
+        margin-bottom: 20px;
+    }
+
+    .creative-header>h2 {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .creative-header>h1 {
+        font-size: 28px;
+    }
+
+    .apply-now {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    /*============================
+    FOOTER SECTION
+    ==============================
+    */
+    .footer-section .row {
+        text-align: center;
+    }
+
+    .type-container {
+        flex-direction: column;
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    .newsletter-part {
+        justify-content: center;
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:768px) {
     .feature-card {
         margin: 0 auto;
         padding: 30px;
+        margin-top: 40px;
     }
 
     .top-bar {
@@ -824,6 +1230,20 @@ MEDIA QUERIES
     .hero-img {
         width: 100%;
         margin-top: 30px;
+    }
+
+    .enroll-btn {
+        left: 1%;
+    }
+
+    .membership ul {
+        z-index: 99;
+        margin: 0 auto;
+    }
+
+    .star-part ul {
+        z-index: 99;
+        margin: 0 auto;
     }
 
     /* FEATURES */
@@ -853,13 +1273,18 @@ MEDIA QUERIES
 
     /* COUNTER */
     .counter-section .col-3 {
-        width: 50%;
+        width: 100%;
         margin-bottom: 20px;
     }
+
 
     /* BLOG */
     .headings {
         font-size: 28px;
+    }
+
+    .blog-card {
+        margin-top: 20px;
     }
 
     .arrow-style {
@@ -867,32 +1292,34 @@ MEDIA QUERIES
     }
 
     /*CREATIVE SECTION*/
-    .creative-cntn {
-        min-height: 0;
+    .creative-section {
+        padding: 30px 15px;
+        min-height: auto;
     }
 
+    .creative-header>h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
 
+    .creative-header>h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .apply-now-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+        margin-left: 26px;
+    }
+
+    .apply-now {
+        margin-top: 20px;
+    }
 
 
     /* FOOTER */
-    .footer-section .row {
-        text-align: center;
-    }
 
-    .type-container {
-        flex-direction: column;
-        margin-bottom: 10px;
-        border: none;
-    }
-
-    .newsletter-part {
-        justify-content: center;
-    }
-
-    .footer-icons {
-        display: flex;
-        justify-content: center;
-    }
 
 }
 
@@ -949,7 +1376,7 @@ MEDIA QUERIES
     }
 
     .about-title {
-        margin-top: 64px;
+        margin-top: 176px;
     }
 
     .testimonial-card {
@@ -972,33 +1399,32 @@ MEDIA QUERIES
         height: 85px;
     }
 
+    /*===============================
+    LATEST NEWS SECTION
+    =================================
+    */
+    .news-arrow {
+        left: 37%;
+        bottom: -36px;
+    }
+
 }
 
 /*============================
 CREATIVE SECTION MEDIA QUERIES
 ===============================
 */
-@media screen and (max-width: 768px) {
-    .creative-cntn {
-        background-size: cover;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .creative-header {
-        margin: 0;
-    }
-
+@media screen and (max-width: 576px) {
     .creative-header>h2 {
         font-size: 18px;
     }
 
     .creative-header>h1 {
-        font-size: 24px;
-        line-height: 1.3;
+        font-size: 22px;
     }
 
     .apply-now-btn {
-        padding: 10px 24px;
+        width: 100%;
+        padding: 12px 0;
     }
 }

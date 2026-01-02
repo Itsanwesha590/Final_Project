@@ -62,7 +62,7 @@ HERO SECTION
     width: 100%;
     min-height: 515px;
     background-image: url("../assets/privacy-hero.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     color: #fff;

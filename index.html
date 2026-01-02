@@ -14,12 +14,17 @@
     <!-----------------AOS CSS CDN-------------------------->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!------------FONT AWESOME CDN------------------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!------CUSTOM CSS--------->
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header>
+    <header class="hdr-sec">
         <!-- TOP INFO BAR -->
         <div class="bg-danger text-white py-1 top-bar">
             <div class="container">
@@ -49,19 +54,22 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg  glass-navbar position-absolute w-100">
+        <nav class="navbar navbar-expand-xl">
             <div class="container">
                 <div class="nav-logo">
                     <a class="navbar-brand" href="#">
                         <img src="./assets/navlogo.png" alt="" />
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse">
+                <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+                    <button class="offcanvas-header ms-auto mb-2" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark text-black"></i>
+                    </button>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -83,7 +91,7 @@
                         </li>
 
                     </ul>
-                    <div class="d-flex align-items-center nav-btn">
+                    <div class="d-flex align-items nav-btn">
                         <a class="d-flex align-items-center rounded-pill px-4 py-2 me-3 sign-btn"
                             href="./login.html">Sign In</a>
                         <a class="d-flex align-items-center text-white border border-transparent rounded-pill px-4 py-2 me-3 register-btn"
@@ -112,7 +120,7 @@
             <div class="row align-items-center">
 
 
-                <div class="col-lg-6">
+                <div class="membership col-lg-6">
                     <div class="d-flex align-items-center">
                         <ul class="member-img d-flex">
                             <li class="member-circle">
@@ -131,14 +139,17 @@
                                 <img src="./assets/member5.png" alt="">
                             </li>
                         </ul>
-                        <ul class="d-flex align-items-center me-2 mt-3">
-                            <li class="stars"><img src="./assets/star.png" alt="" /></li>
-                            <li class="stars"><img src="./assets/star.png" alt="" /></li>
-                            <li class="stars"><img src="./assets/star.png" alt="" /></li>
-                            <li class="stars"><img src="./assets/star.png" alt="" /></li>
-                            <li class="stars"><img src="./assets/star.png" alt="" /></li>
-                        </ul>
-                        <p>1000+ Professionals Joined</p>
+                        <div class="star-part">
+                            <ul class="d-flex align-items-center ms-1 me-2">
+                                <li class="stars"><img src="./assets/star.png" alt="" /></li>
+                                <li class="stars"><img src="./assets/star.png" alt="" /></li>
+                                <li class="stars"><img src="./assets/star.png" alt="" /></li>
+                                <li class="stars"><img src="./assets/star.png" alt="" /></li>
+                                <li class="stars"><img src="./assets/star.png" alt="" /></li>
+                            </ul>
+                            <p class="ms-1">1000+ professionals joined</p>
+                        </div>
+
                     </div>
                     <p class="mt-2 paragraph">
                         Your Day, in Perfect Rhythm.
@@ -153,14 +164,16 @@
                 </div>
 
 
-                <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                    <img src="./assets/student.png" alt="Student" class="hero-img position-absolute">
+                <div class=" hero-img position-absolute text-center mt-5 mt-lg-0">
+                    <img src="./assets/student.png" alt="Student">
                 </div>
 
             </div>
         </div>
     </section>
 
+
+    <!---------------FEATURES SECTION----------------->
     <section class="features-section">
         <div class="container">
             <div class="row">
@@ -234,7 +247,7 @@
             <div class="row">
                 <div class="col-6">
                     <div class="image-cntn position-relative">
-                        <div class="main-image">
+                        <div class="main-image position-absolute">
                             <img src="./assets/readingimg1.png" alt="" />
                         </div>
                         <div class="float-img position-absolute">
@@ -253,7 +266,7 @@
                         A few words <br>
                         about the <span>University</span>
                     </h2>
-                    <p class="about-text ms-lg-5 ps-4 position-relative">
+                    <p class="about-text ps-4 position-relative">
                         Our community is being called to reimagine the future. As the only university where a renowned
                         design school comes together with premier colleges, we are making learning more relevant and
                         transformational.
@@ -277,7 +290,7 @@
                             <p class="ms-4">Most trusted & recommended <br>by students</br></p>
                         </div>
                     </div>
-                    <a class="btn enroll-btn mt-4 ms-5">Enroll Now
+                    <a class="btn enroll-now-btn mt-4">Enroll Now
                         <img src="./assets/arrow-right.png" alt="" />
                     </a>
                 </div>
@@ -547,7 +560,7 @@
             </div>
         </div>
     </section>
-
+    <!---------------------VIDEO TOUR SECTION------------------------------>
     <section class="video-tour-sec position-relative">
         <div class="container-fluid px-0">
             <div class="video-cntn position-relative">
@@ -566,7 +579,7 @@
                     <img src="./assets/hyphen.png" alt="" class="quote-icon">
                 </div>
                 <div class="student-img">
-                    <img src="./assets/std-img.png" alt=""/>
+                    <img src="./assets/std-img.png" alt="" />
                 </div>
 
                 <p class="mt-3 fw-light">
@@ -578,7 +591,7 @@
                 <small class="text-muted">Web Development</small>
 
                 <div class="arrows mt-3">
-                    <img src="./assets/arrows.png" alt=""/>
+                    <img src="./assets/arrows.png" alt="" />
                 </div>
             </div>
         </div>
@@ -621,15 +634,15 @@
 
     <!----------CREATIVE SECTION--------->
     <section class="creative-section">
-        <div class="container-fluid px-0">
+        <div class="container">
             <div
-                class="creative-cntn d-flex align-items-center justify-content-between w-100 flex-column flex-md-row text-center text-md-start ">
+                class="creative-cntn d-flex align-items-center  w-100 flex-column flex-md-row text-center text-md-start ">
                 <div class="creative-header">
                     <h2>COURSES FOR FREE, REGISTER NOW</h2>
                     <h1>CREATIVE IN RESEARCH AND TEACHING.</h1>
                 </div>
-                <div class="apply-now mt-3 mt-md-0">
-                    <a class="apply-now-btn me-4">
+                <div class="apply-now text-center text-md-end">
+                    <a class="apply-now-btn" href="">
                         Apply Now
                     </a>
                 </div>

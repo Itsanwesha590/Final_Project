@@ -27,16 +27,21 @@
     background-color: #e50914;
     color: #FFFF;
     border-radius: 8px;
+    margin-bottom: 40px;
 }
-.goal-cntn p{
+
+.goal-cntn p {
     max-width: 1320px;
-    min-height:216px;
+    min-width: 216px;
     font-size: 56px;
 }
-.mission-section{
-    padding:120px 0;
+
+.mission-section {
+    padding: 100px 0;
     background: #F6F4EE;
 }
-.card{
+
+.card {
     margin-bottom: 30px;
 }
+
