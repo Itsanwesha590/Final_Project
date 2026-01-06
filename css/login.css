@@ -11,8 +11,26 @@
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --primary-color: #AB0C2F;
+    --secondary-color: #F3F1EB;
+    --bg-color: #F6F4EE;
+    --font-color: #141B34;
+    --btn-color: #e50914;
+    --tertiary-color: #777;
+    --bright-color: #FFFFFF;
+}
+
 .header-section {
-    background: red;
+    background: var(--btn-color);
 }
 
 .arrow-circle {
@@ -39,6 +57,67 @@
     max-width: 1200px;
 }
 
+.sign-in-btn,.login-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.sign-in-btn::after {
+    content: "";
+    width: 10px;
+    background: var(--tertiary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 1s linear;
+    border-radius: 50px;
+}
+.login-btn::after{
+    content: "";
+    width: 10px;
+    background: var(--tertiary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 1s linear;
+    border-radius: 50px;
+}
+.login-btn .secondary-btn>span{
+    position: relative;
+    z-index: 2;
+    color: var(--font-color);
+}
+.login-btn:hover::after{
+    transform: scale(40);
+}
+
+.sign-in-btn .primary-btn>span {
+    position: relative;
+    z-index: 2;
+    color: var(--font-color);
+}
+
+.sign-in-btn:hover::after {
+    transform: scale(40);
+}
+
+.arrow-btn{
+    display: inline-block;
+    transition: transform 0.4s infinite;
+    position: relative;
+    z-index: 2;
+}
+.sign-in-btn:hover .arrow-btn{
+    transform: translateX(8px);
+}
+.login-btn:hover .arrow-btn{
+    transform: translateX(8px);
+}
+
 /*=========================================
 MAIN SECTION
 ============================================
@@ -57,6 +136,7 @@ MAIN SECTION
     max-width: 831px;
     margin: 220.5px 61.5px;
 }
+
 .col-md-6 {
     min-height: 600px;
 }
@@ -67,9 +147,69 @@ MAIN SECTION
     bottom: -20%;
     color: #fff
 }
-.login-wrapper{
+
+.login-wrapper {
     background: #F5F5F5;
 }
+
+.social-btn {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px) scale(1.1);
+}
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-control.is-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/*======================================
+FOOTER SECTION
+========================================
+*/
+.type-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    max-width: 610px;
+    width: 100%;
+}
+
+.footer-section {
+    padding: 20px;
+}
+
+.mail,
+.location {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid black;
+    padding: 15px 0;
+}
+
+.footer-icons img {
+    width: 36px;
+    height: 36px;
+}
+
 
 
 /*=====================================
@@ -107,7 +247,7 @@ MEDIA QUERIES
 
     .sign-in-btn,
     .login-btn {
-        padding: 6px 8px;
+        padding: 4px 2px !important;
     }
 
     .nav-btn a {
@@ -158,5 +298,30 @@ MEDIA QUERIES
 
     .login-part {
         padding: 30px 15px;
+    }
+}
+
+/*==================================
+FOOTER SECTION MEDIA QUERIES
+====================================
+*/
+@media screen and (max-width:992px) {
+    .footer-section .row {
+        text-align: center;
+    }
+
+    .type-container {
+        flex-direction: column;
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    .newsletter-part {
+        justify-content: center;
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
     }
 }

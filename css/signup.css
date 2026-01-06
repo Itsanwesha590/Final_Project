@@ -1,3 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 950px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --primary-color: #AB0C2F;
+    --secondary-color: #F3F1EB;
+    --bg-color: #F6F4EE;
+    --font-color: #141B34;
+    --btn-color: #e50914;
+    --tertiary-color: #777;
+    --bright-color: #FFFFFF;
+}
+
+.header-section {
+    background: var(--btn-color);
+}
+
+.arrow-circle {
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.arrow-circle img {
+    width: 12px;
+}
+
+.sign-in-btn,
+.login-btn {
+    background: #fff;
+}
+
+.login-cntn {
+    max-width: 1200px;
+}
+
+.sign-in-btn,.login-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.sign-in-btn::after {
+    content: "";
+    width: 10px;
+    background: var(--tertiary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 1s linear;
+    border-radius: 50px;
+}
+.login-btn::after{
+    content: "";
+    width: 10px;
+    background: var(--tertiary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 1s linear;
+    border-radius: 50px;
+}
+.login-btn .secondary-btn>span{
+    position: relative;
+    z-index: 2;
+    color: var(--font-color);
+}
+.login-btn:hover::after{
+    transform: scale(40);
+}
+
+.sign-in-btn .primary-btn>span {
+    position: relative;
+    z-index: 2;
+    color: var(--font-color);
+}
+
+.sign-in-btn:hover::after {
+    transform: scale(40);
+}
+
+.arrow-btn{
+    display: inline-block;
+    transition: transform 0.4s infinite;
+    position: relative;
+    z-index: 2;
+}
+.sign-in-btn:hover .arrow-btn{
+    transform: translateX(8px);
+}
+.login-btn:hover .arrow-btn{
+    transform: translateX(8px);
+}
+
+
+/*====================================
+ACCOUNT SECTION
+======================================
+*/
+
 .account-section{
     padding: 120px 0;
 }

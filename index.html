@@ -5,71 +5,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <!--------BOOTSTRAP CSS-------->
+    <!----------------BOOTSTRAP CSS------------------------>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!---------------SWIPER CSS----------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <!-----------------AOS CSS CDN-------------------------->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!------------FONT AWESOME CDN------------------------------------>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!------CUSTOM CSS--------->
+    <!------------------CUSTOM CSS-------------------------->
     <link rel="stylesheet" href="./css/style.css" />
+
 </head>
 
 <body>
     <header class="hdr-sec">
-        <!-- TOP INFO BAR -->
-        <div class="bg-danger text-white py-1 top-bar">
+        <div class="top-bar bg-danger">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center small">
-
-                    <!-- LEFT SIDE -->
-                    <div class="d-flex align-items-center">
-                        <span>
-                            <img src="./assets/facebook.png" alt="" />
-                            7500K Followers</span>
-                        <span>
-                            <img src="./assets/call.png" alt="" />+91-22-2314-5678</span>
+                <div class="top-bar-content d-flex align-items-center">
+                    <div class="left-top-bar d-flex align-items-center">
+                        <a href="#">
+                            <img src="./assets/facebook.png" alt="">
+                            7500K Followers
+                        </a>
+                        <a href="#">
+                            <img src="./assets/call.png" alt="">
+                            +91-22-1234-5678
+                        </a>
                     </div>
 
-                    <!-- RIGHT SIDE -->
-                    <div class="d-none d-md-flex align-items-center gap-3 text-uppercase">
-                        <a href="#" class="text-white text-decoration-none">Camps</a>
-                        <span>|</span>
-                        <a href="#" class="text-white text-decoration-none">Students</a>
-                        <span>|</span>
-                        <a href="#" class="text-white text-decoration-none">Staffs</a>
-                        <span>|</span>
-                        <a href="#" class="text-white text-decoration-none">Helpdesk</a>
+                    <div class="top-right-bar d-flex align-items-center ms-auto">
+                        <a href="" class="top-highlights text-white text text-decoration-none">CAMPS</a>
+                        <a href="" class="top-highlights text-white text-decoration-none">STUDENTS</a>
+                        <a href="" class="top-highlights text-white text-decoration-none">STAFFS</a>
+                        <a href="" class="top-highlights text-white text-decoration-none">HELPDESK</a>
                     </div>
-
                 </div>
             </div>
         </div>
 
+        <!-------------NAVBAR SECTION--------------------->
         <nav class="navbar navbar-expand-xl">
             <div class="container">
-                <div class="nav-logo">
-                    <a class="navbar-brand" href="#">
+                <div class="navbar-logo">
+                    <a class="navbar-brand" href="">
                         <img src="./assets/navlogo.png" alt="" />
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
-                    <button class="offcanvas-header ms-auto mb-2" data-bs-dismiss="offcanvas" aria-label="Close">
-                        <i class="fa-solid fa-xmark text-black"></i>
-                    </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -78,25 +60,27 @@
                             <a class="nav-link" href="./aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Instructors</a>
+                            <a class="nav-link" href="#">Instructors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./privacy.html">FAQ</a>
+                            <a class="nav-link" href="#">FAQ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-0" href="./contact.html">Contact</a>
+                            <a class="nav-link last-item" href="./contact.html">Contact</a>
                         </li>
-
                     </ul>
-                    <div class="d-flex align-items nav-btn">
-                        <a class="d-flex align-items-center rounded-pill px-4 py-2 me-3 sign-btn"
-                            href="./login.html">Sign In</a>
-                        <a class="d-flex align-items-center text-white border border-transparent rounded-pill px-4 py-2 me-3 register-btn"
-                            href="./signup.html">Register</a>
-                        <a class="search-btn" href="">
+                    <div class="nav-btn d-flex justify-content-center">
+                        <a class="rounded-pill px-4 py-2 sign-in-btn" href="./signup.html">Sign In
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <a class="text-white rounded-pill px-4 py-2 register-btn" href="">Register</a>
+                        <a class="search-btn d-flex align-items-center" href="">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.5833 15.5834L19.2499 19.25" stroke="white" stroke-width="1.5"
@@ -106,22 +90,23 @@
                                     stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <a class="text-white border border-white ms-4 apply-btn" href="">Apply Now</a>
+                        <a class="apply-btn text-white" href="">Apply Now</a>
                     </div>
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
     </header>
 
+    <!---------------BANNER SECTION------------------------------------>
 
-    <!----BANNER SECTION------->
-    <section class="hero-section d-flex align-items-center position-relative">
+    <section class="hero-section position-relative">
         <div class="container">
-            <div class="row align-items-center">
-
-
+            <div class="row">
                 <div class="membership col-lg-6">
-                    <div class="d-flex align-items-center">
+                    <div class="banner-highlight d-flex align-items-center">
                         <ul class="member-img d-flex">
                             <li class="member-circle">
                                 <img src="./assets/member1.png" alt="">
@@ -139,7 +124,7 @@
                                 <img src="./assets/member5.png" alt="">
                             </li>
                         </ul>
-                        <div class="star-part">
+                        <div class="star-part ms-1">
                             <ul class="d-flex align-items-center ms-1 me-2">
                                 <li class="stars"><img src="./assets/star.png" alt="" /></li>
                                 <li class="stars"><img src="./assets/star.png" alt="" /></li>
@@ -147,9 +132,8 @@
                                 <li class="stars"><img src="./assets/star.png" alt="" /></li>
                                 <li class="stars"><img src="./assets/star.png" alt="" /></li>
                             </ul>
-                            <p class="ms-1">1000+ professionals joined</p>
+                            <p class="text-white ms-1">1000+ professionals joined</p>
                         </div>
-
                     </div>
                     <p class="mt-2 paragraph">
                         Your Day, in Perfect Rhythm.
@@ -158,7 +142,7 @@
                         Skill Up Today,<br />
                         Lead Tomorrow
                     </h1>
-                    <a class="enroll-btn">Enroll Now
+                    <a class="enroll-btn" href="">Enroll Now
                         <img src="./assets/arrow-right.png" alt="" />
                     </a>
                 </div>
@@ -167,13 +151,11 @@
                 <div class=" hero-img position-absolute text-center mt-5 mt-lg-0">
                     <img src="./assets/student.png" alt="Student">
                 </div>
-
             </div>
         </div>
     </section>
 
-
-    <!---------------FEATURES SECTION----------------->
+    <!-- ---------------FEATURES SECTION----------------------------------->
     <section class="features-section">
         <div class="container">
             <div class="row">
@@ -240,95 +222,105 @@
         </div>
     </section>
 
-    <!--------ABOUT SECTION--------------->
-
-    <section class="about-university position-relative">
+    <!---------------------ABOUT SECTION--------------------->
+    <section class="about-university-section position-relative">
         <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="image-cntn position-relative">
-                        <div class="main-image position-absolute">
-                            <img src="./assets/readingimg1.png" alt="" />
-                        </div>
-                        <div class="float-img position-absolute">
-                            <img src="./assets/greenwall.png" alt="" />
-                        </div>
-                        <div class="float-img-on position-absolute">
-                            <img src="./assets/girlimg.png" alt="" />
-                        </div>
-                        <div class="float-img-exp position-absolute">
-                            <img src="./assets/Experience.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h2 class="about-title">
-                        A few words <br>
-                        about the <span>University</span>
-                    </h2>
-                    <p class="about-text ps-4 position-relative">
-                        Our community is being called to reimagine the future. As the only university where a renowned
-                        design school comes together with premier colleges, we are making learning more relevant and
-                        transformational.
-                    </p>
-                    <div class="qualities d-flex align-items-start">
-                        <div class="icon">
-                            <img src="./assets/trust.png" alt="" />
-                        </div>
-                        <div class="writing">
-                            <h6 class="ms-4">Building Trust</h6>
-                            <p class="ms-4">We are committed <br>to building trust</br></p>
+            <div class="about-cntn">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="image-cntn position-relative">
+                            <div class="main-image position-absolute">
+                                <img src="./assets/readingimg1.png" alt="" />
+                            </div>
+                            <div class="float-img position-absolute">
+                                <img src="./assets/greenwall.png" alt="" />
+                            </div>
+                            <div class="float-img-on position-absolute">
+                                <img src="./assets/girlimg.png" alt="" />
+                            </div>
+                            <div class="float-img-exp position-absolute">
+                                <img src="./assets/Experience.png" alt="" />
+                            </div>
                         </div>
                     </div>
+                    <div class="col-6">
+                        <h2 class="about-title">
+                            A few words <br>
+                            about the <span>University</span>
+                        </h2>
+                        <p class="about-text ps-4 position-relative">
+                            Our community is being called to reimagine the future. As the only university where a
+                            renowned
+                            design school comes together with premier colleges, we are making learning more relevant and
+                            transformational.
+                        </p>
+                        <div class="qualities d-flex align-items-start">
+                            <div class="icon">
+                                <img src="./assets/trust.png" alt="" />
+                            </div>
+                            <div class="writing">
+                                <h6 class="ms-4">Building Trust</h6>
+                                <p class="ms-4">We are committed <br>to building trust</br></p>
+                            </div>
+                        </div>
 
-                    <div class="qualities d-flex align-items-start">
-                        <div class="icon">
-                            <img src="./assets/trusted-by-std.png" alt="" />
+                        <div class="qualities d-flex align-items-start">
+                            <div class="icon">
+                                <img src="./assets/trusted-by-std.png" alt="" />
+                            </div>
+                            <div class="writing">
+                                <h6 class="ms-4">Trusted by Students</h6>
+                                <p class="ms-4">Most trusted & recommended <br>by students</br></p>
+                            </div>
                         </div>
-                        <div class="writing">
-                            <h6 class="ms-4">Trusted by Students</h6>
-                            <p class="ms-4">Most trusted & recommended <br>by students</br></p>
-                        </div>
+                        <a class="enroll-btn classic" href="">
+                            Enroll Now
+                            <img src="./assets/arrow-right.png" alt="" />
+                        </a>
                     </div>
-                    <a class="btn enroll-now-btn mt-4">Enroll Now
-                        <img src="./assets/arrow-right.png" alt="" />
-                    </a>
                 </div>
             </div>
             <div class="counter-section mb-lg-5 position-absolute">
                 <div class="row">
-                    <div class="col-3">
-                        <h3 class="counter" data-target="2000">0</h3>
-                        <p>Students</p>
+                    <div class="col-6 col-lg-3">
+                        <div class="counter-box">
+                            <h3 class="counter" data-target="2000">0</h3>
+                            <p>Students</p>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <h3 class="counter" data-target="30">0</h3>
-                        <p>Professors</p>
+                    <div class="col-6 col-lg-3">
+                        <div class="counter-box">
+                            <h3 class="counter" data-target="30">0</h3>
+                            <p>Professors</p>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <h3 class="counter" data-target="6000">0</h3>
-                        <p>Programs</p>
+                    <div class="col-6 col-lg-3">
+                        <div class="counter-box">
+                            <h3 class="counter" data-target="6000">0</h3>
+                            <p>Programs</p>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        <h3 class="counter" data-target="2000">0</h3>
-                        <p>Research</p>
+                    <div class="col-6 col-lg-3">
+                        <div class="counter-box last-item">
+                            <h3 class="counter" data-target="2000">0</h3>
+                            <p>Research</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!----------ACADEMIC SECTION-------------->
-
+    <!------------ACADEMIC SECTION------------------------------->
     <section class="academic-section">
         <div class="container">
-            <div class="academic-title" data-aos="zoom-out-right">
+            <div class="academic-title">
                 <h2><span class="short-text position-relative">Academic
                         <img class=" red-curve position-absolute" src="./assets/red-line.png" alt="" />
                     </span> Programs</h2>
-                <p>Focusing on high education with the best quality.</p>
+                <p>Focusing on high education with the best quality</p>
             </div>
-            <div class="swiper mySwiper">
+            <div class="swiper academicSwiper">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
@@ -338,7 +330,7 @@
                                 <h6>UI/UX Design Essentials</h6>
                                 <p>Create engaging user experiences with Figma & prototyping.</p>
                                 <small>242 Students</small><br>
-                                <small>18 Sessions</small>
+                                <small class="mb-1">18 Sessions</small>
                                 <a class="play-btn w-100" href="">Apply Now</a>
                             </div>
                         </div>
@@ -351,7 +343,7 @@
                                 <h6>Web Development Mastery</h6>
                                 <p>Build modern websites with HTML, CSS & JavaScript.</p>
                                 <small>264 Students</small><br>
-                                <small>20 Sessions</small>
+                                <small class="mb-1">20 Sessions</small>
                                 <a class="play-btn w-100" href="">Apply Now</a>
                             </div>
                         </div>
@@ -362,13 +354,54 @@
                             <img src="./assets/data.png" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h6>Data Science & ML</h6>
-                                <p class="data-para">Learn Python, AI, and predictive models.</p>
+                                <p class="data-para">Master data analysis, machine learning, and real-world AI solutions
+                                    using Python tools.</p>
                                 <small>346 Students</small><br>
-                                <small>16 Sessions</small>
+                                <small class="mb-1">16 Sessions</small>
                                 <a class="play-btn w-100" href="">Apply Now</a>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="card course-card p-4">
+                            <img src="./assets/digital-marketing.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h6>Digital Marketing</h6>
+                                <p class="data-para">Learn SEO, social media, and paid campaigns to grow brands and
+                                    reach audiences online.</p>
+                                <small>386 Students</small><br>
+                                <small class="mb-1">19 Sessions</small>
+                                <a class="play-btn w-100" href="">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card course-card p-4">
+                            <img src="./assets/graphic-designer.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h6>Graphic Design</h6>
+                                <p class="data-para">Learn visual design, branding, and creative tools to craft engaging
+                                    graphics and digital visuals.</p>
+                                <small>336 Students</small><br>
+                                <small class="mb-1">17 Sessions</small>
+                                <a class="play-btn w-100" href="">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card course-card p-4">
+                            <img src="./assets/SEO.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h6>Search Engine Optimization</h6>
+                                <p class="data-para">Learn keywords,on-page SEO,and ranking techniques to search
+                                    visibility and organic traffic.</p>
+                                <small>306 Students</small><br>
+                                <small class="mb-1">13 Sessions</small>
+                                <a class="play-btn w-100" href="">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
 
@@ -384,7 +417,7 @@
         </div>
     </section>
 
-    <!------------EVENTS SECTION-------------------->
+    <!------------------EVENTS SECTION----------------------------------->
     <section class="events-section">
         <div class="container">
             <div class="events-cntn">
@@ -472,14 +505,12 @@
             </div>
     </section>
 
-
-
-    <!-----------LATEST NEWS SECTION--------->
+    <!-------------------LATEST BLOG SECTION---------------------------------->
     <section class="news-section">
         <div class="container">
             <div class="text-center mb-5">
                 <div class="title mb-1">BLOG UPDATES</div>
-                <h2 class="headings position-relative">Latest News & Articles.</h2>
+                <h2 class="headings position-relative">Latest News & Articles</h2>
                 <img class="arrow-style position-absolute" src="./assets/style.png" alt="" />
             </div>
             <div class="row justify-content-center g-4">
@@ -560,42 +591,110 @@
             </div>
         </div>
     </section>
-    <!---------------------VIDEO TOUR SECTION------------------------------>
-    <section class="video-tour-sec position-relative">
-        <div class="container-fluid px-0">
-            <div class="video-cntn position-relative">
-                <img src="./assets/bg-frame.png" alt="" class="w-100" />
-                <div class="video-btn">
-                    <a href="">
-                        <img class="video-pic position-absolute" src="./assets/video-btn-final.png" alt="" />
+
+    <!---------------------VIDEO-TOUR-SECTION--------------------------------->
+    <section class="video-section position-relative">
+        <div class="container">
+            <div class="video-cntn">
+                <div class="video-play-btn">
+                    <a class="video-btn" href="javascript:void(0)" id="videoBtn">
+                        <svg id="playIcon" width="25" height="27" viewBox="0 0 25 27" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 10.1243V16.1258C0 21.8231 0 24.6716 1.7091 25.8233C3.41812 26.9745 5.7555 25.7006 10.4306 23.1529L15.9364 20.1518C21.5621 17.0858 24.375 15.5528 24.375 13.125C24.375 10.6973 21.5621 9.16425 15.9364 6.09825L10.4306 3.09728C5.7555 0.549378 3.41812 -0.724572 1.7091 0.426828C0 1.57823 0 4.42688 0 10.1243Z"
+                                fill="#AB0C2F" />
+                        </svg>
                     </a>
+
                 </div>
+                <p>VIDEO TOUR IN LOGO</p>
+            </div>
+            <div class="video-service-logo position-absolute">
+                <img src="./assets/video-service.png" alt="" />
             </div>
             <div class="testimonial-card position-absolute">
-                <span class="text-danger small fw-semibold">TESTIMONIAL</span>
+                <div class="swiper testimonialSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-cntn">
+                                <h6>TESTIMONIAL</h6>
+                                <div class="student-review d-flex justify-content-between align-items-center">
+                                    <h4>What Students Say</h4>
+                                    <a class="quote" href="">
+                                        <img src="./assets/comma.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="student-img">
+                                    <img src="./assets/member5.png" alt="" />
+                                </div>
+                                <p class="review-text">
+                                    "Joining this Web Development course was the best decision for my career.
+                                    The practical coding sessions gave me real confidence."
+                                </p>
+                                <div class="author-text">
+                                    <h5 class="mt-5">Amit Sharma</h5>
+                                    <p>Web Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-cntn">
+                                <h6>TESTIMONIAL</h6>
+                                <div class="student-review d-flex justify-content-between align-items-center">
+                                    <h4>What Students Say</h4>
+                                    <a class="quote" href="">
+                                        <img src="./assets/comma.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="student-img">
+                                    <img src="./assets/member1.png" alt="" />
+                                </div>
+                                <p class="review-text">
+                                    "Amazing mentors and practical learning. I landed my first job within 3 months!"
+                                </p>
+                                <div class="author-text">
+                                    <h5 class="mt-4">Neha Roy</h5>
+                                    <p>Graphic Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-nav">
+                        <div class="swiper-button-prev-custom">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M40.3334 22.0001C40.3334 32.1252 32.1252 40.3334 22.0001 40.3334C11.8749 40.3334 3.66675 32.1252 3.66675 22.0001C3.66675 11.8749 11.8749 3.66675 22.0001 3.66675C32.1252 3.66675 40.3334 11.8749 40.3334 22.0001Z"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M16.5001 22.0003H29.3334M21.0831 15.5835C21.0831 15.5835 14.6665 20.3092 14.6665 22.0001C14.6665 23.6912 21.0833 28.4168 21.0833 28.4168"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next-custom">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.66658 22.0001C3.66658 32.1252 11.8748 40.3334 21.9999 40.3334C32.1251 40.3334 40.3333 32.1252 40.3333 22.0001C40.3333 11.8749 32.1251 3.66675 21.9999 3.66675C11.8748 3.66675 3.66658 11.8749 3.66658 22.0001Z"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M27.4999 22.0003H14.6666M22.9169 15.5835C22.9169 15.5835 29.3335 20.3092 29.3335 22.0001C29.3335 23.6912 22.9167 28.4168 22.9167 28.4168"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
 
-                <div class="student-review d-flex justify-content-between align-items-start">
-                    <h2>What Students Says</h2>
-                    <img src="./assets/hyphen.png" alt="" class="quote-icon">
+                        </div>
+                    </div>
                 </div>
-                <div class="student-img">
-                    <img src="./assets/std-img.png" alt="" />
-                </div>
 
-                <p class="mt-3 fw-light">
-                    “Joining this Web Development course was the best decision for my career.
-                    The practical coding sessions gave me real confidence.”
-                </p>
-
-                <h6 class="mt-3 mb-0">Amit Sharma</h6>
-                <small class="text-muted">Web Development</small>
-
-                <div class="arrows mt-3">
-                    <img src="./assets/arrows.png" alt="" />
-                </div>
             </div>
         </div>
+
     </section>
+    <!--------------SLIDER SECTION----------------------------->
     <section class="slider-sec">
         <div class="container">
             <div class="swiper mySwiper">
@@ -625,12 +724,20 @@
                             <img src="./assets/slider5.png" alt="" />
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="image4">
+                            <img src="./assets/slider4.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image3">
+                            <img src="./assets/slider3.png" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <!----------CREATIVE SECTION--------->
     <section class="creative-section">
@@ -762,21 +869,19 @@
 
         </div>
     </footer>
-    <!--------------SWIPER JS---------------------->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
 
-    <!--------BOOTSTRAP JS---------->
+    <!------------------BOOTSTRAP JS--------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <!-------------AOS JS------------------>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--------------SWIPER JS---------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-    <!----------CUSTOM JS----------------------->
+    <!--------------CUSTOM JS--------------------------------->
     <script src="./js/script.js"></script>
-
+    <script src="./js/script2.js"></script>
 </body>
 
 </html>

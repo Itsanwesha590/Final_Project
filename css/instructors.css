@@ -44,6 +44,46 @@ BUTTON SECTION
     border-radius: 8px;
     font-size: 13px;
     color: black;
+    position: relative;
+}
+
+.apply-btn::before,
+.apply-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    border: 1px solid transparent;
+    pointer-events: none;
+    transition: width 0.45s ease;
+}
+
+.apply-btn::before {
+    left: 0;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 0;
+}
+
+.apply-btn::after {
+    right: 0;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 0;
+}
+
+.apply-btn:hover {
+    color: var(--font-color) !important;
+}
+
+.apply-btn:hover::before,
+.apply-btn:hover::after {
+    width: 50%;
+    box-shadow:
+        0 0 6px white 0 0 14px rgba(110, 231, 255, 0.6);
 }
 
 .register-btn {
@@ -52,6 +92,29 @@ BUTTON SECTION
     background: rgba(255, 255, 255, 0.15);
     margin-right: 20px;
 }
+
+.register-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.register-btn:hover {
+    color: var(--font-color) !important;
+}
+
+.register-btn:hover::before {
+    border-color: var(--btn-color);
+    box-shadow:
+        0 0 6px black,
+        0 0 12px rgba(255, 161, 110, 0.6);
+}
+
 
 /*SIGN-IN-BTN EFFECT START*/
 .sign-in-btn {
@@ -178,8 +241,19 @@ BUTTON SECTION
 
 /*SIGN-IN-BTN-EFFECT CLOSE*/
 
+/*==SEARCH BUTTON EFFECT==*/
 .search-btn {
     margin-right: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn svg {
+    transition: transform 0.6s ease;
+}
+
+.search-btn:hover svg {
+    transform: rotate(360deg);
 }
 
 /*ENROLL BTN EFFECT START*/
@@ -420,7 +494,7 @@ NAVBAR SECTION
     position: absolute;
     bottom: -13px;
     left: 50%;
-    width: 44px;
+    width: 75px;
     height: 2px;
     background: white;
     transition: all 0.5s ease;
@@ -441,17 +515,18 @@ NAVBAR SECTION
 }
 
 .hdr-sec ul li:hover::after {
-    width: 60px;
+    width: 80px;
 }
 
 .nav-link:hover {
     color: var(--secondary-color);
 }
 
-/*=========================================
-HERO SECTION
-=============================================
+/*==================================
+BANNER SECTION
+====================================
 */
+
 .banner-section {
     background: url("../assets/privacy-hero.png")no-repeat center/cover;
     min-height: 100vh;
@@ -460,113 +535,22 @@ HERO SECTION
 }
 
 .banner-title {
-    max-width: 634px;
     min-height: 134px;
     font-size: 80px;
     font-family: "Urbanist";
 }
 
-
-
-
-/*===========================================
-INFORMATION SECTION
-==============================================
+/*==========================
+INSTRUCTOR SECTION
+============================
 */
-.review-box {
-    padding: 30px 30px 32px;
-    background: #fff;
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    max-width: 314px;
-    min-height: 214px;
+.instructor-section{
+    padding:120px 0;
 }
-
-.review-box>h4 {
-    font-size: 24px;
-}
-
-.review-box>h6 {
-    font-size: 16px;
-}
-
-.review-box>h5 {
-    font-size: 15px;
-}
-
-.head-title {
+.header-title{
     text-align: center;
-    margin-bottom: 45px;
-}
-
-.let-us-know {
-    margin: 0 auto;
-    max-width: 860px;
-    background: #F6F4EE;
-    margin-bottom: 60px;
-}
-
-.information-sec {
-    padding: 60px;
-    background: #F6F4EE;
-}
-
-.info-wrpr {
-    max-width: 860px;
-}
-
-.topic {
-    margin-bottom: 50px;
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-/*===========================
-FOOTER SECTION
-=============================
-*/
-.type-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid black;
-    max-width: 610px;
-    width: 100%;
-}
-
-.footer-section {
-    padding: 20px;
-}
-
-.mail,
-.location {
-    margin-bottom: 10px;
-}
-
-.footer-bottom {
-    border-top: 1px solid black;
-    padding: 15px 0;
-}
-
-.footer-icons img {
-    width: 36px;
-    height: 36px;
-}
-
-
-/*=========================================
-MEDIA QUERIES
-============================================
-*/
-@media screen and(max-width:768px) {
-    .banner-title {
-        font-size: 36px;
-        min-height: auto;
-    }
+    font-size: 60px;
+    
 }
 
 /*===== MEDIA QUERIES ======*/
@@ -680,4 +664,23 @@ NAVBAR MEDIA QUERIES
         margin-left: 0 !important;
         margin-bottom: 10px;
     }
+}
+
+/*===============================
+BANNER SECTION
+=================================
+*/
+@media screen and (max-width:768px) {
+    .banner-title{
+        text-align: center;
+    }
+    .banner-section p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:576px) {
+    .banner-title{
+        font-size: 48px;
+    }
+    
 }
