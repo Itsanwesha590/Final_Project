@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--------BOOTSTRAP CSS-------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-----------------AOS CSS CDN-------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!----------------SWIPER CSS------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!------CUSTOM CSS--------->
+    <link rel="stylesheet" href="./css/courses.css" />
+</head>
+
+<body>
+    <header class="hdr-sec">
+        <div class="top-bar bg-danger">
+            <div class="container">
+                <div class="top-bar-content d-flex align-items-center">
+                    <div class="left-top-bar d-flex align-items-center">
+                        <a href="#">
+                            <img src="./assets/facebook.png" alt="">
+                            7500K Followers
+                        </a>
+                        <a href="#">
+                            <img src="./assets/call.png" alt="">
+                            +91-22-1234-5678
+                        </a>
+                    </div>
+
+                    <div class="top-right-bar d-flex align-items-center ms-auto">
+                        <a href="" class="top-highlights text-white text text-decoration-none">CAMPS</a>
+                        <a href="" class="top-highlights text-white text-decoration-none">STUDENTS</a>
+                        <a href="" class="top-highlights text-white text-decoration-none">STAFFS</a>
+                        <a href="" class="top-highlights text-white text-decoration-none">HELPDESK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------NAVBAR SECTION--------------------->
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <div class="navbar-logo">
+                    <a class="navbar-brand" href="">
+                        <img src="./assets/navlogo.png" alt="" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./instructors.html">Instructors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link last-item" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="nav-btn d-flex justify-content-center">
+                        <a class="rounded-pill px-4 py-2 sign-in-btn" href="./signup.html">Sign In
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <a class="text-white rounded-pill px-4 py-2 register-btn" href="">Register</a>
+                        <a class="search-btn d-flex align-items-center" href="">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5833 15.5834L19.2499 19.25" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M17.4167 10.0833C17.4167 6.03324 14.1334 2.75 10.0833 2.75C6.03324 2.75 2.75 6.03324 2.75 10.0833C2.75 14.1334 6.03324 17.4167 10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a class="apply-btn text-white" href="">Apply Now</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!---------------BANNER SECTION--------------------------------->
+    <section class="banner-section d-flex align-items-center">
+        <div class="container">
+            <p class="small mb-0">
+                <img src="./assets/home.png" alt="" class="me-2" />
+                <span>courses</span> All courses
+            </p>
+            <h1 class="banner-title text-capitalize">All Courses</h1>
+            <p class="para">We have the largest collection of courses</p>
+        </div>
+    </section>
+
+    <!------------------COURSES SECTION------------------>
+    <section class="courses-section">
+        <div class="container">
+            <div class="course-tabs">
+                <div class="tab-btn active" data-slide="0">All Courses</div>
+                <div class="tab-btn" data-slide="1">Art & Design</div>
+                <div class="tab-btn" data-slide="2">Development</div>
+                <div class="tab-btn" data-slide="3">UI/UX Design</div>
+                <div class="tab-btn" data-slide="4">Graphic Design</div>
+                <div class="tab-btn" data-slide="5">Marketing</div>
+                <div class="tab-btn" data-slide="6">Web Development</div>
+            </div>
+            <div class="tab-dropdown d-none">
+                <select class="form-select" id="courseTabSelect">
+                    <option value="0">All Courses</option>
+                    <option value="1">Art & Design</option>
+                    <option value="2">Development</option>
+                    <option value="3">UI/UX Design</option>
+                    <option value="4">Graphic Design</option>
+                    <option value="5">Marketing</option>
+                    <option value="6">Web Development</option>
+                </select>
+            </div>
+            <div class="swiper courseSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row course-row justify-content-center">
+                            <div class="col-lg-4 col-md-6 course-col">
+                                <div class="card-box">
+                                    <div class="card-head">
+                                        <div class="profile">
+                                            <span class="avatar">
+                                                <img src="./assets/teacher12.png" alt="" />
+                                            </span>
+                                            <span class="name">Rahul Mehta</span>
+                                        </div>
+                                        <div class="percentage">-25%</div>
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="./assets/ui-ux.png" alt="">
+                                    </div>
+                                    <div class="card-intro">
+                                        <span class="tag">UI/UX Design</span>
+
+                                        <div class="views">
+                                            <span>
+                                                <img src="./assets/card-book.png"> 12 Lessons
+                                            </span>
+                                            <span class="ms-1">
+                                                <img src="./assets/user-pic.png"> 45 Students
+                                            </span>
+                                        </div>
+
+                                        <h4>Introduction to UI/UX Principles</h4>
+
+                                        <hr>
+
+                                        <div class="rating-price">
+                                            <div class="rating">
+                                                <div class="score">5/5</div>
+                                                <ul>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="price">
+                                                <del>$84.00</del>
+                                                <strong>$63.00</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 course-col">
+                                <div class="card-box">
+                                    <div class="card-head">
+                                        <div class="profile">
+                                            <span class="avatar">
+                                                <img src="./assets/teacher7.png" alt="" />
+                                            </span>
+                                            <span class="name">Ananya Iyer</span>
+                                        </div>
+                                        <div class="percentage">-5%</div>
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="./assets/SEO.png" alt="">
+                                    </div>
+                                    <div class="card-intro">
+                                        <span class="tag">Development</span>
+
+                                        <div class="views">
+                                            <span>
+                                                <img src="./assets/card-book.png"> 15 Lessons
+                                            </span>
+                                            <span class="ms-1">
+                                                <img src="./assets/user-pic.png"> 25 Students
+                                            </span>
+                                        </div>
+
+                                        <h4>Starting seo as your home based business</h4>
+
+                                        <hr>
+
+                                        <div class="rating-price">
+                                            <div class="rating">
+                                                <div class="score">4/5</div>
+                                                <ul>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="price">
+                                                <del>$54.00</del>
+                                                <strong>$53.33</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 course-col">
+                                <div class="card-box">
+                                    <div class="card-head">
+                                        <div class="profile">
+                                            <span class="avatar">
+                                                <img src="./assets/teacher9.png" alt="" />
+                                            </span>
+                                            <span class="name">Priya Nair</span>
+                                        </div>
+                                        <div class="percentage">-10%</div>
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="./assets/HTML.png" alt="">
+                                    </div>
+                                    <div class="card-intro">
+                                        <span class="tag">Programming</span>
+
+                                        <div class="views">
+                                            <span>
+                                                <img src="./assets/card-book.png"> 12 Lessons
+                                            </span>
+                                            <span class="ms-1">
+                                                <img src="./assets/user-pic.png"> 45 Students
+                                            </span>
+                                        </div>
+
+                                        <h4>HTML & CSS for Beginners</h4>
+
+                                        <hr>
+
+                                        <div class="rating-price">
+                                            <div class="rating">
+                                                <span class="score">4.9/5</span>
+                                                <ul>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="price">
+                                                <del>$59.00</del>
+                                                <strong>$55.30</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-6 course-col">
+                                <div class="card-box">
+                                    <div class="card-head">
+                                        <div class="profile">
+                                            <span class="avatar">
+                                                <img src="./assets/teacher11.png" alt="" />
+                                            </span>
+                                            <span class="name">Karan Malhotra</span>
+                                        </div>
+                                        <div class="percentage">-12%</div>
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="./assets/data.png" alt="">
+                                    </div>
+                                    <div class="card-intro">
+                                        <span class="tag">Computer Science</span>
+
+                                        <div class="views">
+                                            <span>
+                                                <img src="./assets/card-book.png"> 18 Lessons
+                                            </span>
+                                            <span class="ms-1">
+                                                <img src="./assets/user-pic.png"> 95 Students
+                                            </span>
+                                        </div>
+
+                                        <h4>Python for Data Analysis</h4>
+
+                                        <hr>
+
+                                        <div class="rating-price">
+                                            <div class="rating">
+                                                <span class="score">5/5</span>
+                                                <ul>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="price">
+                                                <del>$82.00</del>
+                                                <strong>$72.00</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 course-col">
+                                <div class="card-box">
+                                    <div class="card-head">
+                                        <div class="profile">
+                                            <span class="avatar">
+                                                <img src="./assets/teacher1.png" alt="" />
+                                            </span>
+                                            <span class="name">Sneha Reddy</span>
+                                        </div>
+                                        <div class="percentage">-8%</div>
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="./assets/digital-marketing.png" alt="">
+                                    </div>
+                                    <div class="card-intro">
+                                        <span class="tag">Marketing</span>
+
+                                        <div class="views">
+                                            <span>
+                                                <img src="./assets/card-book.png"> 15 Lessons
+                                            </span>
+                                            <span class="ms-1">
+                                                <img src="./assets/user-pic.png"> 25 Students
+                                            </span>
+                                        </div>
+
+                                        <h4>Social Media Strategy & Campaigns</h4>
+
+                                        <hr>
+
+                                        <div class="rating-price">
+                                            <div class="rating">
+                                                <span class="score">4.7/5</span>
+                                                <ul>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="price">
+                                                <del>$64.00</del>
+                                                <strong>$61.30</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 course-col">
+                                <div class="card-box">
+                                    <div class="card-head">
+                                        <div class="profile">
+                                            <span class="avatar">
+                                                <img src="./assets/teacher2.png" alt="" />
+                                            </span>
+                                            <span class="name">Arvind Kapoor</span>
+                                        </div>
+                                        <div class="percentage">-13%</div>
+                                    </div>
+                                    <div class="card-image">
+                                        <img src="./assets/graphic-designer.png" alt="">
+                                    </div>
+                                    <div class="card-intro">
+                                        <span class="tag">Design</span>
+
+                                        <div class="views">
+                                            <span>
+                                                <img src="./assets/card-book.png"> 20 Lessons
+                                            </span>
+                                            <span class="ms-1">
+                                                <img src="./assets/user-pic.png"> 120 Students
+                                            </span>
+                                        </div>
+
+                                        <h4>Basics of Typography & Color Theory</h4>
+
+                                        <hr>
+
+                                        <div class="rating-price">
+                                            <div class="rating">
+                                                <span class="score">4.8/5</span>
+                                                <ul>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                    <li><img src="./assets/star.png"></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="price">
+                                                <del>$49.30</del>
+                                                <strong>$39.30</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-box">
+                            <div class="card-head">
+                                <div class="profile">
+                                    <span class="avatar">
+                                        <img src="./assets/teacher12.png" alt="" />
+                                    </span>
+                                    <span class="name">Rahul Mehta</span>
+                                </div>
+                                <div class="percentage">-25%</div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./assets/ui-ux.png" alt="">
+                            </div>
+                            <div class="card-intro">
+                                <span class="tag">UI/UX Design</span>
+
+                                <div class="views">
+                                    <span>
+                                        <img src="./assets/card-book.png"> 12 Lessons
+                                    </span>
+                                    <span class="ms-1">
+                                        <img src="./assets/user-pic.png"> 45 Students
+                                    </span>
+                                </div>
+
+                                <h4>Introduction to UI/UX Principles</h4>
+
+                                <hr>
+
+                                <div class="rating-price">
+                                    <div class="rating">
+                                        <div class="score">5/5</div>
+                                        <ul>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="price">
+                                        <del>$84.00</del>
+                                        <strong>$63.00</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-box">
+                            <div class="card-head">
+                                <div class="profile">
+                                    <span class="avatar">
+                                        <img src="./assets/teacher7.png" alt="" />
+                                    </span>
+                                    <span class="name">Ananya Iyer</span>
+                                </div>
+                                <div class="percentage">-5%</div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./assets/SEO.png" alt="">
+                            </div>
+                            <div class="card-intro">
+                                <span class="tag">Development</span>
+
+                                <div class="views">
+                                    <span>
+                                        <img src="./assets/card-book.png"> 15 Lessons
+                                    </span>
+                                    <span class="ms-1">
+                                        <img src="./assets/user-pic.png"> 25 Students
+                                    </span>
+                                </div>
+
+                                <h4>Starting seo as your home based business</h4>
+
+                                <hr>
+
+                                <div class="rating-price">
+                                    <div class="rating">
+                                        <div class="score">4/5</div>
+                                        <ul>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="price">
+                                        <del>$54.00</del>
+                                        <strong>$53.33</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-box">
+                            <div class="card-head">
+                                <div class="profile">
+                                    <span class="avatar">
+                                        <img src="./assets/teacher12.png" alt="" />
+                                    </span>
+                                    <span class="name">Rahul Mehta</span>
+                                </div>
+                                <div class="percentage">-25%</div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./assets/ui-ux.png" alt="">
+                            </div>
+                            <div class="card-intro">
+                                <span class="tag">UI/UX Design</span>
+
+                                <div class="views">
+                                    <span>
+                                        <img src="./assets/card-book.png"> 12 Lessons
+                                    </span>
+                                    <span class="ms-1">
+                                        <img src="./assets/user-pic.png"> 45 Students
+                                    </span>
+                                </div>
+
+                                <h4>Introduction to UI/UX Principles</h4>
+
+                                <hr>
+
+                                <div class="rating-price">
+                                    <div class="rating">
+                                        <div class="score">5/5</div>
+                                        <ul>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="price">
+                                        <del>$84.00</del>
+                                        <strong>$63.00</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-box">
+                            <div class="card-head">
+                                <div class="profile">
+                                    <span class="avatar">
+                                        <img src="./assets/teacher2.png" alt="" />
+                                    </span>
+                                    <span class="name">Arvind Kapoor</span>
+                                </div>
+                                <div class="percentage">-13%</div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./assets/graphic-designer.png" alt="">
+                            </div>
+                            <div class="card-intro">
+                                <span class="tag">Design</span>
+
+                                <div class="views">
+                                    <span>
+                                        <img src="./assets/card-book.png"> 20 Lessons
+                                    </span>
+                                    <span class="ms-1">
+                                        <img src="./assets/user-pic.png"> 120 Students
+                                    </span>
+                                </div>
+
+                                <h4>Basics of Typography & Color Theory</h4>
+
+                                <hr>
+
+                                <div class="rating-price">
+                                    <div class="rating">
+                                        <span class="score">4.8/5</span>
+                                        <ul>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="price">
+                                        <del>$49.30</del>
+                                        <strong>$39.30</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-box">
+                            <div class="card-head">
+                                <div class="profile">
+                                    <span class="avatar">
+                                        <img src="./assets/teacher1.png" alt="" />
+                                    </span>
+                                    <span class="name">Sneha Reddy</span>
+                                </div>
+                                <div class="percentage">-8%</div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./assets/digital-marketing.png" alt="">
+                            </div>
+                            <div class="card-intro">
+                                <span class="tag">Marketing</span>
+
+                                <div class="views">
+                                    <span>
+                                        <img src="./assets/card-book.png"> 15 Lessons
+                                    </span>
+                                    <span class="ms-1">
+                                        <img src="./assets/user-pic.png"> 25 Students
+                                    </span>
+                                </div>
+
+                                <h4>Social Media Strategy & Campaigns</h4>
+
+                                <hr>
+
+                                <div class="rating-price">
+                                    <div class="rating">
+                                        <span class="score">4.7/5</span>
+                                        <ul>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="price">
+                                        <del>$64.00</del>
+                                        <strong>$61.30</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-box">
+                            <div class="card-head">
+                                <div class="profile">
+                                    <span class="avatar">
+                                        <img src="./assets/teacher9.png" alt="" />
+                                    </span>
+                                    <span class="name">Priya Nair</span>
+                                </div>
+                                <div class="percentage">-10%</div>
+                            </div>
+                            <div class="card-image">
+                                <img src="./assets/HTML.png" alt="">
+                            </div>
+                            <div class="card-intro">
+                                <span class="tag">Programming</span>
+
+                                <div class="views">
+                                    <span>
+                                        <img src="./assets/card-book.png"> 12 Lessons
+                                    </span>
+                                    <span class="ms-1">
+                                        <img src="./assets/user-pic.png"> 45 Students
+                                    </span>
+                                </div>
+
+                                <h4>HTML & CSS for Beginners</h4>
+
+                                <hr>
+
+                                <div class="rating-price">
+                                    <div class="rating">
+                                        <span class="score">4.9/5</span>
+                                        <ul>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                            <li><img src="./assets/star.png"></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="price">
+                                        <del>$59.00</del>
+                                        <strong>$55.30</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------CERTIFICATION SECTION----------------------------->
+
+    <section class="certificate-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="bg-cert d-flex flex-column 
+                    text-center text-md-start">
+                        <h5 class="fw-bold">Earn a<br>Certificate</h5>
+                        <a href="#" class="btn btn-success btn-sm mt-2 align-self-center align-self-md-start">View
+                            Programs</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-rated d-flex flex-column 
+                    text-center text-md-start">
+                        <h5 class="fw-bold">Best<br>Rated Courses</h5>
+                        <a href="#" class="btn btn-warning btn-sm mt-2 align-self-center align-self-md-start">View
+                            Programs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------CREATIVE SECTION--------->
+    <section class="creative-section">
+        <div class="container">
+            <div
+                class="creative-cntn d-flex align-items-center  w-100 flex-column flex-md-row text-center text-md-start ">
+                <div class="creative-header">
+                    <h2>COURSES FOR FREE, REGISTER NOW</h2>
+                    <h1>CREATIVE IN RESEARCH AND TEACHING.</h1>
+                </div>
+                <div class="apply-now text-center">
+                    <a class="apply-now-btn" href="">
+                        Apply Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------FOOTER SECTION----------->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row small">
+
+                <div class="col-lg-4">
+                    <ul>
+                        <li>
+                            <a class="footer-logo" href="">
+                                <img src="./assets/footer-logo.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                We provide industry-recognized online and offline courses to help learners gain
+                                practical skills
+                                and advance their careers.
+                            </p>
+                        </li>
+                        <li class="mail"><a class="footer-email" href="">
+                                <img src="./assets/footer-email.png" alt="" />
+                            </a>Vidyasu@gmail.com</li>
+                        <li class="location"><a class="footer-loc" href="">
+                                <img src="./assets/footer-map.png" alt="" />
+                            </a>Eco Intelligent Park, Unit No- 7E, 7th Floor, Block-EM, Plot-3, Salt Lake Sector-5,
+                            Kolkata 700091, India</li>
+                        <li><a class="footer-call" href="">
+                                <img src="./assets/footer-call.png" alt="" />
+                            </a>1800- 419-9108</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2">
+                    <ul>
+                        <li>
+                            <h6><a class="text-dark" href="">About</a></h6>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="">About Us</a>
+                        </li>
+                        <li><a class="text-dark" href="">Courses</a></li>
+                        <li><a class="text-dark" href="">News & Blog</a></li>
+                        <li><a class="text-dark" href="">Become A Teacher</a></li>
+                        <li><a class="text-dark" href="">Events</a></li>
+                        <li><a class="text-dark" href="">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2">
+                    <ul>
+                        <li>
+                            <h6><a class="text-dark" href="">Quick Links</a></h6>
+                        </li>
+                        <li><a class="text-dark" href="">Students</a></li>
+                        <li><a class="text-dark" href="">Admission</a></li>
+                        <li><a class="text-dark" href="">Faculty & Staffs</a></li>
+                        <li><a class="text-dark" href="">Media Relations</a></li>
+                        <li><a class="text-dark" href="">Alumni</a></li>
+                        <li><a class="text-dark" href="">Visit</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class=" newsletter-part d-flex">
+                        <ul>
+                            <li>
+                                <h6><a class="text-dark" href="">Our Newsletter</a></h6>
+                            </li>
+                            <li>
+                                <p>Enter your email and we will send you more information</p>
+                            </li>
+                            <li>
+                                <div class="type-container">
+                                    <input type="email" class="form-control" placeholder=" Your Email">
+                                    <a class="btn btn-danger btn-sm" href="">Subscribe</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="footer-icons d-flex mt-4">
+                                    <ul class="d-flex me-2 list-unstyled mb-0">
+                                        <li><a class="me-2" href=""><img src="./assets/fb.png" alt="" /></a></li>
+                                        <li><a class="me-2" href=""><img src="./assets/insta.png" alt="" /></a></li>
+                                        <li><a class="me-2" href=""><img src="./assets/pintrest.png" alt="" /></a></li>
+                                        <li><a href=""><img src="./assets/telegram.png" alt="" /></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-end d-flex flex-column flex-md-row
+            justify-content-between align-items-center
+            text-center text-md-start">
+                    <p class="copy-text mb-2 mb-md-0">Copyright©2025
+                        <a class="text-dark" href="./index.html">vidyasu</a>.All rights reserved.
+                    </p>
+
+                    <div class="footer-links">
+                        <a href="./privacy.html" class="text-dark text-center">Privacy Policy</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--------BOOTSTRAP JS---------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!----------------SWIPER JS----------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-------------AOS JS------------------>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!----------CUSTOM JS----------------------->
+    <script src="./js/script4.js"></script>
+</body>
+
+</html>

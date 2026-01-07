@@ -12,6 +12,9 @@
     <!-----------------AOS CSS CDN-------------------------->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!----------------SWIPER CSS------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <!------CUSTOM CSS--------->
     <link rel="stylesheet" href="./css/instructors.css" />
 </head>
@@ -114,15 +117,294 @@
     <section class="instructor-section">
         <div class="container">
             <div class="header-title">
-                <h2 class="text-capitalize">How to<br/> become an instructor</h2>
+                <h2 class="text-capitalize">How to<br /> become an instructor</h2>
             </div>
-            
+            <div class="instructor-tabs text-center">
+                <div class="tab-btn active" data-slide="0">Become an Instructor</div>
+                <div class="tab-btn" data-slide="1">Instructor Rules</div>
+                <div class="tab-btn" data-slide="2">Start with Courses</div>
+            </div>
+            <div class="swiper instructorSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="row instructor-cntn">
+                            <div class="col-6">
+                                <h4>Become an Instructor</h4>
+                                <h6>Plan your course</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur. Mauris sapien enim amet urna a. Eget a at
+                                    vulputate
+                                    egestas feugiat tincidunt. Posuere facilisis fermentum ipsum turpis cursus non. Eu
+                                    tristique
+                                    massa adipiscing lobortis. Faucibus volutpat facilisi viverra diam.
+                                </p>
+                                <h6>How we help you</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur. Mauris sapien enim amet urna a. Eget a at
+                                    vulputate egestas feugiat tincidunt. Posuere facilisis fermentum ipsum turpis cursus
+                                    non. Eu tristique massa adipiscing lobortis. Faucibus volutpat facilisi viverra
+                                    diam.
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <div class="image-contain">
+                                    <img src="./assets/instructor-image1.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="row instructor-cntn">
+                            <div class="col-6">
+                                <h4>Instructor Rules</h4>
+                                <h6 class="text-decoration-underline">Follow Content Guidelines</h6>
+                                <h6 class="text-decoration-underline">Maintain Professional Conduct</h6>
+                                <h6 class="text-decoration-underline">Provide Accurate & Updated Information</h6>
+                                <h6 class="text-decoration-underline">Respect Learner Privacy</h6>
+                                <h6 class="text-decoration-underline">Meet Course Quality Standards</h6>
+                                <h6 class="text-decoration-underline">Timely Response & Support</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="image-contain">
+                                    <img src="./assets/instructor-rules.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="row instructor-cntn">
+                            <div class="col-6">
+                                <h4>Start With Courses</h4>
+                                <h6>Create Your Course</h6>
+                                <p>
+                                    Choose a topic you know well and design clear lessons that deliver value. Organize
+                                    content into simple modules so learners can follow easily from start to finish.
+                                </p>
+                                <h6>Publish & Grow</h6>
+                                <p>
+                                    Upload high-quality videos and resources, then publish your course to reach learners
+                                    worldwide. Improve your content continuously using student feedback.
+                                </p>
+                                <a href="#" class="course-btn">
+                                    <span>Courses</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <div class="image-contain">
+                                    <img src="./assets/courses.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="instructor-form-section">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10 col-lg-11">
+
+                        <div class="row align-items-center shadow rounded-4 overflow-hidden bg-light">
+
+                            <!-- LEFT IMAGE -->
+                            <div class="instructor-image col-lg-4 p-0">
+                                <img src="./assets/instructor-person.png"
+                                    alt="Instructor">
+                            </div>
+
+                            <!-- RIGHT FORM -->
+                            <div class="col-lg-8 p-4 p-lg-5">
+                                <h4 class="fw-bold mb-1 text-center text-lg-start">
+                                    Become an instructor
+                                </h4>
+                                <p class="text-muted small mb-4 text-center text-lg-start">
+                                    Discover a supportive community of online instructors.
+                                </p>
+
+                                <form>
+                                    <div class="row instructor-form-row">
+                                        <div class="col-md-6">
+                                            <h6 class="text-start">User Name</h6>
+                                            <input type="text" class="form-control" placeholder="User name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6 class="text-start">Phone Number</h6>
+                                            <input type="tel" class="form-control" placeholder="Phone number">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6 class="text-start">Email Address</h6>
+                                            <input type="email" class="form-control" placeholder="Email address">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6 class="text-start">Password</h6>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="col-12">
+                                            <h6 class="text-start">Bio</h6>
+                                            <textarea class="form-control" rows="5" placeholder="Bio"></textarea>
+                                        </div>
+                                        <div class="col-12 text-start text-lg-start">
+                                            <a class="instructor-btn btn-danger px-4 py-2" href="./instructors.html">
+                                                <span>Become an instructor</span>
+                                                <img src="./assets/arrow-right.png" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <!----------CREATIVE SECTION--------->
+    <section class="creative-section">
+        <div class="container">
+            <div
+                class="creative-cntn d-flex align-items-center  w-100 flex-column flex-md-row text-center text-md-start ">
+                <div class="creative-header">
+                    <h2>COURSES FOR FREE, REGISTER NOW</h2>
+                    <h1>CREATIVE IN RESEARCH AND TEACHING.</h1>
+                </div>
+                <div class="apply-now text-center">
+                    <a class="apply-now-btn" href="">
+                        Apply Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------FOOTER SECTION----------->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row small">
+
+                <div class="col-lg-4">
+                    <ul>
+                        <li>
+                            <a class="footer-logo" href="">
+                                <img src="./assets/footer-logo.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <p class="text-muted">
+                                We provide industry-recognized online and offline courses to help learners gain
+                                practical skills
+                                and advance their careers.
+                            </p>
+                        </li>
+                        <li class="mail"><a class="footer-email" href="">
+                                <img src="./assets/footer-email.png" alt="" />
+                            </a>Vidyasu@gmail.com</li>
+                        <li class="location"><a class="footer-loc" href="">
+                                <img src="./assets/footer-map.png" alt="" />
+                            </a>Eco Intelligent Park, Unit No- 7E, 7th Floor, Block-EM, Plot-3, Salt Lake Sector-5,
+                            Kolkata 700091, India</li>
+                        <li><a class="footer-call" href="">
+                                <img src="./assets/footer-call.png" alt="" />
+                            </a>1800- 419-9108</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2">
+                    <ul>
+                        <li>
+                            <h6><a class="text-dark" href="">About</a></h6>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="">About Us</a>
+                        </li>
+                        <li><a class="text-dark" href="">Courses</a></li>
+                        <li><a class="text-dark" href="">News & Blog</a></li>
+                        <li><a class="text-dark" href="">Become A Teacher</a></li>
+                        <li><a class="text-dark" href="">Events</a></li>
+                        <li><a class="text-dark" href="">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2">
+                    <ul>
+                        <li>
+                            <h6><a class="text-dark" href="">Quick Links</a></h6>
+                        </li>
+                        <li><a class="text-dark" href="">Students</a></li>
+                        <li><a class="text-dark" href="">Admission</a></li>
+                        <li><a class="text-dark" href="">Faculty & Staffs</a></li>
+                        <li><a class="text-dark" href="">Media Relations</a></li>
+                        <li><a class="text-dark" href="">Alumni</a></li>
+                        <li><a class="text-dark" href="">Visit</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class=" newsletter-part d-flex">
+                        <ul>
+                            <li>
+                                <h6><a class="text-dark" href="">Our Newsletter</a></h6>
+                            </li>
+                            <li>
+                                <p>Enter your email and we will send you more information</p>
+                            </li>
+                            <li>
+                                <div class="type-container">
+                                    <input type="email" class="form-control me-2" placeholder=" Your Email">
+                                    <a class="btn btn-danger btn-sm" href="">Subscribe</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="footer-icons d-flex mt-4">
+                                    <ul class="d-flex me-2 list-unstyled mb-0">
+                                        <li><a class="me-2" href=""><img src="./assets/fb.png" alt="" /></a></li>
+                                        <li><a class="me-2" href=""><img src="./assets/insta.png" alt="" /></a></li>
+                                        <li><a class="me-2" href=""><img src="./assets/pintrest.png" alt="" /></a></li>
+                                        <li><a href=""><img src="./assets/telegram.png" alt="" /></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-end d-flex flex-column flex-md-row
+            justify-content-between align-items-center
+            text-center text-md-start">
+                    <p class="copy-text mb-2 mb-md-0">Copyright©2025
+                        <a class="text-dark" href="./index.html">vidyasu</a>.All rights reserved.
+                    </p>
+
+                    <div class="footer-links">
+                        <a href="./privacy.html" class="text-dark text-center">Privacy Policy</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
     <!--------BOOTSTRAP JS---------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <!----------------SWIPER JS----------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!-------------AOS JS------------------>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -39,8 +39,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const section = document.querySelector(".counter-section");
     observer.observe(section);
-    
+
 });
 
 
+const swiper = new Swiper(".instructorSwiper", {
+    allowTouchMove: false, 
+    autoHeight: true
+});
+
+
+
+
+const tabs = document.querySelectorAll(".tab-btn");
+
+tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+        swiper.slideTo(index);
+
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+    });
+});
+
+
+const course = new Swiper(".courseSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return `<span class="${className}">${index + 1}</span>`;
+        },
+    },
+});
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+        document.querySelector(".tab-btn.active").classList.remove("active");
+        btn.classList.add("active");
+        swiper.slideTo(btn.dataset.slide);
+    });
+});
 
