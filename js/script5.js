@@ -1,28 +1,28 @@
 var academic = new Swiper(".academicSwiper", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: false
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1
         },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+        576: {
+            slidesPerView: 2
         },
-        breakpoints: {
-            0: {
-                slidesPerView: 1
-            },
-            576: {
-                slidesPerView: 2
-            },
-            992: {
-                slidesPerView: 3
-            }
+        992: {
+            slidesPerView: 3
         }
-    });
+    }
+});
 
 
 
@@ -64,3 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
         isPlaying = !isPlaying;
     });
 });
+
+/*=====================================
+TESTIMONIAL SWIPER
+*/
+const testimonialSwiper = new Swiper(".testimonialSwiper", {
+    slidesPerView: 1,
+    loop: true,
+    speed: 700,
+    spaceBetween:57,
+    navigation: {
+        nextEl: ".swiper-button-next-custom",
+        prevEl: ".swiper-button-prev-custom",
+    },
+});
+

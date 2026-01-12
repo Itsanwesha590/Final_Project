@@ -1,9 +1,9 @@
-var swiper = new Swiper(".mySwiper", {
+var images = new Swiper(".imgSwiper", {
     slidesPerView: 5,
     spaceBetween: 30,
     loop: true,
     autoplay: {
-        delay: 2000,
+        delay: 1200,
         disableOnInteraction: false,
     },
     breakpoints: {

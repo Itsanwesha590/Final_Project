@@ -129,11 +129,11 @@ BUTTON SECTION
 .sign-in-btn:hover {
     color: #050801;
     background: var(--tertiary-color);
-    box-shadow:
+    /* box-shadow:
         0 0 5px var(--tertiary-color),
         0 0 25px var(--tertiary-color),
         0 0 50px var(--tertiary-color),
-        0 0 200px var(--tertiary-color);
+        0 0 200px var(--tertiary-color); */
 }
 
 .sign-in-btn span {
@@ -147,7 +147,7 @@ BUTTON SECTION
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--font-color));
+    background: linear-gradient(90deg, transparent, var(--btn-color));
 }
 
 .sign-in-btn span:nth-child(2) {
@@ -155,7 +155,7 @@ BUTTON SECTION
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, var(--font-color));
+    background: linear-gradient(180deg, transparent, var(--btn-color));
 }
 
 .sign-in-btn span:nth-child(3) {
@@ -163,7 +163,7 @@ BUTTON SECTION
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, var(--font-color));
+    background: linear-gradient(270deg, transparent, var(--btn-color));
 }
 
 .sign-in-btn span:nth-child(4) {
@@ -171,7 +171,7 @@ BUTTON SECTION
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, var(--font-color));
+    background: linear-gradient(360deg, transparent, var(--btn-color));
 }
 
 .sign-in-btn:hover span:nth-child(1) {
@@ -788,13 +788,57 @@ CERTIFICATE SECTION
 CREATIVE SECTION
 ============================
 */
-.apply-now-btn {
-    padding: 13px 30px;
-    border: 1px solid black;
-    background-color: #fff;
-    color: var(--btn-color);
-    border-radius: 10px;
+.apply-scene {
+    width: 160px;
+    height: 50px;
+    perspective: 600px;
+    margin: auto;
 }
+
+
+.apply-cube {
+    width: 160px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.85s cubic-bezier(.17, .67, .14, .93);
+    transform-origin: center center;
+}
+
+
+.apply-cube:hover {
+    transform: rotateX(-90deg);
+}
+
+
+.apply-side {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.apply-front {
+    background: var(--bright-color);
+    color: var(--btn-color);
+    border: 1px solid #000;
+    transform: translateZ(25px);
+}
+
+
+.apply-top {
+    background: var(--font-color);
+    color: var(--bright-color);
+    border: 1px solid #000;
+    transform: rotateX(90deg) translateZ(25px);
+}
+
 
 .apply-now {
     margin-top: 71px !important;
@@ -883,6 +927,78 @@ FOOTER SECTION
 .footer-icons img {
     width: 36px;
     height: 36px;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1);
+    transition: 0.6s all linear;
+}
+
+.col-lg-2 li a:hover {
+    color: var(--btn-color) !important;
+}
+
+.type-container a {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: var(--bright-color);
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: var(--btn-color);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.type-container a span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+}
+
+.type-container a span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+
+.type-container a:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+
+.type-container a:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+
+.type-container a:hover span:last-child {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
 

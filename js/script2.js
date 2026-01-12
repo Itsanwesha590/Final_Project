@@ -3,39 +3,49 @@
 FORM VALIDATION
 ======================================
 */
-document.getElementById("loginBtn").addEventListener("click", function (e) {
+
+const togglePassword = document.getElementById("togglePassword");
+const passwordInput = document.getElementById("password");
+const eyeOpen = document.getElementById("eyeOpen");
+const eyeSlash = document.getElementById("eyeSlash");
+
+togglePassword.addEventListener("click", () => {
+  const isHidden = passwordInput.type === "password";
+
+  passwordInput.type = isHidden ? "text" : "password";
+
+  eyeOpen.style.display = isHidden ? "block" : "none";
+  eyeSlash.style.display = isHidden ? "none" : "block";
+});
+
+/*====================================
+PASSWORD CHECK
+=======================================
+*/
+const form = document.querySelector("form");
+const newPassword = document.getElementById("newPassword");
+const confirmPassword = document.getElementById("confirmPassword");
+const errorText = document.getElementById("passwordError");
+
+form.addEventListener("submit", function (e) {
+  if (newPassword.value !== confirmPassword.value) {
     e.preventDefault();
+    errorText.style.display = "block";
+    confirmPassword.focus();
+  } else {
+    errorText.style.display = "none";
+  }
+});
 
-    const email = document.getElementById("email");
-    const password = document.getElementById("password");
+document.querySelectorAll(".toggle-password").forEach(toggle => {
+  toggle.addEventListener("click", () => {
+    const input = document.getElementById(toggle.dataset.target);
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    
-    if (!email.value.match(emailPattern)) {
-      email.classList.add("is-invalid");
-      email.focus();
-      return;
+    if (input.type === "password") {
+      input.type = "text";
     } else {
-      email.classList.remove("is-invalid");
+      input.type = "password";
     }
-
-    
-    if (password.value.length < 6) {
-      password.classList.add("is-invalid");
-      password.focus();
-      return;
-    } else {
-      password.classList.remove("is-invalid");
-    }
-
-    alert("✅ Login form validated successfully!");
   });
+});
 
-  document.getElementById("togglePassword").addEventListener("click", function () {
-    const password = document.getElementById("password");
-    const type = password.getAttribute("type") === "password" ? "text" : "password";
-    password.setAttribute("type", type);
-  });
-
-  

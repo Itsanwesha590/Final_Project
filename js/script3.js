@@ -2,7 +2,7 @@ const imgSwip = new Swiper(".imageSwiper", {
     loop: true,
     spaceBetween: 30,
     centeredSlides: true,
-    slidesPerView: 1,
+    slidesPerView: 3,
     autoplay: {
       delay: 1500,
       disableOnInteraction: false,

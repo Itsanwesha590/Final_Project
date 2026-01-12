@@ -536,6 +536,33 @@ FOOTER SECTION
     border: 1px solid black;
     max-width: 610px;
     width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.type-container .form-control {
+    border: none;
+    box-shadow: none;
+    height: 44px;
+    padding: 0 14px;
+    font-size: 14px;
+    background: transparent;
+}
+
+.type-container .btn {
+    height: 36px;
+    margin-right: 6px;
+    border-radius: 6px;
+    padding: 0 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-container .form-control:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .footer-section {
@@ -557,6 +584,69 @@ FOOTER SECTION
     height: 36px;
 }
 
+.footer-icons img:hover {
+    transform: scale(1.1);
+    transition: 0.6s all linear;
+}
+
+.col-lg-2 li a:hover {
+    color: var(--btn-color) !important;
+}
+
+.footer-icons ul li a {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-icons ul li a:hover {
+    transform: translateY(-8px);
+}
+
+
+.footer-icons ul li a svg path,
+.footer-icons ul li a svg rect {
+    transition: all 0.35s ease;
+}
+
+.footer-icons ul li:nth-child(1) a:hover {
+    background: #1877f2;
+}
+
+.footer-icons ul li:nth-child(1) a:hover svg path {
+    fill: #fff;
+}
+
+.footer-icons ul li:nth-child(2) a:hover {
+    background: #e4405f;
+}
+
+.footer-icons ul li:nth-child(2) a:hover svg path {
+    fill: #fff;
+}
+
+.footer-icons ul li:nth-child(3) a:hover {
+    background: #bd081c;
+}
+
+.footer-icons ul li:nth-child(3) a:hover svg path {
+    fill: #fff;
+}
+
+.footer-icons ul li:nth-child(4) a:hover {
+    background: #229ED9;
+}
+
+.footer-icons ul li:nth-child(4) a:hover svg path {
+    fill: #fff;
+}
 
 /*=========================================
 MEDIA QUERIES
