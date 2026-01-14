@@ -524,7 +524,7 @@ BANNER SECTION
 */
 
 .banner-section {
-    background: url("../assets/privacy-hero.png")no-repeat center/cover;
+    background: url("../assets/contactbannerfinal.png")no-repeat center/cover;
     min-height: 100vh;
     width: 100%;
     color: #fff;
@@ -554,9 +554,9 @@ GET IN TOUCH SECTION
     margin-bottom: 35px;
 }
 
-.mid-box h1 {
+/* .mid-box h1 {
     margin-top: 25px;
-}
+} */
 
 .review-box {
     padding: 30px 30px 32px;
@@ -602,6 +602,277 @@ GET IN TOUCH SECTION
     height: 100%;
     border: 0;
 }
+
+.form-control:focus {
+    border-color: var(--btn-color);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.4);
+    outline: none;
+}
+
+
+.form-check-input:focus {
+    border-color: var(--btn-color);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.4);
+}
+
+.message-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    padding: 13px 53px 12px 30px;
+    background: linear-gradient(135deg, #e63946, #ff6b6b);
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 2px;
+    background: linear-gradient(120deg, #ffd166, #ff6b6b, #ffd166);
+    background-size: 300%;
+    opacity: 0;
+    z-index: 0;
+    animation: glowMove 2.5s linear infinite;
+}
+
+.message-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.message-btn img {
+    margin-left: 5px;
+}
+
+.message-btn img,
+.message-btn {
+    position: relative;
+    z-index: 1;
+}
+
+.message-btn img {
+    width: 14px;
+    transition: transform 0.3s ease;
+}
+
+.message-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(230, 57, 70, 0.4);
+}
+
+.message-btn:hover::before {
+    opacity: 1;
+}
+
+.message-btn:hover img {
+    transform: translateX(5px);
+}
+
+.message-btn:active {
+    transform: scale(0.96);
+}
+
+@keyframes glowMove {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+.message-item h5 {
+    margin-right: 10px;
+}
+
+.like-container {
+    --like-color: #ff5b89;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+/* checkbox on top */
+.like-checkbox {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* svg wrapper */
+.svg-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.svg-container svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.svg-container svg:nth-child(1) {
+    display: block;
+}
+
+
+.svg-container svg:nth-child(2),
+.like-celebrate {
+    display: none;
+}
+
+
+.like-checkbox:checked~.svg-container svg:nth-child(2) {
+    display: block;
+    animation: pop 0.5s ease;
+}
+
+
+.like-checkbox:checked~.svg-container .like-celebrate {
+    display: block;
+    animation: celebrate 0.6s ease forwards;
+}
+
+
+.like-checkbox:checked~.svg-container svg:nth-child(1) {
+    display: none;
+}
+
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes celebrate {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/* ===============================
+CUSTOM CHECKBOX – KEEP ME LOGGED IN
+================================ */
+
+.checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #9098a9;
+    transition: all 0.2s ease;
+}
+
+.checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+}
+
+.checkbox-wrapper-46 .cbx span:first-child::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--btn-color);
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 1;
+}
+
+.checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+
+.checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: var(--btn-color);
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child {
+    background: var(--btn-color);
+    border-color: var(--btn-color);
+    animation: wave-46 0.4s ease;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child::before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+    50% {
+        transform: scale(0.9);
+    }
+}
+
 
 
 
