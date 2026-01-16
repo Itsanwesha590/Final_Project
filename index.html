@@ -12,6 +12,9 @@
     <!---------------SWIPER CSS----------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
+    <!---------------AOS CSS----------------------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!------------------CUSTOM CSS-------------------------->
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -19,7 +22,7 @@
 
 <body>
     <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content border-0">
 
                 <!-- Close button -->
@@ -130,7 +133,7 @@
                                                     CREATE ACCOUNT
                                                 </button>
                                             </form>
-                                            <div class="d-flex align-items-center my-3">
+                                            <!-- <div class="d-flex align-items-center my-3">
                                                 <hr class="flex-grow-1">
                                                 <span class="mx-2 text-muted">OR</span>
                                                 <hr class="flex-grow-1">
@@ -147,7 +150,7 @@
                                             </div>
                                             <h6 class="exist-check">Already have an account?
                                                 <a class="login-page" href="./login.html">Log in</a>
-                                            </h6>
+                                            </h6> -->
                                         </div>
 
                                     </div>
@@ -218,7 +221,7 @@
                                 <a class="nav-link last-item" href="./contact.html">Contact</a>
                             </li>
                         </ul>
-                        <div class="nav-btn d-flex justify-content-center">
+                        <div class="nav-btn d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#loginModal">
                             <a class="rounded-pill px-4 py-2 sign-in-btn" href="./signup.html">Sign In
                                 <span></span>
                                 <span></span>
@@ -312,7 +315,8 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 mb-4 features-cntn">
-                        <div class="feature-card position-relative">
+                        <div class="feature-card position-relative" data-aos="fade-up"
+                            data-aos-anchor-placement="top-center" data-aos-duration="500">
                             <img src="./assets/studentread.png" alt="" />
                             <h5>Why Study @ Vidyasu</h5>
 
@@ -335,13 +339,15 @@
                                 </svg>
                             </a>
                         </div>
-                        <p>
-                            We have students coming from different backgrounds,cultures, & nationalities as well.
+                        <p data-aos="fade-right" data-aos-anchor-placement="top-center">
+                            We have students coming from different backgrounds,cultures, & nationalities
+                            as well.
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 mb-4 features-cntn">
-                        <div class="feature-card position-relative">
+                        <div class="feature-card position-relative" data-aos="fade-up"
+                            data-aos-anchor-placement="top-center">
                             <img src="./assets/certification.png" alt="" />
                             <h5>Certification Guidance</h5>
                             <a class="arrowsec position-absolute" href="">
@@ -363,13 +369,15 @@
                                 </svg>
                             </a>
                         </div>
-                        <p>
-                            We have students coming from different backgrounds,cultures, & nationalities as well.
+                        <p data-aos="fade-up" data-aos-anchor-placement="top-center">
+                            We have students coming from different backgrounds,cultures, & nationalities
+                            as well.
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 mb-4 features-cntn">
-                        <div class="feature-card position-relative">
+                        <div class="feature-card position-relative" data-aos="fade-up"
+                            data-aos-anchor-placement="top-center" data-aos-duration="800">
                             <img src="./assets/graudate.png" alt="" />
                             <h5>Graduate Admissions</h5>
 
@@ -392,13 +400,15 @@
                                 </svg>
                             </a>
                         </div>
-                        <p>
-                            We have students coming from different backgrounds,cultures, & nationalities as well.
+                        <p data-aos="fade-up" data-aos-anchor-placement="top-center">
+                            We have students coming from different backgrounds,cultures, & nationalities
+                            as well.
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 features-cntn">
-                        <div class="feature-card position-relative">
+                        <div class="feature-card position-relative" data-aos="fade-up"
+                            data-aos-anchor-placement="top-center" data-aos-duration="1000">
                             <img src="./assets/book.png" alt="" />
                             <h5>Scholarships & Fees</h5>
 
@@ -421,15 +431,16 @@
                                 </svg>
                             </a>
                         </div>
-                        <p>
-                            We have students coming from different backgrounds,cultures, & nationalities as well.
+                        <p data-aos="fade-left" data-aos-anchor-placement="top-center">
+                            We have students coming from different backgrounds,cultures, & nationalities
+                            as well.
                         </p>
                     </div>
 
                 </div>
                 <div class="trusted-part">
                     <p>
-                        <a class="text-white" href="">
+                        <a class="text-white" href="" data-aos="zoom-out-up">
                             Trusted by the worlds Best University
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -453,33 +464,35 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="image-cntn">
-                                <div class="main-image position-relative">
+                                <div class="main-image position-relative" data-aos="flip-right">
                                     <img src="./assets/readingimg1.png" alt="" />
                                 </div>
-                                <div class="float-img position-absolute">
+                                <div class="float-img position-absolute" data-aos="flip-right">
                                     <img src="./assets/greenwall.png" alt="" />
                                 </div>
-                                <div class="float-img-on position-absolute">
+                                <div class="float-img-on position-absolute" data-aos="flip-right">
                                     <img src="./assets/girlimg.png" alt="" />
                                 </div>
-                                <div class="float-img-exp position-absolute">
+                                <div class="float-img-exp position-absolute" data-aos="flip-right">
                                     <img src="./assets/Experience.png" alt="" />
                                 </div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <h2 class="about-title">
+                            <h2 class="about-title" data-aos="fade-up-left" data-aos-duration="1000">
                                 A few words <br>
                                 about the <span>University</span>
                             </h2>
-                            <p class="about-text ps-4 position-relative">
-                                Our community is being called to reimagine the future. As the only university where a
+                            <p class="about-text ps-4 position-relative" data-aos="fade-left" data-aos-duration="1500">
+                                Our community is being called to reimagine the future. As the only
+                                university where a
                                 renowned
-                                design school comes together with premier colleges, we are making learning more relevant
+                                design school comes together with premier colleges, we are making
+                                learning more relevant
                                 and
                                 transformational.
                             </p>
-                            <div class="qualities d-flex align-items-start">
+                            <div class="qualities d-flex align-items-start" data-aos="zoom-out-left">
                                 <div class="icon">
                                     <img src="./assets/trust.png" alt="" />
                                 </div>
@@ -489,7 +502,7 @@
                                 </div>
                             </div>
 
-                            <div class="qualities d-flex align-items-start">
+                            <div class="qualities d-flex align-items-start" data-aos="zoom-out-left">
                                 <div class="icon">
                                     <img src="./assets/trusted-by-std.png" alt="" />
                                 </div>
@@ -498,7 +511,7 @@
                                     <p class="ms-4">Most trusted & recommended <br>by students</br></p>
                                 </div>
                             </div>
-                            <a class="enroll-btn classic" href="">
+                            <a class="enroll-btn classic" href="" data-aos="zoom-out-left">
                                 Enroll Now
                                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -520,7 +533,7 @@
                     <div class="row">
                         <div class="col-6 col-lg-3">
                             <div class="counter-box">
-                                <h3><span class="counter" data-target="2">0</span>k</h3>
+                                <h3 class="counter" data-target="2000"></h3>
                                 <p>Students</p>
                             </div>
                         </div>
@@ -550,7 +563,7 @@
         <!------------ACADEMIC SECTION------------------------------->
         <section class="academic-section">
             <div class="container">
-                <div class="academic-title">
+                <div class="academic-title" data-aos="zoom-out-up">
                     <h2><span class="short-text position-relative">Academic
                             <img class=" red-curve position-absolute" src="./assets/red-line.png" alt="" />
                         </span> Programs</h2>
@@ -560,7 +573,7 @@
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <div class="card course-card p-4">
+                            <div class="card course-card p-4" data-aos="flip-right">
                                 <img src="./assets/ui-ux.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h6>UI/UX Design Essentials</h6>
@@ -576,7 +589,7 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="card course-card p-4">
+                            <div class="card course-card p-4" data-aos="flip-right">
                                 <img src="./assets/HTML.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h6>Web Development Mastery</h6>
@@ -592,11 +605,12 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="card course-card p-4">
+                            <div class="card course-card p-4" data-aos="flip-right">
                                 <img src="./assets/data.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h6>Data Science & ML</h6>
-                                    <p class="data-para">Master data analysis, machine learning, and real-world AI
+                                    <p class="data-para">Master data analysis, machine learning, and
+                                        real-world AI
                                         solutions
                                         using Python tools.</p>
                                     <small>346 Students</small><br>
@@ -609,11 +623,12 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card course-card p-4">
+                            <div class="card course-card p-4" data-aos="flip-right">
                                 <img src="./assets/digital-marketing.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h6>Digital Marketing</h6>
-                                    <p class="data-para">Learn SEO, social media, and paid campaigns to grow brands and
+                                    <p class="data-para">Learn SEO, social media, and paid campaigns to
+                                        grow brands and
                                         reach audiences online.</p>
                                     <small>386 Students</small><br>
                                     <small class="mb-3">19 Sessions</small>
@@ -625,11 +640,12 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card course-card p-4">
+                            <div class="card course-card p-4" data-aos="flip-right">
                                 <img src="./assets/graphic-designer.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h6>Graphic Design</h6>
-                                    <p class="data-para">Learn visual design, branding, and creative tools to craft
+                                    <p class="data-para">Learn visual design, branding, and creative
+                                        tools to craft
                                         engaging
                                         graphics and digital visuals.</p>
                                     <small>336 Students</small><br>
@@ -642,11 +658,12 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="card course-card p-4">
+                            <div class="card course-card p-4" data-aos="flip-right">
                                 <img src="./assets/SEO.png" class="card-img-top" alt="">
                                 <div class="card-body">
                                     <h6>Search Engine Optimization</h6>
-                                    <p class="data-para">Learn keywords,on-page SEO,and ranking techniques to search
+                                    <p class="data-para">Learn keywords,on-page SEO,and ranking
+                                        techniques to search
                                         visibility and organic traffic.</p>
                                     <small>306 Students</small><br>
                                     <small class="mb-3">13 Sessions</small>
@@ -663,7 +680,7 @@
 
                     <div class="swiper-pagination"></div>
                 </div>
-                <div class="view-courses">
+                <div class="view-courses" data-aos="zoom-out-up">
                     <span>Explore the most appropriate program.</span>
                     <a class="text-danger" href="./courses.html">View all Programs
                         <img src="./assets/arrow-right.png" alt="" class="bg-danger" />
@@ -678,12 +695,12 @@
             <div class="container">
                 <div class="events-cntn">
                     <div class="events-header d-flex justify-content-between align-items-center mb-4">
-                        <h2 class="events-title">
+                        <h2 class="events-title" data-aos="fade-up-right">
                             Recent & <br>
                             Upcoming <span>Events</span>
                         </h2>
 
-                        <a href="#" class="btn btn-danger rounded-pill px-4 see-more-btn">
+                        <a href="#" class="btn btn-danger rounded-pill px-4 see-more-btn" data-aos="fade-up-left">
                             <span class="arrow-text">See more events</span>
                             <span class="arrow-wrap">
                                 <svg class="arrow arr-1" width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -718,7 +735,7 @@
                     <div class="events-list">
 
                         <!-- ITEM 1 -->
-                        <div class="event-item d-flex align-items-center">
+                        <div class="event-item d-flex align-items-center" data-aos="zoom-in-up">
                             <div class="event-date-box text-center">
                                 <h4>08</h4>
                                 <span>DEC, 2024</span>
@@ -735,7 +752,7 @@
                         </div>
 
                         <!-- ITEM 2 -->
-                        <div class="event-item d-flex align-items-center">
+                        <div class="event-item d-flex align-items-center" data-aos="zoom-in-up">
                             <div class="event-date-box text-center red">
                                 <h4>12</h4>
                                 <span>AUG, 2024</span>
@@ -752,7 +769,7 @@
                         </div>
 
                         <!-- ITEM 3 -->
-                        <div class="event-item d-flex align-items-center">
+                        <div class="event-item d-flex align-items-center" data-aos="zoom-in-up">
                             <div class="event-date-box text-center red">
                                 <h4>03</h4>
                                 <span>SEPT, 2024</span>
@@ -769,7 +786,7 @@
                         </div>
 
                         <!-- ITEM 4 -->
-                        <div class="event-item d-flex align-items-center border-0">
+                        <div class="event-item d-flex align-items-center border-0" data-aos="zoom-in-up">
                             <div class="event-date-box text-center red">
                                 <h4>20</h4>
                                 <span>JAN, 2024</span>
@@ -791,7 +808,7 @@
         <!-------------------LATEST BLOG SECTION---------------------------------->
         <section class="news-section">
             <div class="container">
-                <div class="text-center mb-5">
+                <div class="text-center mb-5" data-aos="zoom-in-up" data-aos-duration="2000">
                     <div class="title mb-1">BLOG UPDATES</div>
                     <h2 class="headings position-relative">Latest News & Articles</h2>
                     <img class="arrow-style position-absolute" src="./assets/style.png" alt="" />
@@ -800,7 +817,7 @@
 
                     <!-- Card 1 -->
                     <div class="col-lg-5 col-md-6">
-                        <div class="blog-card position-relative">
+                        <div class="blog-card position-relative" data-aos="flip-right" data-aos-duration="2000">
                             <img src="./assets/news1.png" class="img-fluid w-100" alt="">
 
                             <div class="blog-tag">Video & Tips</div>
@@ -853,7 +870,7 @@
 
                     <!-- Card 2 -->
                     <div class="col-lg-5 col-md-6">
-                        <div class="blog-card position-relative">
+                        <div class="blog-card position-relative" data-aos="flip-right" data-aos-duration="2000">
                             <img src="./assets/news2.png" class="img-fluid w-100" alt="">
 
                             <div class="blog-tag">Video & Tips</div>
@@ -912,15 +929,15 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="col-8">
-                        <div class="img-wrpr">
+                        <div class="img-wrpr" data-aos="fade-up-left" data-aos-duration="1000">
                             <a class="video-btn" href="">
                                 <img src="./assets/video-btn-final.png" alt="" />
                             </a>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="testimonial-wrpr">
-                            <div class="testimonialSwiper">
+                        <div class="testimonial-wrpr" data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="testimonialSwiper" data-aos="flip-left" data-aos-duration="1000">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="testimonial-cntn">
@@ -936,7 +953,8 @@
                                                 <img src="./assets/member5.png" alt="" />
                                             </div>
                                             <p class="review-text">
-                                                "Joining this Web Development course was the best decision for my
+                                                "Joining this Web Development course was the best
+                                                decision for my
                                                 career.
                                                 The practical coding sessions gave me real confidence."
                                             </p>
@@ -960,7 +978,8 @@
                                                 <img src="./assets/member1.png" alt="" />
                                             </div>
                                             <p class="review-text">
-                                                "Amazing mentors and practical learning. I landed my first job within 3
+                                                "Amazing mentors and practical learning. I landed my
+                                                first job within 3
                                                 months!"
                                             </p>
                                             <div class="author-text">
@@ -983,7 +1002,8 @@
                                                 <img src="./assets/member2.png" alt="" />
                                             </div>
                                             <p class="review-text">
-                                                "Teaching skills are amazing and all the study materials and courses are
+                                                "Teaching skills are amazing and all the study materials
+                                                and courses are
                                                 very nicely organized."
                                             </p>
                                             <div class="author-text">
@@ -1006,7 +1026,8 @@
                                                 <img src="./assets/member3.png" alt="" />
                                             </div>
                                             <p class="review-text">
-                                                "Such a great experience here. I learn so many new things upgrade my
+                                                "Such a great experience here. I learn so many new
+                                                things upgrade my
                                                 knowledge that helps me in my professional growth."
                                             </p>
                                             <div class="author-text">
@@ -1105,7 +1126,7 @@
             <div class="container">
                 <div
                     class="creative-cntn d-flex align-items-center  w-100 flex-column flex-md-row text-center text-md-start ">
-                    <div class="creative-header">
+                    <div class="creative-header" data-aos="fade-up-right" data-aos-duration="2000">
                         <h2>COURSES FOR FREE, REGISTER NOW</h2>
                         <h1>CREATIVE IN RESEARCH AND TEACHING.</h1>
                     </div>
@@ -1122,7 +1143,7 @@
         </section>
 
         <!-----------FOOTER SECTION----------->
-        <footer class="footer-section">
+        <footer class="footer-section" data-aos="fade-up" data-aos-duration="2000">
             <div class="container">
                 <div class="row small">
 
@@ -1135,7 +1156,8 @@
                             </li>
                             <li>
                                 <p class="text-muted">
-                                    We provide industry-recognized online and offline courses to help learners gain
+                                    We provide industry-recognized online and offline courses to help
+                                    learners gain
                                     practical skills
                                     and advance their careers.
                                 </p>
@@ -1146,7 +1168,8 @@
                                 </a></li>
                             <li class="location"><a class="footer-loc text-dark" href="">
                                     <img src="./assets/footer-map.png" alt="" />
-                                    Eco Intelligent Park, Unit No- 7E, 7th Floor, Block-EM, Plot-3, Salt Lake Sector-5,
+                                    Eco Intelligent Park, Unit No- 7E, 7th Floor, Block-EM, Plot-3, Salt
+                                    Lake Sector-5,
                                     Kolkata 700091, India
                                 </a></li>
                             <li><a class="footer-call text-dark" href="">
@@ -1179,7 +1202,7 @@
                             </li>
                             <li><a class="text-dark" href="">Students</a></li>
                             <li><a class="text-dark" href="">Admission</a></li>
-                            <li><a class="text-dark" href="">Faculty & Staffs</a></li>
+                            <li><a class="text-dark" href="./leadership.html">Faculty & Staffs</a></li>
                             <li><a class="text-dark" href="">Media Relations</a></li>
                             <li><a class="text-dark" href="">Alumni</a></li>
                             <li><a class="text-dark" href="">Visit</a></li>
@@ -1287,11 +1310,14 @@
     <!--------------SWIPER JS---------------------->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
+    <!--------------------AOS JS--------------------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!----------------LUXY JS----------------------------->
     <script src="./js/luxy.js"></script>
 
     <!--------------CUSTOM JS--------------------------------->
     <script src="./js/animation.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/script5.js"></script>
     <script src="./js/script6.js"></script>

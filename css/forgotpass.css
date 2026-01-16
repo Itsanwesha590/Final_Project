@@ -701,6 +701,20 @@ RESET PASSWORD SECTION
     transform: scale(0.98);
 }
 
+.modal-body {
+    overflow-x: hidden;
+}
+
+.modal {
+    z-index: 1200 !important;
+
+}
+
+.modal-dialog {
+    max-width: 1000px;
+    /* min-height: 100vh; */
+}
+
 
 /*========================================
 FOOTER SECTION
