@@ -11,6 +11,23 @@
     width: 100%;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#luxy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -31,8 +48,8 @@ ul {
 }
 
 .navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 /*===========================================
@@ -536,12 +553,35 @@ BANNER SECTION
     font-family: "Urbanist";
 }
 
+.pagination {
+    position: relative;
+}
+
+.pagination::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    width: 16px;
+    left: -1px;
+    background: var(--bright-color);
+}
+
+.page::before {
+    content: "|"
+}
+
+.page {
+    color: var(--bright-color);
+    padding-left: 10px;
+}
+
 /*============================================
 GET IN TOUCH SECTION
 ==============================================
 */
 .get-in-touch {
     background: var(--bg-color);
+    padding:60px 0;
 }
 
 .form-control {

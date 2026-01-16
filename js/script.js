@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const startCounting = () => {
         counters.forEach(counter => {
             const target = +counter.dataset.target;
-            const speed = 200;
+            const speed = 3000;
 
             const updateCount = () => {
                 const count = +counter.innerText;

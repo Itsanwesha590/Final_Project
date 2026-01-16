@@ -27,6 +27,7 @@ ul {
     --btn-color: #e50914;
     --tertiary-color: #777;
     --bright-color: #FFFFFF;
+    --footer-bg-color: #F3F4F8;
 }
 
 .navbar-toggler:focus {
@@ -886,6 +887,10 @@ CUSTOM CHECKBOX – KEEP ME LOGGED IN
 FOOTER SECTION
 ===========================================
 */
+
+.footer-section{
+    background:var(--footer-bg-color);
+}
 .type-container {
     display: flex;
     align-items: center;

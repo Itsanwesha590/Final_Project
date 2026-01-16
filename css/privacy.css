@@ -34,6 +34,11 @@ ul {
     --bright-color: #FFFFFF;
 }
 
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 /*===========================================
 BUTTON SECTION
 =============================================
@@ -465,6 +470,24 @@ HERO SECTION
     font-size: 80px;
     font-family: "Urbanist";
 }
+.pagination{
+    position: relative;
+}
+.pagination::after{
+    content:"";
+    position: absolute;
+    top:-9px;
+    width:16px;
+    left:-1px;
+    background: var(--bright-color);
+}
+.page::before{
+    content:"|"
+}
+.page{
+    color: var(--bright-color);
+    padding-left: 10px;
+}
 
 
 
@@ -769,5 +792,136 @@ NAVBAR MEDIA QUERIES
         margin-right: 0 !important;
         margin-left: 0 !important;
         margin-bottom: 10px;
+    }
+}
+
+/*===============================
+BANNER SECTION MEDIA QUERIES
+=================================
+*/
+@media screen and (max-width:768px) {
+    .banner-title {
+        text-align: center;
+    }
+
+    .banner-section p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .banner-title {
+        font-size: 48px;
+    }
+
+}
+
+/*===========================================
+INFORMATION SECTION
+=============================================
+*/
+@media screen and (max-width:992px) {
+    .let-us-know .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .let-us-know .row>div {
+        width: 100%;
+    }
+
+    .let-us-know .col-lg-4 {
+        width: 100%;
+        max-width: 360px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .email-id{
+        font-size: small;
+    }
+}
+/*=============================
+FOOTER SECTION MEDIA QUERIES
+===============================
+*/
+
+@media screen and (max-width: 992px) {
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section .row>div {
+        margin-bottom: 30px;
+    }
+
+    .footer-section ul {
+        padding-left: 0;
+    }
+
+    .footer-section ul li {
+        justify-content: center;
+    }
+
+    .newsletter-part {
+        justify-content: center;
+    }
+
+    .type-container {
+        margin: 0 auto;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+
+    .footer-icons ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section .row>div {
+        margin-bottom: 30px;
+    }
+
+    .footer-section ul {
+        padding-left: 0;
+    }
+
+    .footer-section ul li {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-part {
+        justify-content: center;
+    }
+
+    .type-container {
+        margin: 15px auto 0;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+
+    .footer-icons ul {
+        justify-content: center;
+    }
+
+    .footer-icons ul li {
+        margin-right: 10px;
+    }
+
+    .footer-icons ul li:last-child {
+        margin-right: 0;
     }
 }
