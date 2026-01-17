@@ -17,7 +17,8 @@
     margin: 0 auto;
     width: 100%;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
 
@@ -2277,6 +2278,24 @@ CREATIVE SECTION
 FOOTER SECTION
 ===========================================
 */
+.footer-section {
+    font-family: "Urbanist";
+}
+
+.newsletter-part ul li h6 a:hover {
+    color: var(--btn-color) !important;
+}
+
+.newsletter-part ul li h6 a {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.footer-section .col-lg-2 ul li h6 a {
+    font-weight: 800;
+    font-size: 18px;
+}
+
 .type-container {
     display: flex;
     align-items: center;
@@ -2340,7 +2359,7 @@ FOOTER SECTION
     justify-content: center;
     border-radius: 50%;
     transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.04);
     position: relative;
     overflow: hidden;
 }
@@ -2456,6 +2475,13 @@ FOOTER SECTION
     color: var(--btn-color) !important;
 }
 
+.footer-nav:hover {
+    color: var(--btn-color) !important;
+}
+
+.privacy-link:hover {
+    color: var(--btn-color) !important;
+}
 
 
 /*===== MEDIA QUERIES ======*/
@@ -2904,7 +2930,8 @@ ACADEMIC SECTION MEDIA QUERIES
     .course-card img {
         height: 170px;
     }
-    .arrow-style{
+
+    .arrow-style {
         display: none;
     }
 }
@@ -3240,7 +3267,7 @@ MODAL PART SIGN UP SECTION MEDIA QUERIES
 loader part media queries
 ===================================
 */
-@media screen and  (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     html,
     body {

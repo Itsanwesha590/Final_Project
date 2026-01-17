@@ -20,9 +20,166 @@
 </head>
 
 <body>
+    <!-------------LOADER PART------------------------>
+    <div id="page-loader">
+        <figure class="loader">
+            <div class="dot white"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </figure>
+    </div>
+
+    <!-------------------MODAL---------------------------->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content border-0">
+
+                <!-- Close button -->
+
+
+                <div class="modal-body p-0">
+
+                    <!-- YOUR EXISTING SIGNUP SECTION -->
+                    <section class="account-section">
+                        <button type="button" class="btn-close account-close position-absolute" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        <div class="container account-part">
+                            <div class="account-cntn">
+                                <div class="row">
+                                    <div class="col-md-6 d-md-flex position-relative p-0">
+                                        <img src="./assets/welcomeback.png"
+                                            class="img-happens w-100 h-100 object-fit-cover" alt="">
+                                        <h1 class="left-text position-absolute text-white fw-bold">
+                                            Let’s Get <br> Started
+                                        </h1>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <div class="form-box w-100 w-md-75">
+
+                                            <h2 class="fw-bold">Create Account</h2>
+                                            <p class="text-muted">Join Now and Experience a World of Opportunities!</p>
+                                            <form>
+                                                <!-- Name -->
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label class="form-label">First name</label>
+                                                        <input type="text" class="form-control border-dark"
+                                                            placeholder="Enter your first name" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label class="form-label">Last name</label>
+                                                        <input type="text" class="form-control border-dark"
+                                                            placeholder="Enter your last name" required>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Email -->
+                                                <div class="mb-3">
+                                                    <label class="form-label">Email</label>
+                                                    <input type="email" class="form-control border-dark"
+                                                        placeholder="Enter your email" required name="email">
+                                                </div>
+
+                                                <!-- Password -->
+                                                <div class="mb-3 password-wrapper">
+                                                    <label class="form-label">Password</label>
+                                                    <div class="password-field position-relative">
+                                                        <input type="password" id="password"
+                                                            class="form-control border-black"
+                                                            placeholder="Create password" required name="password" />
+
+                                                        <span class="toggle-password" id="togglePassword">
+
+                                                            <svg id="eyeIcon " width="24" height="24"
+                                                                viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M0.292893 0.292893C0.683418 -0.0976311 1.31643 -0.0976311 1.70696 0.292893L23.707 22.2929C24.0975 22.6834 24.0975 23.3164 23.707 23.707C23.3164 24.0975 22.6834 24.0975 22.2929 23.707L17.8251 19.2392C16.0954 20.3524 14.0848 20.9661 12.0165 20.9999C12.0111 21 12.0054 20.9999 11.9999 20.9999C8.10042 20.9999 5.10445 18.7731 3.14543 16.6835C2.15705 15.6292 1.40216 14.579 0.894456 13.7929C0.640031 13.3989 0.446196 13.0682 0.314378 12.8339C0.248483 12.7168 0.197794 12.6233 0.16301 12.5575C0.145646 12.5247 0.131529 12.4989 0.121995 12.4804C0.11727 12.4712 0.11404 12.4634 0.111253 12.4579C0.109855 12.4552 0.108249 12.4529 0.107346 12.4511L0.10637 12.4491L0.105393 12.4482C0.105209 12.4478 0.105497 12.4471 0.999924 11.9999L0.105393 12.4482C-0.0399083 12.1575 -0.0345653 11.8136 0.119065 11.5273C1.25061 9.41853 2.76043 7.5403 4.56926 5.98332L0.292893 1.70696C-0.0976311 1.31643 -0.0976311 0.683418 0.292893 0.292893ZM5.98723 7.40129C4.45077 8.70131 3.15018 10.2581 2.14348 12.0029C2.25248 12.1911 2.39585 12.4309 2.57414 12.707C3.03516 13.4208 3.71805 14.3709 4.60442 15.3163C6.39313 17.2242 8.8932 18.9945 11.9882 18.9989C13.5347 18.9729 15.0414 18.551 16.37 17.7841L14.0488 15.4628C13.8899 15.5623 13.7246 15.6518 13.5527 15.7284C13.0622 15.9469 12.5329 16.0646 11.996 16.0741C11.4589 16.0836 10.9248 15.9853 10.4267 15.7841C9.92866 15.5829 9.4764 15.283 9.0966 14.9032C8.7168 14.5234 8.41692 14.0712 8.21574 13.5732C8.01457 13.0751 7.91623 12.5409 7.92571 12.0038C7.93523 11.467 8.05293 10.9376 8.27141 10.4472C8.34806 10.2752 8.43647 10.109 8.53606 9.95012L5.98723 7.40129ZM10.0282 11.4423C9.96411 11.6348 9.9293 11.8365 9.92571 12.04C9.92103 12.3083 9.9697 12.5752 10.0702 12.8241C10.1708 13.0731 10.3208 13.2993 10.5107 13.4892C10.7005 13.6791 10.9267 13.829 11.1757 13.9296C11.4246 14.0301 11.6915 14.0788 11.9599 14.0741C12.1632 14.0706 12.3642 14.0346 12.5566 13.9706L10.0282 11.4423Z"
+                                                                    fill="black" />
+                                                                <g id="eyeSlash">
+
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                        d="M0.292893 0.292893C0.683418 -0.0976311 ... Z"
+                                                                        fill="black" />
+                                                                </g>
+
+
+                                                                <g id="eyeOpen" style="display:none">
+
+                                                                    <path d="M12.0009 3.0009C15.8999 3.00127 ... Z"
+                                                                        fill="black" />
+                                                                </g>
+                                                                <path
+                                                                    d="M12.0009 3.0009C15.8999 3.00127 18.8956 5.22689 20.8544 7.31633C21.8428 8.37063 22.5977 9.42088 23.1054 10.207C23.3598 10.6009 23.5537 10.9316 23.6855 11.1659C23.7514 11.2831 23.8021 11.3766 23.8368 11.4423C23.8542 11.4751 23.8683 11.5009 23.8779 11.5195C23.8826 11.5286 23.8858 11.5364 23.8886 11.5419C23.89 11.5447 23.8916 11.547 23.8925 11.5488L23.8935 11.5507L23.8945 11.5517C23.8946 11.552 23.8943 11.5527 22.9999 11.9999L23.8945 11.5517C24.0395 11.8418 24.0347 12.1855 23.8818 12.4716C23.242 13.6685 22.4792 14.7955 21.6054 15.8339C21.2498 16.2565 20.6188 16.3106 20.1962 15.955C19.7736 15.5994 19.7195 14.9684 20.0751 14.5458C20.7439 13.751 21.3392 12.8979 21.8564 11.998C21.7473 11.8096 21.6042 11.5693 21.4257 11.2929C20.9647 10.5791 20.2818 9.62898 19.3954 8.68352C17.6045 6.7732 15.1003 4.99992 11.9999 4.99992H11.998C11.3686 4.99845 10.7407 5.07034 10.1279 5.21379C9.59011 5.33965 9.05255 5.00544 8.92668 4.4677C8.80087 3.93005 9.13422 3.39251 9.6718 3.26653C10.4355 3.08777 11.2176 2.99811 12.0019 2.99992L12.0009 3.0009Z"
+                                                                    fill="black" />
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Checkbox -->
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div class="checkbox-wrapper-46">
+                                                        <input type="checkbox" id="keepLoggedIn" class="inp-cbx"
+                                                            checked>
+                                                        <label for="keepLoggedIn" class="cbx">
+                                                            <span>
+                                                                <svg viewBox="0 0 12 10" height="10" width="12">
+                                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                                </svg>
+                                                            </span>
+                                                            <span>I agree with Terms & Privacy Policy
+                                                            </span>
+                                                        </label>
+                                                    </div>
+
+                                                    <a href="./forgotpass.html"
+                                                        class="forgot-pass small text-decoration-none">Forgot
+                                                        password?</a>
+                                                </div>
+                                                <button type="submit"
+                                                    class="btn btn-danger w-100 fw-bold py-2 mb-3 account-create-button">
+                                                    CREATE ACCOUNT
+                                                </button>
+                                            </form>
+                                            <!-- <div class="d-flex align-items-center my-3">
+                                                <hr class="flex-grow-1">
+                                                <span class="mx-2 text-muted">OR</span>
+                                                <hr class="flex-grow-1">
+                                            </div>
+                                            <div class="sign-up-with-google d-flex align-items-center">
+                                                <div class="g-logo me-4">
+                                                    <a class="google-logo" href="">
+                                                        <img src="./assets/google.png" alt="" />
+                                                    </a>
+                                                </div>
+                                                <a class="sign-text" href="">
+                                                    <span>Sign Up With Google</span>
+                                                </a>
+                                            </div>
+                                            <h6 class="exist-check">Already have an account?
+                                                <a class="login-page" href="./login.html">Log in</a>
+                                            </h6> -->
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div id="luxy">
         <header class="hdr-sec">
-            <div class="top-bar bg-danger">
+            <div class="top-bar">
                 <div class="container">
                     <div class="top-bar-content d-flex align-items-center">
                         <div class="left-top-bar d-flex align-items-center">
@@ -57,7 +214,7 @@
                     <div class="collapse navbar-collapse" id="mainNavbar">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./aboutus.html">About Us</a>
@@ -69,7 +226,7 @@
                                 <a class="nav-link" href="#">FAQ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="./blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link last-item" href="./contact.html">Contact</a>
@@ -82,7 +239,8 @@
                                 <span></span>
                                 <span></span>
                             </a>
-                            <a class="text-white rounded-pill px-4 py-2 register-btn" href="">Register</a>
+                            <a class="text-white rounded-pill px-4 py-2 register-btn" href="" data-bs-toggle="modal"
+                                data-bs-target="#signupModal">Register</a>
                             <a class="search-btn d-flex align-items-center" href="">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -107,9 +265,15 @@
         <!---------------BANNER SECTION--------------------------------->
         <section class="banner-section d-flex align-items-center">
             <div class="container">
-                <p class="small mb-0">
-                    <img src="./assets/home.png" alt="" class="me-2" />| Become an Instructors
-                </p>
+                <div class="pagination">
+                    <a href="">
+                        <img src="./assets/home.png" alt="" />
+                    </a>
+
+                    <a class="page" href="">
+                        Become an Instructors
+                    </a>
+                </div>
                 <h1 class="banner-title text-capitalize">become an Instructors</h1>
                 <p class="para">Share your knowledge and inspire the next generation of learners.</p>
             </div>
@@ -119,10 +283,10 @@
         <section class="instructor-section">
             <div class="container">
                 <div class="header-title">
-                    <h2 class="text-capitalize" data-aos="fade-up" data-aos-duration="1000">How to<br /> become an instructor</h2>
+                    <h2 class="text-capitalize" data-aos="fade-up">How to<br /> become an
+                        instructor</h2>
                 </div>
-                <div class="instructor-tabs text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-                    data aos duration="1800">
+                <div class="instructor-tabs text-center" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <div class="tab-btn active" data-slide="0">Become an Instructor</div>
                     <div class="tab-btn" data-slide="1">Instructor Rules</div>
                     <div class="tab-btn" data-slide="2">Start with Courses</div>
@@ -134,9 +298,9 @@
                         <div class="swiper-slide">
                             <div class="row instructor-cntn">
                                 <div class="col-6">
-                                    <h4 data-aos="fade-up" data-aos-duration="2000">Become an Instructor</h4>
-                                    <h6 data-aos="fade-up" data-aos-duration="2800">Plan your course</h6>
-                                    <p data-aos="zoom-in-up" data-aos-duration="3000">
+                                    <h4 data-aos="fade-up">Become an Instructor</h4>
+                                    <h6 data-aos="fade-up">Plan your course</h6>
+                                    <p data-aos="zoom-in-up">
                                         Lorem ipsum dolor sit amet consectetur. Mauris sapien enim amet urna a. Eget a
                                         at
                                         vulputate
@@ -145,8 +309,8 @@
                                         tristique
                                         massa adipiscing lobortis. Faucibus volutpat facilisi viverra diam.
                                     </p>
-                                    <h6 data-aos="fade-up" data-aos-duration="2800">How we help you</h6>
-                                    <p data-aos="zoom-in-up" data-aos-duration="3000">
+                                    <h6 data-aos="fade-up">How we help you</h6>
+                                    <p data-aos="zoom-in-up">
                                         Lorem ipsum dolor sit amet consectetur. Mauris sapien enim amet urna a. Eget a
                                         at
                                         vulputate egestas feugiat tincidunt. Posuere facilisis fermentum ipsum turpis
@@ -156,7 +320,7 @@
                                     </p>
                                 </div>
                                 <div class="col-6">
-                                    <div class="image-contain" data-aos="flip-right" data-aos-duration="2000">
+                                    <div class="image-contain" data-aos="flip-right">
                                         <img src="./assets/instructor-image1.png" alt="" />
                                     </div>
                                 </div>
@@ -169,21 +333,21 @@
                             <div class="row instructor-cntn">
                                 <div class="col-6">
                                     <h4>Instructor Rules</h4>
-                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up"
-                                        data-aos-duration="3000">Follow Content Guidelines</h6>
-                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up"
-                                        data-aos-duration="3000">Maintain Professional Conduct</h6>
-                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up"
-                                        data-aos-duration="3000">Provide Accurate & Updated Information</h6>
-                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up"
-                                        data-aos-duration="3000">Respect Learner Privacy</h6>
-                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up"
-                                        data-aos-duration="3000">Meet Course Quality Standards</h6>
-                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up"
-                                        data-aos-duration="3000">Timely Response & Support</h6>
+                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up">Follow Content
+                                        Guidelines</h6>
+                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up">Maintain Professional
+                                        Conduct</h6>
+                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up">Provide Accurate &
+                                        Updated Information</h6>
+                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up">Respect Learner Privacy
+                                    </h6>
+                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up">Meet Course Quality
+                                        Standards</h6>
+                                    <h6 class="text-decoration-underline" data-aos="zoom-in-up">Timely Response &
+                                        Support</h6>
                                 </div>
                                 <div class="col-6">
-                                    <div class="image-contain" data-aos="flip-right" data-aos-duration="3000">
+                                    <div class="image-contain" data-aos="flip-right">
                                         <img src="./assets/instructor-rules.png" alt="" />
                                     </div>
                                 </div>
@@ -194,25 +358,25 @@
                         <div class="swiper-slide">
                             <div class="row instructor-cntn">
                                 <div class="col-6">
-                                    <h4 data-aos="fade-up" data-aos-duration="2000">Start With Courses</h4>
-                                    <h6 data-aos="fade-up" data-aos-duration="2000">Create Your Course</h6>
-                                    <p data-aos="zoom-in-up" data-aos-duration="3000">
+                                    <h4 data-aos="fade-up">Start With Courses</h4>
+                                    <h6 data-aos="fade-up">Create Your Course</h6>
+                                    <p data-aos="zoom-in-up">
                                         Choose a topic you know well and design clear lessons that deliver value.
                                         Organize
                                         content into simple modules so learners can follow easily from start to finish.
                                     </p>
-                                    <h6 data-aos="zoom-in-up" data-aos-duration="2000">Publish & Grow</h6>
-                                    <p data-aos="zoom-in-up" data-aos-duration="3000">
+                                    <h6 data-aos="zoom-in-up">Publish & Grow</h6>
+                                    <p data-aos="zoom-in-up">
                                         Upload high-quality videos and resources, then publish your course to reach
                                         learners
                                         worldwide. Improve your content continuously using student feedback.
                                     </p>
-                                    <a href="#" class="course-btn" data-aos="zoom-in-up" data-aos-duration="3000">
+                                    <a href="#" class="course-btn" data-aos="zoom-in-up">
                                         <span>Courses</span>
                                     </a>
                                 </div>
                                 <div class="col-6">
-                                    <div class="image-contain" data-aos="flip-right" data-aos-duration="3000">
+                                    <div class="image-contain" data-aos="flip-right">
                                         <img src="./assets/courses.png" alt="" />
                                     </div>
                                 </div>
@@ -229,57 +393,52 @@
                             <div class="row align-items-center shadow rounded-4 overflow-hidden bg-light">
 
                                 <!-- LEFT IMAGE -->
-                                <div class="instructor-image col-lg-4 p-0" data-aos="flip-right"
-                                    data-aos-duration="1000">
+                                <div class="instructor-image col-lg-4 p-0" data-aos="flip-right">
                                     <img src="./assets/instructor-person.png" alt="Instructor">
                                 </div>
 
                                 <!-- RIGHT FORM -->
                                 <div class="col-lg-8 p-4 p-lg-5">
-                                    <h4 class="fw-bold mb-1 text-center text-lg-start" data-aos="zoom-in-up"
-                                        data-aos-duration="1000">
+                                    <h4 class="fw-bold mb-1 text-center text-lg-start" data-aos="zoom-in-up">
                                         Become an instructor
                                     </h4>
-                                    <p class="text-muted small mb-4 text-center text-lg-start" data-aos="zoom-in-up"
-                                        data-aos-duration="2000">
+                                    <p class="text-muted small mb-4 text-center text-lg-start" data-aos="zoom-in-up">
                                         Discover a supportive community of online instructors.
                                     </p>
 
                                     <form>
                                         <div class="row instructor-form-row">
                                             <div class="col-md-6">
-                                                <h6 class="text-start" data-aos="fade-up" data-aos-duration="2400">User
+                                                <h6 class="text-start" data-aos="fade-up">User
                                                     Name</h6>
                                                 <input type="text" class="form-control" placeholder="User name" required
-                                                    name="email" data-aos="fade-up" data-aos-duration="2500">
+                                                    name="email" data-aos="fade-up">
                                             </div>
                                             <div class="col-md-6">
-                                                <h6 class="text-start" data-aos="fade-up" data-aos-duration="2400">Phone
+                                                <h6 class="text-start" data-aos="fade-up">Phone
                                                     Number</h6>
                                                 <input type="tel" class="form-control" placeholder="Phone number"
-                                                    required name="password" data-aos="fade-up"
-                                                    data-aos-duration="2500">
+                                                    required name="password" data-aos="fade-up">
                                             </div>
                                             <div class="col-md-6">
-                                                <h6 class="text-start" data-aos="fade-up" data-aos-duration="2400">Email
+                                                <h6 class="text-start" data-aos="fade-up">Email
                                                     Address</h6>
                                                 <input type="email" class="form-control" placeholder="Email address"
-                                                    required data-aos="fade-up" data-aos-duration="2500">
+                                                    required data-aos="fade-up">
                                             </div>
                                             <div class="col-md-6">
-                                                <h6 class="text-start" data-aos="fade-up" data-aos-duration="2400">
+                                                <h6 class="text-start" data-aos="fade-up">
                                                     Password</h6>
                                                 <input type="password" class="form-control" placeholder="Password"
-                                                    required data-aos="fade-up" data-aos-duration="2500">
+                                                    required data-aos="fade-up">
                                             </div>
                                             <div class="col-12">
-                                                <h6 class="text-start" data-aos="fade-up" data-aos-duration="2400">Bio
+                                                <h6 class="text-start" data-aos="fade-up">Bio
                                                 </h6>
                                                 <textarea class="form-control" rows="5" placeholder="Bio" required
-                                                    data-aos="fade-up" data-aos-duration="2500"></textarea>
+                                                    data-aos="fade-up"></textarea>
                                             </div>
-                                            <div class="col-12 text-start text-lg-start" data-aos="fade-up"
-                                                data-aos-duration="2500">
+                                            <div class="col-12 text-start text-lg-start" data-aos="fade-up">
                                                 <button type="submit" class="instructor-btn btn-danger px-4 py-2"
                                                     href="./instructors.html">
                                                     <span>Become an instructor</span>
@@ -305,10 +464,10 @@
                 <div
                     class="creative-cntn d-flex align-items-center  w-100 flex-column flex-md-row text-center text-md-start ">
                     <div class="creative-header">
-                        <h2 data-aos="fade-up" data-aos-duration="2000">COURSES FOR FREE, REGISTER NOW</h2>
-                        <h1 data-aos="zoom-in-up" data-aos-duration="2600">CREATIVE IN RESEARCH AND TEACHING.</h1>
+                        <h2 data-aos="fade-up">COURSES FOR FREE, REGISTER NOW</h2>
+                        <h1 data-aos="zoom-in-up">CREATIVE IN RESEARCH AND TEACHING.</h1>
                     </div>
-                    <div class="apply-now text-center" data-aos="zoom-in-out" data-aos-duration="3000">
+                    <div class="apply-now text-center">
                         <a class="apply-scene" href="">
                             <div class="apply-cube">
                                 <span class="apply-side apply-front">Apply Now</span>
@@ -325,7 +484,7 @@
             <div class="container">
                 <div class="row small">
 
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-lg-4" data-aos="fade-up">
                         <ul>
                             <li>
                                 <a class="footer-logo" href="">
@@ -355,23 +514,23 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-lg-2" data-aos="fade-up">
                         <ul>
                             <li>
                                 <h6><a class="text-dark" href="">About</a></h6>
                             </li>
                             <li>
-                                <a class="text-dark" href="">About Us</a>
+                                <a class="text-dark" href="./aboutus.html">About Us</a>
                             </li>
-                            <li><a class="text-dark" href="">Courses</a></li>
-                            <li><a class="text-dark" href="">News & Blog</a></li>
-                            <li><a class="text-dark" href="">Become A Teacher</a></li>
-                            <li><a class="text-dark" href="">Events</a></li>
-                            <li><a class="text-dark" href="">Contact Us</a></li>
+                            <li><a class="text-dark" href="./courses.html">Courses</a></li>
+                            <li><a class="text-dark" href="./blog.html">News & Blog</a></li>
+                            <li><a class="text-dark" href="./instructors.html">Become A Teacher</a></li>
+                            <li><a class="text-dark" href="./categories.html">Events</a></li>
+                            <li><a class="text-dark" href="./contact.html">Contact Us</a></li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-lg-2" data-aos="fade-up">
                         <ul>
                             <li>
                                 <h6><a class="text-dark" href="">Quick Links</a></h6>
@@ -385,7 +544,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-lg-4" data-aos="fade-up">
                         <div class=" newsletter-part d-flex">
                             <ul>
                                 <li>
@@ -465,11 +624,11 @@
             justify-content-between align-items-center
             text-center text-md-start">
                         <p class="copy-text mb-2 mb-md-0">Copyright©2025
-                            <a class="text-dark" href="./index.html">vidyasu</a>.All rights reserved.
+                            <a class="footer-nav text-dark" href="./index.html">vidyasu</a>.All rights reserved.
                         </p>
 
                         <div class="footer-links">
-                            <a href="./privacy.html" class="text-dark text-center">Privacy Policy</a>
+                            <a href="./privacy.html" class="privacy-link text-dark text-center">Privacy Policy</a>
 
                         </div>
                     </div>
@@ -496,6 +655,7 @@
     <script src="./js/script.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/animation.js"></script>
+    <script src="./js/loader.js"></script>
 </body>
 
 </html>

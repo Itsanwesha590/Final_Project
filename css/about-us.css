@@ -1133,7 +1133,7 @@ COUNTER PART
   border-radius: 24px;
   padding: 48px 60px;
   width: 85%;
-  margin:0 auto;
+  margin: 0 auto;
   font-family: "Crimson Pro", serif;
   color: #fff;
 }
@@ -1552,6 +1552,24 @@ CREATIVE SECTION
 FOOTER SECTION
 ===========================================
 */
+.footer-section {
+  font-family: "Urbanist";
+}
+
+.newsletter-part ul li h6 a:hover {
+  color: var(--btn-color) !important;
+}
+
+.newsletter-part ul li h6 a {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.footer-section .col-lg-2 ul li h6 a {
+  font-weight: 800;
+  font-size: 18px;
+}
+
 .type-container {
   display: flex;
   align-items: center;
@@ -1624,7 +1642,7 @@ FOOTER SECTION
   justify-content: center;
   border-radius: 50%;
   transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.04);
   position: relative;
   overflow: hidden;
 }
@@ -1738,6 +1756,14 @@ FOOTER SECTION
 .footer-email:hover,
 .footer-loc:hover,
 .footer-call:hover {
+  color: var(--btn-color) !important;
+}
+
+.privacy-link:hover {
+  color: var(--btn-color) !important;
+}
+
+.footer-nav:hover {
   color: var(--btn-color) !important;
 }
 
@@ -1914,10 +1940,11 @@ COUNTER SECTION MEDIA QUERIES
 ==================================*/
 
 @media screen and (max-width:768px) {
-  .about-counter-section{
+  .about-counter-section {
     margin-bottom: 20px;
   }
 }
+
 @media screen and (max-width: 425px) {
 
   .about-counter-section {
