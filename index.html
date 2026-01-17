@@ -18,9 +18,25 @@
     <!------------------CUSTOM CSS-------------------------->
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-------------------FANCY BOX CSS---------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+
+
 </head>
 
 <body>
+    <!--------------LOADER---------------------->
+    <div id="page-loader">
+        <figure class="loader">
+            <div class="dot white"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </figure>
+    </div>
+
+    <!-------------------MODAL---------------------------->
     <div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content border-0">
@@ -39,7 +55,7 @@
                                 <div class="row">
                                     <div class="col-md-6 d-md-flex position-relative p-0">
                                         <img src="./assets/welcomeback.png"
-                                            class="img-fluid w-100 h-100 object-fit-cover" alt="">
+                                            class="img-happens w-100 h-100 object-fit-cover" alt="">
                                         <h1 class="left-text position-absolute text-white fw-bold">
                                             Let’s Get <br> Started
                                         </h1>
@@ -215,13 +231,14 @@
                                 <a class="nav-link" href="#">FAQ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="./blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link last-item" href="./contact.html">Contact</a>
                             </li>
                         </ul>
-                        <div class="nav-btn d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <div class="nav-btn d-flex justify-content-center" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
                             <a class="rounded-pill px-4 py-2 sign-in-btn" href="./signup.html">Sign In
                                 <span></span>
                                 <span></span>
@@ -808,7 +825,7 @@
         <!-------------------LATEST BLOG SECTION---------------------------------->
         <section class="news-section">
             <div class="container">
-                <div class="text-center mb-5" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="text-center mb-5" data-aos="zoom-in-up">
                     <div class="title mb-1">BLOG UPDATES</div>
                     <h2 class="headings position-relative">Latest News & Articles</h2>
                     <img class="arrow-style position-absolute" src="./assets/style.png" alt="" />
@@ -817,7 +834,7 @@
 
                     <!-- Card 1 -->
                     <div class="col-lg-5 col-md-6">
-                        <div class="blog-card position-relative" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="blog-card position-relative" data-aos="flip-right">
                             <img src="./assets/news1.png" class="img-fluid w-100" alt="">
 
                             <div class="blog-tag">Video & Tips</div>
@@ -870,7 +887,7 @@
 
                     <!-- Card 2 -->
                     <div class="col-lg-5 col-md-6">
-                        <div class="blog-card position-relative" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="blog-card position-relative" data-aos="flip-right">
                             <img src="./assets/news2.png" class="img-fluid w-100" alt="">
 
                             <div class="blog-tag">Video & Tips</div>
@@ -929,15 +946,16 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="col-8">
-                        <div class="img-wrpr" data-aos="fade-up-left" data-aos-duration="1000">
-                            <a class="video-btn" href="">
+                        <div class="img-wrpr" data-aos="fade-up-left">
+                            <a class="video-btn" data-fancybox data-small-btn="true"
+                                href="https://www.youtube.com/embed/LlCwHnp3kL4">
                                 <img src="./assets/video-btn-final.png" alt="" />
                             </a>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="testimonial-wrpr" data-aos="fade-up-left" data-aos-duration="1000">
-                            <div class="testimonialSwiper" data-aos="flip-left" data-aos-duration="1000">
+                        <div class="testimonial-wrpr" data-aos="fade-up-left">
+                            <div class="testimonialSwiper" data-aos="flip-left">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="testimonial-cntn">
@@ -1126,7 +1144,7 @@
             <div class="container">
                 <div
                     class="creative-cntn d-flex align-items-center  w-100 flex-column flex-md-row text-center text-md-start ">
-                    <div class="creative-header" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="creative-header" data-aos="fade-up-right">
                         <h2>COURSES FOR FREE, REGISTER NOW</h2>
                         <h1>CREATIVE IN RESEARCH AND TEACHING.</h1>
                     </div>
@@ -1143,7 +1161,7 @@
         </section>
 
         <!-----------FOOTER SECTION----------->
-        <footer class="footer-section" data-aos="fade-up" data-aos-duration="2000">
+        <footer class="footer-section" data-aos="zoom-in-up">
             <div class="container">
                 <div class="row small">
 
@@ -1312,6 +1330,10 @@
 
     <!--------------------AOS JS--------------------------------->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!---------------FANCY BOX JS------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+
     <!----------------LUXY JS----------------------------->
     <script src="./js/luxy.js"></script>
 
@@ -1322,6 +1344,10 @@
     <script src="./js/script5.js"></script>
     <script src="./js/script6.js"></script>
     <script src="./js/script2.js"></script>
+    <script src="./js/fancy-box.js"></script>
+    <script src="./js/loader.js"></script>
+
+
 </body>
 
 </html>
