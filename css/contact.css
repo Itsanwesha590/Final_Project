@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,22 +20,9 @@
     width: 100%;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 body {
     overflow-x: hidden;
 }
-
-#luxy {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
 
 a {
     text-decoration: none;
@@ -50,6 +46,441 @@ ul {
 .navbar-toggler:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+
+/*=================================
+LOADER PART
+===================================
+*/
+.loader {
+    position: relative;
+    width: 6.25em;
+    height: 6.25em;
+
+    max-width: 80px;
+    max-height: 80px;
+
+    animation: rotate5123 2.4s linear infinite;
+    contain: layout paint;
+}
+
+.white {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    animation: flash 2.4s linear infinite;
+    opacity: 0;
+}
+
+.dot {
+    position: absolute;
+    margin: auto;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 100%;
+    transition: all 1s ease;
+}
+
+.dot:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #FF4444;
+    animation: dotsY 2.4s linear infinite;
+}
+
+.dot:nth-child(3) {
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #FFBB33;
+    animation: dotsX 2.4s linear infinite;
+}
+
+.dot:nth-child(4) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #99CC00;
+    animation: dotsY 2.4s linear infinite;
+}
+
+.dot:nth-child(5) {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #33B5E5;
+    animation: dotsX 2.4s linear infinite;
+}
+
+@keyframes rotate5123 {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        width: 6.250em;
+        height: 6.250em;
+    }
+
+    66% {
+        width: 2.4em;
+        height: 2.4em;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        width: 6.250em;
+        height: 6.250em;
+    }
+}
+
+@keyframes dotsY {
+    66% {
+        opacity: .1;
+        width: 2.4em;
+    }
+
+    77% {
+        opacity: 1;
+        width: 0;
+    }
+}
+
+@keyframes dotsX {
+    66% {
+        opacity: .1;
+        height: 2.4em;
+    }
+
+    77% {
+        opacity: 1;
+        height: 0;
+    }
+}
+
+@keyframes flash {
+    33% {
+        opacity: 0;
+        border-radius: 0%;
+    }
+
+    55% {
+        opacity: .6;
+        border-radius: 100%;
+    }
+
+    66% {
+        opacity: 0;
+    }
+}
+
+#page-loader {
+    position: fixed;
+    inset: 0;
+    background: var(--font-color);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#page-loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+/*====================================
+ACCOUNT SECTION REGISTER
+======================================
+*/
+
+/* .account-section {
+    padding: 40px 0;
+} */
+
+.left-text {
+    bottom: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: clamp(32px, 4vw, 60px);
+}
+
+.account-part {
+    max-width: 1200px;
+    padding: 0;
+}
+
+.account-cntn {
+    background: var(--secondary-color);
+    display: flex;
+    align-items: stretch;
+}
+
+.sign-up-with-google {
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 24px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.sign-up-with-google a,
+.sign-up-with-google img {
+    position: relative;
+    z-index: 2;
+}
+
+
+.g-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.sign-text {
+    color: #3c4043;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1;
+}
+
+
+
+
+.login-page:hover {
+    color: var(--btn-color);
+}
+
+.forgot-pass:hover {
+    color: var(--btn-color);
+}
+
+.form-control:focus {
+    border-color: var(--btn-color);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.4);
+    outline: none;
+}
+
+
+.form-check-input:focus {
+    border-color: var(--btn-color);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.4);
+}
+
+.form-box {
+    max-width: 425px;
+    width: 100%;
+    padding: 0;
+}
+
+.password-field input {
+    padding-right: 44px;
+}
+
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #000;
+}
+
+
+.password-field input {
+    border-radius: 6px;
+}
+
+
+.password-field input:focus {
+    border-color: var(--btn-color);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.4);
+}
+
+.exist-check {
+    margin-top: 20px;
+}
+
+.account-create-button {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e50914, #ff3b3b);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.account-create-button::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(120deg,
+            transparent 30%,
+            rgba(255, 255, 255, 0.6),
+            transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.acount-create-button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg,
+            transparent 20%,
+            rgba(255, 255, 255, 0.4),
+            transparent 80%);
+    transform: translateX(-100%);
+}
+
+.account-create-button:hover {
+    transform: translateY(-1px);
+    box-shadow:
+        0 0 15px rgba(229, 9, 20, 0.6),
+        0 0 30px rgba(229, 9, 20, 0.4);
+}
+
+
+.account-create-button:hover::before,
+.account-create-button:hover::after {
+    transform: translateX(100%);
+}
+
+
+.account-create-button:active {
+    transform: scale(0.98);
+}
+
+.account-close {
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.account-close:focus,
+.account-close:active {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ===============================
+CUSTOM CHECKBOX – KEEP ME LOGGED IN
+================================ */
+
+.checkbox-wrapper-46 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
+
+.checkbox-wrapper-46 .cbx {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #9098a9;
+    transition: all 0.2s ease;
+}
+
+.checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+}
+
+.checkbox-wrapper-46 .cbx span:first-child::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--btn-color);
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 1;
+}
+
+.checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+
+.checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: var(--btn-color);
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child {
+    background: var(--btn-color);
+    border-color: var(--btn-color);
+    animation: wave-46 0.4s ease;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child::before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+
+/*=================================
+MODAL-PART
+===================================
+*/
+.modal-body {
+    overflow-x: hidden;
+}
+
+.modal {
+    z-index: 1055 !important;
+
+}
+
+.modal-dialog {
+    max-width: 1000px;
+    overflow: hidden;
+    /* min-height: 100vh; */
 }
 
 /*===========================================
@@ -94,7 +525,7 @@ BUTTON SECTION
 }
 
 .apply-btn:hover {
-    color: var(--font-color) !important;
+    background: var(--font-color) !important;
 }
 
 .apply-btn:hover::before,
@@ -170,7 +601,7 @@ BUTTON SECTION
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--font-color));
+    background: linear-gradient(90deg, transparent, var(--btn-color));
 }
 
 .sign-in-btn span:nth-child(2) {
@@ -178,7 +609,7 @@ BUTTON SECTION
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, var(--font-color));
+    background: linear-gradient(180deg, transparent, var(--btn-color));
 }
 
 .sign-in-btn span:nth-child(3) {
@@ -186,7 +617,7 @@ BUTTON SECTION
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, var(--font-color));
+    background: linear-gradient(270deg, transparent, var(--btn-color));
 }
 
 .sign-in-btn span:nth-child(4) {
@@ -194,7 +625,7 @@ BUTTON SECTION
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, var(--font-color));
+    background: linear-gradient(360deg, transparent, var(--btn-color));
 }
 
 .sign-in-btn:hover span:nth-child(1) {
@@ -445,6 +876,7 @@ NAVBAR SECTION
     position: absolute;
     width: 100%;
     z-index: 99;
+    font-family: "Urbanist";
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(12px);
@@ -507,7 +939,7 @@ NAVBAR SECTION
     position: absolute;
     bottom: -13px;
     left: 50%;
-    width: 78px;
+    width: 58px;
     height: 2px;
     background: white;
     transition: all 0.5s ease;
@@ -528,7 +960,7 @@ NAVBAR SECTION
 }
 
 .hdr-sec ul li:hover::after {
-    width: 80px;
+    width: 68px;
 }
 
 .nav-link:hover {
@@ -549,8 +981,9 @@ BANNER SECTION
 
 .banner-title {
     min-height: 134px;
-    font-size: 80px;
+    font-size: 100px;
     font-family: "Urbanist";
+    font-weight: bold;
 }
 
 .pagination {
@@ -560,19 +993,33 @@ BANNER SECTION
 .pagination::after {
     content: "";
     position: absolute;
-    top: -9px;
-    width: 16px;
-    left: -1px;
+    /* top: -9px; */
+    /* width: 16px; */
+    /* left: -1px; */
     background: var(--bright-color);
 }
 
 .page::before {
-    content: "|"
+    content: "|";
+    margin: 0 4px 2px;
+}
+
+.pagination img {
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+    margin-bottom: 4px;
+    margin-right: 2px;
 }
 
 .page {
     color: var(--bright-color);
     padding-left: 10px;
+    font-family: "Urbanist";
+}
+
+.banner-section p {
+    font-family: "Urbanist";
 }
 
 /*============================================
@@ -582,6 +1029,7 @@ GET IN TOUCH SECTION
 .get-in-touch {
     background: var(--bg-color);
     padding: 60px 0;
+    font-family: "Urbanist";
 }
 
 .form-control {
@@ -592,6 +1040,8 @@ GET IN TOUCH SECTION
 .mid-box {
     text-align: center;
     margin-bottom: 35px;
+    font-family: "Urbanist";
+    font-weight: 500;
 }
 
 /* .mid-box h1 {
@@ -604,8 +1054,8 @@ GET IN TOUCH SECTION
     border: 1px solid #e5e5e5;
     border-radius: 10px;
     transition: all 0.3s ease;
-    max-width: 314px;
-    min-height: 214px;
+    max-width: 354px;
+    min-height: 260px;
 }
 
 .review-box>h4 {
@@ -733,6 +1183,7 @@ GET IN TOUCH SECTION
 
 .message-item h5 {
     margin-right: 10px;
+    font-family: "Urbanist";
 }
 
 .like-container {
@@ -830,24 +1281,28 @@ GET IN TOUCH SECTION
 CUSTOM CHECKBOX – KEEP ME LOGGED IN
 ================================ */
 
-.checkbox-wrapper-46 input[type="checkbox"] {
+/* ===============================
+CUSTOM CHECKBOX – DUPLICATE STYLE
+================================ */
+
+.checkbox-wrapper-custom input[type="checkbox"] {
     display: none;
     visibility: hidden;
 }
 
-.checkbox-wrapper-46 .cbx {
+.checkbox-wrapper-custom .cbx-custom {
     display: flex;
     align-items: center;
     cursor: pointer;
     user-select: none;
 }
 
-.checkbox-wrapper-46 .cbx span {
+.checkbox-wrapper-custom .cbx-custom span {
     display: inline-block;
     vertical-align: middle;
 }
 
-.checkbox-wrapper-46 .cbx span:first-child {
+.checkbox-wrapper-custom .cbx-custom span:first-child {
     position: relative;
     width: 18px;
     height: 18px;
@@ -856,7 +1311,7 @@ CUSTOM CHECKBOX – KEEP ME LOGGED IN
     transition: all 0.2s ease;
 }
 
-.checkbox-wrapper-46 .cbx span:first-child svg {
+.checkbox-wrapper-custom .cbx-custom span:first-child svg {
     position: absolute;
     top: 3px;
     left: 2px;
@@ -870,7 +1325,7 @@ CUSTOM CHECKBOX – KEEP ME LOGGED IN
     transition: all 0.3s ease;
 }
 
-.checkbox-wrapper-46 .cbx span:first-child::before {
+.checkbox-wrapper-custom .cbx-custom span:first-child::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -881,45 +1336,60 @@ CUSTOM CHECKBOX – KEEP ME LOGGED IN
     opacity: 1;
 }
 
-.checkbox-wrapper-46 .cbx span:last-child {
+.checkbox-wrapper-custom .cbx-custom span:last-child {
     padding-left: 8px;
     font-size: 14px;
 }
 
-
-.checkbox-wrapper-46 .cbx:hover span:first-child {
+.checkbox-wrapper-custom .cbx-custom:hover span:first-child {
     border-color: var(--btn-color);
 }
 
-.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child {
+.checkbox-wrapper-custom .inp-cbx-custom:checked+.cbx-custom span:first-child {
     background: var(--btn-color);
     border-color: var(--btn-color);
-    animation: wave-46 0.4s ease;
+    animation: wave-custom 0.4s ease;
 }
 
-.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child svg {
+.checkbox-wrapper-custom .inp-cbx-custom:checked+.cbx-custom span:first-child svg {
     stroke-dashoffset: 0;
 }
 
-.checkbox-wrapper-46 .inp-cbx:checked+.cbx span:first-child::before {
+.checkbox-wrapper-custom .inp-cbx-custom:checked+.cbx-custom span:first-child::before {
     transform: scale(3.5);
     opacity: 0;
     transition: all 0.6s ease;
 }
 
-@keyframes wave-46 {
+@keyframes wave-custom {
     50% {
         transform: scale(0.9);
     }
 }
 
 
-
-
-/*========================================
+/*=============================
 FOOTER SECTION
-===========================================
+===============================
 */
+.footer-section {
+    font-family: "Urbanist";
+}
+
+.newsletter-part ul li h6 a:hover {
+    color: var(--btn-color) !important;
+}
+
+.newsletter-part ul li h6 a {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.footer-section .col-lg-2 ul li h6 a {
+    font-weight: 800;
+    font-size: 18px;
+}
+
 .type-container {
     display: flex;
     align-items: center;
@@ -958,6 +1428,7 @@ FOOTER SECTION
 
 .footer-section {
     padding: 20px;
+    font-family: "Urbanist";
 }
 
 .mail,
@@ -970,17 +1441,7 @@ FOOTER SECTION
     padding: 15px 0;
 }
 
-.footer-icons img {
-    width: 36px;
-    height: 36px;
-}
-
-.footer-icons img:hover {
-    transform: scale(1.1);
-    transition: 0.6s all linear;
-}
-
-.col-lg-2 li a:hover {
+.footer-section .col-lg-2 li a:hover {
     color: var(--btn-color) !important;
 }
 
@@ -992,7 +1453,7 @@ FOOTER SECTION
     justify-content: center;
     border-radius: 50%;
     transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.04);
     position: relative;
     overflow: hidden;
 }
@@ -1100,6 +1561,20 @@ FOOTER SECTION
     transform: translateX(-50%) translateY(-50%);
     opacity: 1;
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.footer-email:hover,
+.footer-loc:hover,
+.footer-call:hover {
+    color: var(--btn-color) !important;
+}
+
+.footer-nav:hover {
+    color: var(--btn-color) !important;
+}
+
+.privacy-link:hover {
+    color: var(--btn-color) !important;
 }
 
 /*======================================
@@ -1253,6 +1728,43 @@ GET-IN-TOUCH SECTION
 @media screen and (max-width:768px) {
     .review-box {
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .checkbox-wrapper-custom .cbx-custom span:last-child {
+        /* padding-left: 8px; */
+        font-size: 9px;
+    }
+}
+
+/*=============================
+LET US KNOW SECTION
+===============================
+*/
+@media screen and (max-width:992px) {
+    .let-us-know .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .let-us-know .col-lg-4 {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .review-box {
+        margin-bottom: 24px;
+    }
+
+    .let-us-know .col-lg-4:last-child .review-box {
+        margin-bottom: 0;
+    }
+
+    .review-box {
+        padding: 30px 30px 32px;
     }
 }
 
