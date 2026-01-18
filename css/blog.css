@@ -992,7 +992,6 @@ BANNER SECTION
     position: relative;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .pagination::after {
@@ -1007,6 +1006,9 @@ BANNER SECTION
 .page::before {
     content: "|";
     margin: 0 4px;
+}
+.banner-section p{
+    font-family: "Urbanist";
 }
 
 .pagination img {
