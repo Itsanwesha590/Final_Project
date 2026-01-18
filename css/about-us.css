@@ -999,24 +999,35 @@ BANNER SECTION
 
 .pagination {
   position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .pagination::after {
   content: "";
   position: absolute;
-  top: -9px;
-  width: 16px;
+  /* top: -9px; */
+  /* width: 16px; */
   left: -1px;
   background: var(--bright-color);
 }
 
 .page::before {
-  content: "|"
+  content: "|";
+  margin: 0 4px 2px;
+}
+.pagination img{
+  width:17px;
+  height:17px;
+  object-fit: cover;
+  margin-bottom: 4px;
+  margin-right: 2px;
 }
 
 .page {
   color: var(--bright-color);
-  padding-left: 10px;
+  /* padding-left: 10px; */
   font-family: "Outfit";
 }
 

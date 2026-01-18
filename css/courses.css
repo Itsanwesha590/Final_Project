@@ -1002,13 +1002,25 @@ BANNER SECTION
 }
 
 .page::before {
-    content: "|"
+    content: "|";
+    margin-right: 7px;
 }
+
+.pagination img {
+    width: 17px;
+    height: 17px;
+    object-fit: cover;
+    margin-bottom: 2px;
+    margin-right: 7px;
+}
+
 
 .page {
     color: var(--bright-color);
-    padding-left: 10px;
+    /* padding:0 10px; */
+    /* margin-left: 9px; */
     font-family: "Outfit";
+    margin: 0 7px;
 }
 
 
