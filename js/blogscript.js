@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
         tab.addEventListener("click", () => {
             const index = tab.getAttribute("data-slide");
 
-            // active tab UI
+            
             tabs.forEach(t => t.classList.remove("active"));
             tab.classList.add("active");
 
-            // 🔥 MOVE SWIPER (THIS WAS MISSING)
+           
             blogcard.slideTo(index);
         });
     });
