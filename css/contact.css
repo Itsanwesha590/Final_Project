@@ -796,6 +796,7 @@ TOPBAR SECTION
 .top-bar {
     width: 100%;
     min-height: 42px;
+    background: var(--btn-color);
 }
 
 .top-bar-content {
@@ -986,37 +987,42 @@ BANNER SECTION
     font-weight: bold;
 }
 
-.pagination {
-    position: relative;
-}
-
-.pagination::after {
-    content: "";
-    position: absolute;
-    /* top: -9px; */
-    /* width: 16px; */
-    /* left: -1px; */
-    background: var(--bright-color);
-}
-
-.page::before {
-    content: "|";
-    margin: 0 4px 2px;
-}
-
-.pagination img {
-    width: 17px;
-    height: 17px;
-    object-fit: cover;
-    margin-bottom: 4px;
-    margin-right: 2px;
-}
-
-.page {
-    color: var(--bright-color);
-    padding-left: 10px;
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     font-family: "Urbanist";
 }
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item img {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+    display: block;
+    transform: translateY(-1px);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "|";
+    margin: 0 8px;
+    color: var(--bright-color);
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.breadcrumb-item.active {
+    color: var(--bright-color);
+    line-height: 1;
+}
+
 
 .banner-section p {
     font-family: "Urbanist";
@@ -1708,7 +1714,7 @@ BANNER SECTION MEDIA QUERIES
         text-align: center;
     }
 
-    .banner-section .pagination {
+    .banner-section .breadcrumb {
         display: flex;
         justify-content: center;
     }

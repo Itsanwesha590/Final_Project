@@ -21,6 +21,11 @@ body {
   overflow-x: hidden;
 }
 
+body.nav-open {
+  overflow: hidden;
+  height: 100vh;
+}
+
 a {
   text-decoration: none;
 }
@@ -997,38 +1002,40 @@ BANNER SECTION
   top: 6px;
 }
 
-.pagination {
-  position: relative;
+.breadcrumb {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Urbanist";
 }
 
-.pagination::after {
-  content: "";
-  position: absolute;
-  /* top: -9px; */
-  /* width: 16px; */
-  left: -1px;
-  background: var(--bright-color);
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
 }
 
-.page::before {
+.breadcrumb-item img {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  display: block;
+  transform: translateY(-1px);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
   content: "|";
-  margin: 0 4px 2px;
-}
-.pagination img{
-  width:17px;
-  height:17px;
-  object-fit: cover;
-  margin-bottom: 4px;
-  margin-right: 2px;
+  margin: 0 8px;
+  color: var(--bright-color);
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
 }
 
-.page {
+.breadcrumb-item.active {
   color: var(--bright-color);
-  /* padding-left: 10px; */
-  font-family: "Outfit";
+  line-height: 1;
 }
 
 
@@ -1417,7 +1424,7 @@ SWIPER LAST SECTION
 
 .teacher-overlay {
   position: absolute;
-  top:2%;
+  top: 2%;
   left: 18px;
   padding: 120px 25px 40px;
   text-align: center;
@@ -1863,6 +1870,10 @@ NAVBAR MEDIA QUERIES
     margin: 0 auto;
   }
 
+  .nav-link:hover {
+    color: var(--tertiary-color) !important;
+  }
+
   .navbar-collapse {
     position: fixed;
     top: 0;
@@ -1892,6 +1903,11 @@ NAVBAR MEDIA QUERIES
     display: none;
   }
 
+  .hdr-sec ul li::after,
+  .hdr-sec ul li .active::after {
+    display: none !important;
+  }
+
   .nav-link {
     color: #fff;
   }
@@ -1915,6 +1931,14 @@ NAVBAR MEDIA QUERIES
     margin-right: 0 !important;
     margin-left: 0 !important;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .navbar-collapse {
+    width: 80%;
+    /* height:auto; */
+    height: 90vh;
   }
 }
 
@@ -1945,7 +1969,7 @@ BANNER SECTION MEDIA QUERIES
     font-size: 40px;
   }
 
-  .banner-section .pagination {
+  .banner-section .breadcrumb {
     display: flex;
     justify-content: center;
   }

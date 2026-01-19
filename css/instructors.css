@@ -22,6 +22,11 @@ body {
     overflow-x: hidden;
 }
 
+body.nav-open {
+    overflow: hidden;
+    height: 100vh;
+}
+
 a {
     text-decoration: none;
 }
@@ -1070,28 +1075,42 @@ BANNER SECTION
     font-family: "Poppins";
 }
 
-.pagination {
-    position: relative;
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Urbanist";
 }
 
-.pagination::after {
-    content: "";
-    position: absolute;
-    top: -9px;
-    width: 16px;
-    left: -1px;
-    background: var(--bright-color);
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
 }
 
-.page::before {
-    content: "|"
+.breadcrumb-item img {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+    display: block;
+    transform: translateY(-1px);
 }
 
-.page {
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "|";
+    margin: 0 8px;
     color: var(--bright-color);
-    padding-left: 10px;
-    font-family: "Outfit";
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
 }
+
+.breadcrumb-item.active {
+    color: var(--bright-color);
+    line-height: 1;
+}
+
 
 
 /*==========================
@@ -1557,8 +1576,9 @@ FOOTER SECTION
 .privacy-link:hover {
     color: var(--btn-color) !important;
 }
-.footer-nav:hover{
-    color:var(--btn-color)!important;
+
+.footer-nav:hover {
+    color: var(--btn-color) !important;
 }
 
 
@@ -1622,6 +1642,11 @@ NAVBAR MEDIA QUERIES
         margin: 0 auto;
     }
 
+    .hdr-sec ul li::after,
+    .hdr-sec ul li .active::after {
+        display: none !important;
+    }
+
     .navbar-collapse {
         position: fixed;
         top: 0;
@@ -1677,6 +1702,15 @@ NAVBAR MEDIA QUERIES
     }
 }
 
+@media screen and (max-width:576px) {
+    .navbar-collapse {
+        width: 80%;
+        /* height:auto; */
+        height: 90vh;
+    }
+}
+
+
 /*===============================
 BANNER SECTION MEDIA QUERIES
 =================================
@@ -1689,13 +1723,17 @@ BANNER SECTION MEDIA QUERIES
     .banner-section p {
         text-align: center;
     }
+
+    .banner-section .breadcrumb {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width:576px) {
     .banner-title {
-        font-size: 48px;
+        font-size: 32px;
     }
-
 }
 
 /*==================================

@@ -175,7 +175,7 @@
 
     <div id="luxy">
         <header class="hdr-sec">
-            <div class="top-bar bg-danger">
+            <div class="top-bar">
                 <div class="container">
                     <div class="top-bar-content d-flex align-items-center">
                         <div class="left-top-bar d-flex align-items-center">
@@ -210,7 +210,7 @@
                     <div class="collapse navbar-collapse" id="mainNavbar">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./aboutus.html">About Us</a>
@@ -262,15 +262,20 @@
         <!---------------BANNER SECTION--------------------------------->
         <section class="banner-section d-flex align-items-center">
             <div class="container">
-                <div class="pagination">
-                    <a href="">
-                        <img src="./assets/home.png" alt="" />
-                    </a>
+                <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/">
+                                <img src="./assets/home.png" alt="Home" />
+                            </a>
+                        </li>
 
-                    <a class="page" href="">
-                        Contact
-                    </a>
-                </div>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a class="text-white" href="">Contact</a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <h1 class="banner-title text-capitalize">Contact</h1>
                 <p class="para">Let's connect and start the conversation</p>
             </div>
@@ -281,8 +286,8 @@
         <section class="get-in-touch">
             <div class="container">
                 <div class="mid-box">
-                    <h1>Get in Touch</h1>
-                    <p>We are here to answer any question you may have.
+                    <h1 data-aos="fade-up">Get in Touch</h1>
+                    <p data-aos="fade-up">We are here to answer any question you may have.
                     </p>
                 </div>
                 <div class="row justify-content-center">
@@ -290,8 +295,8 @@
 
                         <!-- SEND MESSAGE HEADER -->
                         <div class="message-item d-flex align-items-center mb-4">
-                            <h5 class="mb-0 fw-semibold">Send a message</h5>
-                            <div class="like-container" title="Like">
+                            <h5 class="mb-0 fw-semibold" data-aos="fade-up">Send a message</h5>
+                            <div class="like-container" data-aos="fade-up" title="Like">
                                 <input type="checkbox" class="like-checkbox">
 
                                 <div class="svg-container">
@@ -340,31 +345,31 @@
 
                             <!-- NAME + EMAIL -->
                             <div class="row mb-3">
-                                <div class="col-md-6 mb-3 mb-md-0">
+                                <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-up">
                                     <label class="form-label small">Your Name</label>
                                     <input type="text" class="form-control" required>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6" data-aos="fade-up">
                                     <label class="form-label small">Email</label>
                                     <input type="email" class="form-control" required>
                                 </div>
                             </div>
 
                             <!-- SUBJECT -->
-                            <div class="mb-3">
+                            <div class="mb-3" data-aos="fade-up">
                                 <label class="form-label small">Subject</label>
                                 <input type="text" class="form-control" required>
                             </div>
 
                             <!-- MESSAGE -->
-                            <div class="mb-3">
+                            <div class="mb-3" data-aos="fade-up">
                                 <label class="form-label small">Your message</label>
                                 <textarea rows="5" class="form-control" required></textarea>
                             </div>
 
                             <!-- CHECKBOX -->
-                            <div class="checkbox-wrapper-custom mb-5">
+                            <div class="checkbox-wrapper-custom mb-5" data-aos="fade-up">
                                 <input type="checkbox" id="rememberMe" class="inp-cbx-custom" checked>
                                 <label for="rememberMe" class="cbx-custom">
                                     <span>
@@ -378,7 +383,7 @@
                             </div>
 
                             <!-- BUTTON -->
-                            <button type="submit" class="message-btn btn-danger px-4">
+                            <button type="submit" class="message-btn btn-danger px-4" data-aos="fade-up">
                                 <span>Send message</span>
                                 <img src="./assets/arrow-right.png" alt="" />
                             </button>
@@ -387,12 +392,12 @@
                     </div>
 
                 </div>
-                <h3 class="head-title">Let us know how we can help
+                <h3 class="head-title" data-aos="fade-up">Let us know how we can help
                 </h3>
                 <div class="let-us-know">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="review-box h-100">
+                            <div class="review-box h-100" data-aos="flip-right">
                                 <img src="./assets/mail.png" alt="" />
                                 <h4 class="mt-1">Feedbacks</h4>
                                 <h6 class="fw-light mb-1">Speak to our Friendly team.</h6>
@@ -400,7 +405,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="review-box h-100">
+                            <div class="review-box h-100" data-aos="flip-right">
                                 <img src="./assets/call-us.png" alt="" />
                                 <h4 class="mt-1">Call Us</h4>
                                 <h6 class="fw-light mb-1">Mon-Fri from 8am to 5pm</h6>
@@ -408,7 +413,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="review-box h-100">
+                            <div class="review-box h-100" data-aos="flip-right">
                                 <img src="./assets/location.png" alt="" />
                                 <h4 class="mt-1">Visit Us</h4>
                                 <h6 class="fw-light">Eco Intelligent Park, Unit No- 7E, 7th Floor, Block- EM, Plot-3,

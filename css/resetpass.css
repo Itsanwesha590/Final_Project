@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +40,152 @@ ul {
 .navbar-toggler:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+
+/*=================================
+LOADER PART
+===================================
+*/
+.loader {
+    position: relative;
+    width: 6.25em;
+    height: 6.25em;
+
+    max-width: 80px;
+    max-height: 80px;
+
+    animation: rotate5123 2.4s linear infinite;
+    contain: layout paint;
+}
+
+.white {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    animation: flash 2.4s linear infinite;
+    opacity: 0;
+}
+
+.dot {
+    position: absolute;
+    margin: auto;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 100%;
+    transition: all 1s ease;
+}
+
+.dot:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #FF4444;
+    animation: dotsY 2.4s linear infinite;
+}
+
+.dot:nth-child(3) {
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #FFBB33;
+    animation: dotsX 2.4s linear infinite;
+}
+
+.dot:nth-child(4) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #99CC00;
+    animation: dotsY 2.4s linear infinite;
+}
+
+.dot:nth-child(5) {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #33B5E5;
+    animation: dotsX 2.4s linear infinite;
+}
+
+@keyframes rotate5123 {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        width: 6.250em;
+        height: 6.250em;
+    }
+
+    66% {
+        width: 2.4em;
+        height: 2.4em;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        width: 6.250em;
+        height: 6.250em;
+    }
+}
+
+@keyframes dotsY {
+    66% {
+        opacity: .1;
+        width: 2.4em;
+    }
+
+    77% {
+        opacity: 1;
+        width: 0;
+    }
+}
+
+@keyframes dotsX {
+    66% {
+        opacity: .1;
+        height: 2.4em;
+    }
+
+    77% {
+        opacity: 1;
+        height: 0;
+    }
+}
+
+@keyframes flash {
+    33% {
+        opacity: 0;
+        border-radius: 0%;
+    }
+
+    55% {
+        opacity: .6;
+        border-radius: 100%;
+    }
+
+    66% {
+        opacity: 0;
+    }
+}
+
+#page-loader {
+    position: fixed;
+    inset: 0;
+    background: var(--font-color);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#page-loader.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
 }
 
 /*===========================================
@@ -760,7 +913,21 @@ FOOTER SECTION
 ===========================================
 */
 .footer-section {
-    background: var(--secondary-color);
+    font-family: "Urbanist";
+}
+
+.newsletter-part ul li h6 a:hover {
+    color: var(--btn-color) !important;
+}
+
+.newsletter-part ul li h6 a {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.footer-section .col-lg-2 ul li h6 a {
+    font-weight: 800;
+    font-size: 18px;
 }
 
 .type-container {
@@ -801,6 +968,7 @@ FOOTER SECTION
 
 .footer-section {
     padding: 20px;
+    font-family: "Urbanist";
 }
 
 .mail,
@@ -825,7 +993,7 @@ FOOTER SECTION
     justify-content: center;
     border-radius: 50%;
     transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.04);
     position: relative;
     overflow: hidden;
 }
@@ -935,6 +1103,19 @@ FOOTER SECTION
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
+.footer-email:hover,
+.footer-loc:hover,
+.footer-call:hover {
+    color: var(--btn-color) !important;
+}
+
+.footer-nav:hover {
+    color: var(--btn-color) !important;
+}
+
+.privacy-link:hover {
+    color: var(--btn-color) !important;
+}
 
 
 /*===== MEDIA QUERIES ======*/

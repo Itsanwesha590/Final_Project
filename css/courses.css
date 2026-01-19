@@ -988,40 +988,46 @@ BANNER SECTION
     font-family: "Urbanist";
 }
 
-.pagination {
-    position: relative;
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Urbanist";
 }
 
-.pagination::after {
-    content: "";
-    position: absolute;
-    top: -9px;
-    width: 16px;
-    left: -1px;
-    background: var(--bright-color);
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
 }
 
-.page::before {
-    content: "|";
-    margin-right: 7px;
-}
-
-.pagination img {
+.breadcrumb-item img {
     width: 17px;
     height: 17px;
-    object-fit: cover;
-    margin-bottom: 2px;
-    margin-right: 7px;
+    object-fit: contain;
+    display: block;
+    transform: translateY(-1px);
 }
 
-
-.page {
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "|";
+    margin: 0 8px;
     color: var(--bright-color);
-    /* padding:0 10px; */
-    /* margin-left: 9px; */
-    font-family: "Outfit";
-    margin: 0 7px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
 }
+
+.breadcrumb-item.active {
+    color: var(--bright-color);
+    line-height: 1;
+}
+
+.banner-section p {
+    font-family: "Urbanist";
+}
+
 
 
 /*===================================
@@ -1758,6 +1764,12 @@ NAVBAR MEDIA QUERIES
         display: none;
     }
 
+    .hdr-sec ul li::after,
+    .hdr-sec ul li .active::after {
+        display: none !important;
+    }
+
+
     .nav-link {
         color: #fff;
     }
@@ -1784,6 +1796,12 @@ NAVBAR MEDIA QUERIES
     }
 }
 
+@media screen and (max-width:576px) {
+    .navbar-collapse {
+        width: 80%;
+    }
+}
+
 /*===============================
 BANNER SECTION MEDIA QUERIES
 =================================
@@ -1795,6 +1813,11 @@ BANNER SECTION MEDIA QUERIES
 
     .banner-section p {
         text-align: center;
+    }
+
+    .banner-section .pagination {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -2156,5 +2179,22 @@ loader part media queries
 
     #page-loader {
         overflow: hidden;
+    }
+}
+
+/*==========================================
+MODAL PART SIGN UP SECTION MEDIA QUERIES
+============================================
+*/
+@media screen and (max-width:768px) {
+    .account-cntn {
+        background: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-happens {
+        display: none;
     }
 }

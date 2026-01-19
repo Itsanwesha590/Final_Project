@@ -235,7 +235,7 @@
                             </li>
                         </ul>
                         <div class="nav-btn d-flex justify-content-center">
-                            <a class="rounded-pill px-4 py-2 sign-in-btn" href="./signup.html">Sign In
+                            <a class="rounded-pill px-4 py-2 sign-in-btn" href="./login.html">Sign In
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -267,15 +267,19 @@
         <!--------------BANNER SECTION------------------------------------>
         <section class="banner-section d-flex align-items-center position-relative">
             <div class="container">
-                <div class="pagination">
-                    <a href="">
-                        <img src="./assets/home.png" alt="" />
-                    </a>
+                <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/">
+                                <img src="./assets/home.png" alt="Home" />
+                            </a>
+                        </li>
 
-                    <a class="page" href="">
-                        About Us
-                    </a>
-                </div>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a class="text-white" href="">About Us</a>
+                        </li>
+                    </ol>
+                </nav>
                 <h1 class="banner-title fw-bold">About Us</h1>
             </div>
         </section>
@@ -830,6 +834,7 @@
     <script src="./js/aos.js"></script>
     <script src="./js/fancy-box.js"></script>
     <script src="./js/loader.js"></script>
+    <script src="./js/scroll-hide.js"></script>
 
 
 

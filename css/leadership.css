@@ -994,48 +994,40 @@ BANNER SECTION
     position: relative;
 }
 
-.banner-section p span::before {
-    content: "";
-    background: var(--bright-color);
-    width: 0;
-    height: 44px;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Urbanist";
 }
 
-.pagination {
-    position: relative;
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
 }
 
-.pagination::after {
-    content: "";
-    position: absolute;
-    /* top: -9px; */
-    /* width: 16px; */
-    left: -1px;
-    background: var(--bright-color);
-}
-
-.page::before {
-    content: "|";
-    margin-right: 7px;
-}
-
-.pagination img {
+.breadcrumb-item img {
     width: 17px;
     height: 17px;
-    object-fit: cover;
-    margin-bottom: 2px;
-    margin-right: 7px;
+    object-fit: contain;
+    display: block;
+    transform: translateY(-1px);
 }
 
-.page {
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "|";
+    margin: 0 8px;
     color: var(--bright-color);
-    /* padding:0 10px; */
-    /* margin-left: 9px; */
-    font-family: "Outfit";
-    margin: 0 7px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.breadcrumb-item.active {
+    color: var(--bright-color);
+    line-height: 1;
 }
 
 .banner-section p {
@@ -1604,6 +1596,9 @@ NAVBAR MEDIA QUERIES
     .nav-link {
         color: #fff;
     }
+    .nav-link:hover{
+        color:var(--tertiary-color) !important;
+    }
 
     .nav-btn {
         position: static;
@@ -1625,6 +1620,18 @@ NAVBAR MEDIA QUERIES
         margin-left: 0 !important;
         margin-bottom: 10px;
     }
+
+    .hdr-sec ul li::after,
+    .hdr-sec ul li .active::after {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .navbar-collapse {
+        width: 80%;
+    }
 }
 
 /*===============================
@@ -1640,7 +1647,7 @@ BANNER SECTION MEDIA QUERIES
         text-align: center;
     }
 
-    .banner-section .pagination {
+    .banner-section .breadcrumb {
         display: flex;
         justify-content: center;
     }

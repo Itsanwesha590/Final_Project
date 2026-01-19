@@ -238,7 +238,8 @@
                                 <span></span>
                                 <span></span>
                             </a>
-                            <a class="text-white rounded-pill px-4 py-2 register-btn" href="" data-bs-toggle="modal" data-bs-target="#signupModal">Register</a>
+                            <a class="text-white rounded-pill px-4 py-2 register-btn" href="" data-bs-toggle="modal"
+                                data-bs-target="#signupModal">Register</a>
                             <a class="search-btn d-flex align-items-center" href="">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -263,18 +264,22 @@
         <!---------------BANNER SECTION--------------------------------->
         <section class="banner-section d-flex align-items-center">
             <div class="container">
-                <div class="pagination">
-                    <a href="">
-                        <img src="./assets/home.png" alt="" />
-                    </a>
+                <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/">
+                                <img src="./assets/home.png" alt="Home" />
+                            </a>
+                        </li>
 
-                    <a class="page" href="">
-                        Courses
-                    </a>
-                    <a class="page" href="">
-                        All Courses
-                    </a>
-                </div>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a class="text-white" href="">Courses</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a class="text-white" href="">All Courses</a>
+                        </li>
+                    </ol>
+                </nav>
                 <h1 class="banner-title text-capitalize">All Courses</h1>
                 <p class="para">We have the largest collection of courses</p>
             </div>
@@ -284,7 +289,7 @@
         <section class="courses-section">
             <div class="container">
 
-                <!-- COURSES TOP BAR -->
+                <!-- COURSES TOP BAR
                 <div class="courses-topbar" data-aos="fade-up">
                     <div class="left-controls">
                         <div class="view-toggle">
@@ -312,7 +317,7 @@
                             <option value="price-high">Price: High to Low</option>
                         </select>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="course-tabs" data-aos="fade-up">
                     <div class="tab-btn active" data-slide="0">All Courses</div>
@@ -961,7 +966,7 @@
                         <div class="bg-rated d-flex flex-column 
                     text-center text-md-start" data-aos="flip-right">
                             <h5 class="fw-bold">Best<br>Rated Courses</h5>
-                            <a href="#" class="btn btn-warning btn-sm mt-2 align-self-center align-self-md-start">View
+                            <a href="./categories.html" class="btn btn-warning btn-sm mt-2 align-self-center align-self-md-start">View
                                 Programs</a>
                         </div>
                     </div>
